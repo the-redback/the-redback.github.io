@@ -1,6 +1,6 @@
 all: deploy
 
-msg="rebuilding site" + `date +'%y.%m.%d'`
+msg="rebuilding site" + `'%y.%m.%d'`
 
 draft:
 	hugo server -D
@@ -20,7 +20,7 @@ deploy: build
 	git add . \
 
 # Commit changes.
-	git commit -m "$msg" \
+	git commit -m `$(msg)` \
 
 # Push source and build repos.
 	git push origin master \
