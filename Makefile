@@ -12,7 +12,7 @@ deploy: build
 # ref: https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script
 
 	@echo "\n\033[1;35mDeploying updates to GitHub...\033[0m"
-	@echo '$msg'
+	@echo ${msg}
 
 # Go To Public folder
 	cd public \
