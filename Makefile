@@ -1,6 +1,6 @@
 all: deploy
 
-msg="rebuilding site" + `'%y.%m.%d'`
+msg="rebuilding site" + `date`
 
 draft:
 	hugo server -D
