@@ -1,9 +1,11 @@
 #!/bin/bash
 
-echo -e "\033[1;35mDeploying updates to GitHub...\033[0m"
+git submodule update --remote --merge
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+echo -e "\n\033[1;35mDeploying updates to GitHub...\033[0m\n"
 
 # Go To Public folder
 cd public
