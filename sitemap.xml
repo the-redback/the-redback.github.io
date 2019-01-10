@@ -4,7 +4,7 @@
     
     <url>
     
-      <loc>/post/</loc>
+      <loc>https://maruftuhin.com/post/</loc>
       <lastmod>2017-01-01T00:00:00+06:00</lastmod>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
     
-      <loc>/publication/</loc>
+      <loc>https://maruftuhin.com/publication/</loc>
       <lastmod>2017-01-01T00:00:00+06:00</lastmod>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
     
-      <loc>/talk/</loc>
+      <loc>https://maruftuhin.com/talk/</loc>
       <lastmod>2017-01-01T00:00:00+06:00</lastmod>
     </url>
     
@@ -28,7 +28,15 @@
     
     <url>
     
-      <loc>/</loc>
+      <loc>https://maruftuhin.com/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/</loc>
       <lastmod>2017-10-15T00:00:00+06:00</lastmod>
       <priority>0</priority>
     </url>
@@ -37,7 +45,7 @@
     
     <url>
     
-      <loc>/categories/</loc>
+      <loc>https://maruftuhin.com/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -45,15 +53,7 @@
     
     <url>
     
-      <loc>/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
+      <loc>https://maruftuhin.com/tags/</loc>
       <priority>0</priority>
     </url>
     
