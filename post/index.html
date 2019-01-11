@@ -38,7 +38,7 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#0095eb">
   
 
   
@@ -383,6 +383,73 @@
 
   
   
+    
+      
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Abdullah Al Maruf">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="datePublished">
+    <time datetime="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="dateModified">
+      Jan 12, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Abdullah Al Maruf">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/mongodb-on-kubernetes/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+
+  
+  
+  
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/mongodb-on-kubernetes/" itemprop="url">Mongodb on Kubernetes</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    Replica-Sets Create Secret for Key file MongoDB will use this key to communicate internal cluster.
+$ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt secret &quot;shared-bootstrap-data&quot; created  Deploy MongoDB Replica-Sets YAML apiVersion: v1 kind: Service metadata: name: mongodb-service labels: name: mongo spec: ports: - port: 27017 targetPort: 27017 clusterIP: None selector: role: mongo --- apiVersion: apps/v1 kind: StatefulSet metadata: name: mongod spec: serviceName: mongodb-service replicas: 3 selector: matchLabels: role: mongo environment: test replicaset: MainRepSet template: metadata: labels: role: mongo environment: test replicaset: MainRepSet spec: containers: - name: mongod-container image: mongo:3.
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/mongodb-on-kubernetes/" class="btn btn-outline-primary my-1">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+    
+  
 
   
 
@@ -468,6 +535,8 @@
 
     
     
+    
+    <script id="dsq-count-scr" src="//maruftuhin.disqus.com/count.js" async></script>
     
 
     
