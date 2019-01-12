@@ -20,7 +20,7 @@
   <meta name="description" content="Software Engineer, Backend">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://maruftuhin.com/tags/">
+  <link rel="alternate" hreflang="en-us" href="https://maruftuhin.com/blog/">
 
   
 
@@ -98,15 +98,15 @@
   
 
   
-  <link rel="alternate" href="https://maruftuhin.com/tags/index.xml" type="application/rss+xml" title="Maruf&#39;s">
-  <link rel="feed" href="https://maruftuhin.com/tags/index.xml" type="application/rss+xml" title="Maruf&#39;s">
+  <link rel="alternate" href="https://maruftuhin.com/blog/index.xml" type="application/rss+xml" title="Maruf&#39;s">
+  <link rel="feed" href="https://maruftuhin.com/blog/index.xml" type="application/rss+xml" title="Maruf&#39;s">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://maruftuhin.com/tags/">
+  <link rel="canonical" href="https://maruftuhin.com/blog/">
 
   
   
@@ -121,19 +121,19 @@
   <meta property="twitter:creator" content="@maruf2hin">
   
   <meta property="og:site_name" content="Maruf&#39;s">
-  <meta property="og:url" content="https://maruftuhin.com/tags/">
-  <meta property="og:title" content="Tags | Maruf&#39;s">
+  <meta property="og:url" content="https://maruftuhin.com/blog/">
+  <meta property="og:title" content="Blog | Maruf&#39;s">
   <meta property="og:description" content="Software Engineer, Backend"><meta property="og:image" content="https://maruftuhin.com/img/maruf-portrait-v1.1.2.jpg">
   <meta property="og:locale" content="en-us">
   
-  
-  
-
+  <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;06:00">
   
 
   
 
-  <title>Tags | Maruf&#39;s</title>
+  
+
+  <title>Blog | Maruf&#39;s</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -368,7 +368,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Tags</h1>
+  <h1 itemprop="name">Blog</h1>
 
   
 
@@ -381,6 +381,16 @@
   
 
   
+  
+  <div>
+    <h2><a href="/blog/mongodb-on-kubernetes/">Mongodb on Kubernetes</a></h2>
+    <div class="article-style">
+      
+      Replica-Sets Create Secret for Key file MongoDB will use this key to communicate internal cluster.
+$ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt secret &quot;shared-bootstrap-data&quot; created  Deploy MongoDB Replica-Sets YAML apiVersion: v1 kind: Service metadata: name: mongodb-service labels: name: mongo spec: ports: - port: 27017 targetPort: 27017 clusterIP: None selector: role: mongo --- apiVersion: apps/v1 kind: StatefulSet metadata: name: mongod spec: serviceName: mongodb-service replicas: 3 selector: matchLabels: role: mongo environment: test replicaset: MainRepSet template: metadata: labels: role: mongo environment: test replicaset: MainRepSet spec: containers: - name: mongod-container image: mongo:3.
+      
+    </div>
+  </div>
   
 
   
