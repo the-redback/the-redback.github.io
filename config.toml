@@ -48,6 +48,9 @@ enableGitInfo = false
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
   extensions = ["backslashLineBreak"]
 
+[permalinks]
+  post = "/blog/:slug"
+
 [params]
   # AUTHOR SETUP
 
@@ -107,7 +110,7 @@ enableGitInfo = false
 
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
-  color_theme = "default"
+  color_theme = "custom"
   # Enable users to switch between day and night mode?
   day_night = true
 
@@ -173,8 +176,8 @@ enableGitInfo = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
-  # highlight_style = "github"
+  highlight_languages = ["bash","yaml","go","python", "json"]
+  highlight_style = "atom-one-light"
 
   # Enable native social sharing buttons?
   sharing = true

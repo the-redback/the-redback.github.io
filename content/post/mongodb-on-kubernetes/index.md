@@ -36,7 +36,7 @@ categories = []
 
 MongoDB will use this key to communicate internal cluster.
 
-```console
+```shell
 $ openssl rand -base64 741 > ./replica-sets/key.txt
 
 $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt
@@ -128,7 +128,7 @@ spec:
 
 Now Deploy the Yaml
 
-```console
+```shell
 $ kc create -f ./replica-sets/mongodb-rc.yaml 
 service "mongodb-service" created
 statefulset "mongod" created
@@ -136,7 +136,7 @@ statefulset "mongod" created
 
 ### Wait for Pod running and PVC
 
-```console
+```shell
 $ kubectl get all
 NAME                  DESIRED   CURRENT   AGE
 statefulsets/mongod   3         3         2m
@@ -159,7 +159,7 @@ Finally, we need to connect to one of the “mongod” container processes to co
 
 Run the following command to connect to the first container. In the shell initiate the replica set (we can rely on the hostnames always being the same, due to having employed a StatefulSet):
 
-```console
+```shell
 $ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 > rs.initiate({_id: "MainRepSet", version: 1, members: [
@@ -171,7 +171,7 @@ $ mongo
 
 Keep checking the status of the replica set, with the following command, until the replica set is fully initialised and a primary and two secondaries are present:
 
-```console
+```json
 > rs.status();
 
 # output similar to:
@@ -269,7 +269,7 @@ Keep checking the status of the replica set, with the following command, until t
 
 Then run the following command to configure an “admin” user (performing this action results in the “localhost exception” being automatically and permanently disabled):
 
-```console
+```shell
 > db.getSiblingDB("admin").createUser({
       user : "main_admin",
       pwd  : "abc123",
@@ -281,7 +281,7 @@ Then run the following command to configure an “admin” user (performing this
 
 Insert Data into `mongod-0` pod.
 
-```console
+```shell
 > db.getSiblingDB('admin').auth("main_admin", "abc123");
 > use test;
 > db.testcoll.insert({a:1});
@@ -293,7 +293,7 @@ Insert Data into `mongod-0` pod.
 
 `exec` into Secondary Pod (here, mongo-1)
 
-```console
+```shell
 $ kubectl exec -it mongod-1 -c mongod-container bash
 $ mongo
 > db.getSiblingDB('admin').auth("main_admin", "abc123");
@@ -304,7 +304,7 @@ $ mongo
 
 ### Verify PVC
 
-```console
+```shell
 $ kubectl delete -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 $ kubectl get persistentvolumes
@@ -312,14 +312,14 @@ $ kubectl get persistentvolumes
 
 Recreate MongoDB
 
-```console
+```shell
 $ kubectl apply -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 ```
 
 Verify Data:
 
-```console
+```shell
 $ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 > db.getSiblingDB('admin').auth("main_admin", "abc123");
