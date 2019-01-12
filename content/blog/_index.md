@@ -1,5 +1,6 @@
 +++
-title = "Posts"
+title = "Blog"
+date = 2017-01-01T00:00:00
 
 # View.
 #   1 = List
@@ -11,5 +12,4 @@ view = 2
 [header]
 image = ""
 caption = ""
-aliases = ["/blog/"]
 +++
