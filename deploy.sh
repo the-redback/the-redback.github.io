@@ -1,6 +1,10 @@
 #!/bin/bash
-
+set -x
+chmod +x update_academic.sh
+./update_academic.sh
 git submodule update --remote --merge
+
+# ref: https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
