@@ -537,6 +537,15 @@ a[data-fancybox] img {
 }
 
 /*************************************************
+ *  Widgets (common)
+ **************************************************/
+
+.see-all {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+/*************************************************
  *  Hero Widget
  **************************************************/
 
@@ -614,7 +623,7 @@ a[data-fancybox] img {
 }
 
 /*************************************************
- *  Biography
+ *  About widget
  **************************************************/
 
 #profile {
@@ -623,7 +632,7 @@ a[data-fancybox] img {
   position: relative;
 }
 
-#profile .portrait {
+.portrait {
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -631,14 +640,14 @@ a[data-fancybox] img {
   object-fit: cover;
 }
 
-#profile .portrait-title h2 {
+.portrait-title h2 {
   font-size: 1.75em;
   font-weight: 300;
   color: #000000;
   margin: 20px 0 10px 0;
 }
 
-#profile .portrait-title h3 {
+.portrait-title h3 {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(0,0,0, 0.54);
@@ -698,6 +707,40 @@ ul.ul-edu li .description p.course {
 ul.ul-edu li .description p.institution {
   font-size: 0.75rem;
   color: rgba(0,0,0,0.6);
+}
+
+/*************************************************
+ *  People widget
+ **************************************************/
+
+.people-widget {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.people-widget .portrait-title h2 {
+  font-size: 1rem;
+}
+
+.people-widget .portrait-title h3 {
+  font-size: 0.7rem;
+}
+
+.people-widget .portrait {
+  width: 80%;
+  max-width: 150px;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .people-widget  .col-sm-auto {
+    max-width: 30% !important;
+  }
+}
+@media (min-width: 992px) {
+  .people-widget  .col-sm-auto {
+    max-width: 20% !important;
+  }
 }
 
 /*************************************************
@@ -1067,14 +1110,34 @@ article .article-metadata {
 }
 
 /*************************************************
- *  Publications
+ *  List items
  **************************************************/
+
+.view-list-item {
+  margin-bottom: 1rem;
+}
 
 .pub-icon {
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.81em;
-  padding-top: 6px;
+  padding-right: 6px;
 }
+
+.view-list-item .article-metadata {
+  margin-bottom: 0;
+}
+
+.pub-list-item .pub-abstract {
+  font-size: 1rem;
+}
+
+.pub-list-item .btn-links {
+  padding-top: 10px;
+}
+
+/*************************************************
+ *  Publications
+ **************************************************/
 
 .pub-banner {
   max-width: 100%;
@@ -1083,39 +1146,8 @@ article .article-metadata {
   margin-right: auto;
 }
 
-.pub .pub-authors {
-  font-style: italic;
-  line-height: 30px; /* Match share bar line height. */
-}
-
 .pub-row-heading {
   font-weight: bold;
-}
-
-.pub-list-item .pub-abstract {
-  font-size: 1rem;
-}
-
-.pub-list-item .pub-authors {
-  line-height: normal;
-  font-style: normal;
-  font-size: 0.9rem;
-  color: rgba(0,0,0,0.54);
-}
-
-.pub-list-item .pub-publication {
-  color: rgba(0,0,0,0.54);
-  font-size: 0.9rem;
-}
-
-
-.dark .pub-authors,
-.dark .pub-publication {
-  color: rgba(255,255,255,0.54);
-}
-
-.pub-list-item .btn-links {
-  padding-top: 10px;
 }
 
 #container-publications {
@@ -1457,6 +1489,29 @@ footer a#back_to_top i {
 a.badge:focus,
 a.badge:hover {
   color: rgba(0,0,0,.68);
+}
+
+.tag-cloud a {
+  display: inline-block;
+  position: relative;
+  margin: 5px 10px;
+  word-wrap: break-word;
+  transition-duration: .2s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.tag-cloud a:active,
+.tag-cloud a:focus,
+.tag-cloud a:hover {
+  color: #0069c0;
+  transform: scale(1.2);
+}
+
+.dark .tag-cloud a:active,
+.dark .tag-cloud a:focus,
+.dark .tag-cloud a:hover {
+  color: #6ec6ff;
 }
 
 /*************************************************
@@ -1828,7 +1883,7 @@ table > tbody > tr:hover > th {
  *  Alerts
  **************************************************/
 
-div.alert p {
+div.alert > div {
   position: relative;
   display: block;
   font-size: 1rem;
@@ -1837,7 +1892,15 @@ div.alert p {
   margin-bottom: 0;
 }
 
-div.alert p:first-child::before {
+div.alert div > * {
+  margin-bottom: .5rem;  /* Use smaller paragraph spacing than usual. */
+}
+
+div.alert div > :last-child {
+  margin-bottom: 0;
+}
+
+div.alert > div:first-child::before {
   position: absolute;
   top: -0.5rem;
   left: -2rem;
@@ -1850,7 +1913,7 @@ div.alert p:first-child::before {
   text-align: center;
 }
 
-div.alert-warning p:first-child::before {
+div.alert-warning > div:first-child::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #ff3860;
@@ -2208,11 +2271,11 @@ body.dark,
   color: #fff;
 }
 
-.dark #profile .portrait-title h2 {
+.dark .portrait-title h2 {
   color: #fff;
 }
 
-.dark #profile .portrait-title h3 {
+.dark .portrait-title h3 {
   color: rgba(255, 255, 255, 0.54);
 }
 

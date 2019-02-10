@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://maruftuhin.com/project/kubedb/</loc>
+      <lastmod>2019-02-11T03:06:15+06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://maruftuhin.com/blog/mongodb-on-kubernetes/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
     </url>
@@ -20,16 +28,23 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+06:00</lastmod>
+      <loc>https://maruftuhin.com/author/admin/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>https://maruftuhin.com/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+06:00</lastmod>
+      <loc>https://maruftuhin.com/author/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/authors/</loc>
+      <priority>0</priority>
     </url>
     
   
@@ -53,15 +68,6 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://maruftuhin.com/categories/kubernetes/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
       <priority>0</priority>
@@ -71,8 +77,17 @@
     
     <url>
     
+      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
+      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://maruftuhin.com/</loc>
-      <lastmod>2017-10-15T00:00:00+06:00</lastmod>
+      <lastmod>2016-04-20T00:00:00+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -82,6 +97,15 @@
     
       <loc>https://maruftuhin.com/tags/mongodb/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/project/</loc>
+      <lastmod>2019-02-11T03:06:15+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -99,6 +123,15 @@
     
       <loc>https://maruftuhin.com/tags/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/professional/</loc>
+      <lastmod>2019-02-11T03:06:15+06:00</lastmod>
       <priority>0</priority>
     </url>
     

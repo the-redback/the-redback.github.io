@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://maruftuhin.com/home/hero_carousel/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/hero_carousel/</guid>
       <description></description>
@@ -24,26 +24,25 @@
     <item>
       <title>Academic</title>
       <link>https://maruftuhin.com/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/hero/</guid>
       <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Biography</title>
       <link>https://maruftuhin.com/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/about/</guid>
-      <description>Biography Hold on a second. I am going to share lot&amp;rsquo;s of things!!
-But, Let me build the website first!!</description>
+      <description></description>
     </item>
     
     <item>
       <title>Skills</title>
       <link>https://maruftuhin.com/home/skills/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/skills/</guid>
       <description></description>
@@ -59,15 +58,6 @@ But, Let me build the website first!!</description>
     </item>
     
     <item>
-      <title>Selected Publications</title>
-      <link>https://maruftuhin.com/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
-      
-      <guid>https://maruftuhin.com/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Accomplish&amp;shy;ments</title>
       <link>https://maruftuhin.com/home/accomplishments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -77,27 +67,36 @@ But, Let me build the website first!!</description>
     </item>
     
     <item>
+      <title>Featured Publications</title>
+      <link>https://maruftuhin.com/home/publications_featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/publications_featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Recent Publications</title>
       <link>https://maruftuhin.com/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Selected Talks</title>
-      <link>https://maruftuhin.com/home/talks_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <title>Featured Talks</title>
+      <link>https://maruftuhin.com/home/talks_featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://maruftuhin.com/home/talks_selected/</guid>
+      <guid>https://maruftuhin.com/home/talks_featured/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://maruftuhin.com/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/talks/</guid>
       <description></description>
@@ -106,7 +105,7 @@ But, Let me build the website first!!</description>
     <item>
       <title>Recent Posts</title>
       <link>https://maruftuhin.com/home/blogs/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/blogs/</guid>
       <description></description>
@@ -115,7 +114,7 @@ But, Let me build the website first!!</description>
     <item>
       <title>Projects</title>
       <link>https://maruftuhin.com/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/projects/</guid>
       <description></description>
@@ -134,7 +133,7 @@ To remove this section, either delete content/home/teaching.md or edit the front
     <item>
       <title>Tags</title>
       <link>https://maruftuhin.com/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/tags/</guid>
       <description></description>
@@ -143,7 +142,7 @@ To remove this section, either delete content/home/teaching.md or edit the front
     <item>
       <title>Contact</title>
       <link>https://maruftuhin.com/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/contact/</guid>
       <description></description>
