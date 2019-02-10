@@ -26,12 +26,17 @@ date_format = "January 2006"
   date_start = "2017-05-01"
   date_end = ""
   description = """
-  Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Coding
-  * Testing
+  * Worked on Kubernetes client-GO to build third party containerized
+  tools.
+  * Worked on KubeDB tool. Conducted Bi-Weekly KubeDB
+  Community meetings regularly. Acted as KubeDB project head for
+  more than a year. Got involved in other projects too.
+  * Worked on Pixel Tracking [web beacon], different APIs of
+  mainstream cloud providers, etc.
+  * Created and used Kubernetes cluster on all the mainstream cloud
+  providers, like, aws, gcs, azure, digitalocean etc.
+  * Experienced many Kubernetes tools.
   """
 
 [[experience]]
@@ -41,6 +46,9 @@ date_format = "January 2006"
   location = "DHaka branch"
   date_start = "2016-01-01"
   date_end = "2016-02-01"
-  description = """Implemented couple of projects."""
+  description = """
+  * 2 weeks long internship program.
+  * Implemented an email verification tool in Java.
+  """
 
 +++
