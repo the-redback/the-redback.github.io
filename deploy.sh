@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+set -exo pipefail
 chmod +x update_academic.sh
 ./update_academic.sh
 git submodule update --remote --merge
