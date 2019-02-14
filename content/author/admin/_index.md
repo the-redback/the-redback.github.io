@@ -61,17 +61,17 @@ interests = [
 [[social]]
   icon = "linkedin"
   icon_pack = "fab"
-  link = "//www.linkedin.com/feed/"
+  link = "https://www.linkedin.com/feed/"
 
 [[social]]
   icon = "stack-overflow"
   icon_pack = "fab"
-  link = "//stackoverflow.com/users/4628962/maruf-tuhin"
+  link = "https://stackoverflow.com/users/4628962/maruf-tuhin"
 
 [[social]]
   icon = "facebook"
   icon_pack = "fab"
-  link = "//www.facebook.com/maruf.2hin"
+  link = "https://www.facebook.com/maruf.2hin"
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
