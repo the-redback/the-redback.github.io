@@ -26,7 +26,7 @@ date_format = "January 2006"
   date_start = "2017-05-01"
   date_end = ""
   description = """
-  
+
 *AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. An Integrated platform for collaborative coding, testing & deploying containerized apps.*
 
 ---
@@ -48,10 +48,12 @@ many Kubernetes tools.
   title = "Intern"
   company = "AppsCode. Ltd."
   company_url = "https://appscode.com"
-  location = "DHaka branch"
+  location = "Dhaka branch"
   date_start = "2016-01-01"
   date_end = "2016-02-01"
   description = """
+  ---
+
 - 2 weeks long internship program.
 - Implemented an Email verification tool in ***Java***.
 - Used ***Elasticsearch*** for data store purpose. 
