@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 03:10:27 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Academic</title>
+      <link>https://maruftuhin.com/tags/academic/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/academic/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Database Administration</title>
@@ -22,9 +31,18 @@
     </item>
     
     <item>
+      <title>Hobby</title>
+      <link>https://maruftuhin.com/tags/hobby/</link>
+      <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/hobby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kubernetes</title>
       <link>https://maruftuhin.com/tags/kubernetes/</link>
-      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
       
       <guid>https://maruftuhin.com/tags/kubernetes/</guid>
       <description></description>
@@ -40,9 +58,18 @@
     </item>
     
     <item>
-      <title>professional</title>
+      <title>OSS</title>
+      <link>https://maruftuhin.com/tags/oss/</link>
+      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/oss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Professional</title>
       <link>https://maruftuhin.com/tags/professional/</link>
-      <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
+      <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
       
       <guid>https://maruftuhin.com/tags/professional/</guid>
       <description></description>

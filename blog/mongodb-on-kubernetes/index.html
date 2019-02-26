@@ -28,8 +28,7 @@
   
     
   
-  <meta name="description" content="Replica-Sets Create Secret for Key file MongoDB will use this key to communicate internal cluster.
-$ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt secret &quot;shared-bootstrap-data&quot; created  Deploy MongoDB Replica-Sets YAML apiVersion: v1 kind: Service metadata: name: mongodb-service labels: name: mongo spec: ports: - port: 27017 targetPort: 27017 clusterIP: None selector: role: mongo --- apiVersion: apps/v1 kind: StatefulSet metadata: name: mongod spec: serviceName: mongodb-service replicas: 3 selector: matchLabels: role: mongo environment: test replicaset: MainRepSet template: metadata: labels: role: mongo environment: test replicaset: MainRepSet spec: containers: - name: mongod-container image: mongo:3.">
+  <meta name="description" content="Run MongoDB Replica Set on Kubernetes using *Statefulset* and *PersistentVolumeClaim*. Minikube kubernetes cluster is used for this post.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://maruftuhin.com/blog/mongodb-on-kubernetes/">
@@ -134,9 +133,8 @@ $ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret g
   
   <meta property="og:site_name" content="Maruf&#39;s">
   <meta property="og:url" content="https://maruftuhin.com/blog/mongodb-on-kubernetes/">
-  <meta property="og:title" content="Mongodb on Kubernetes | Maruf&#39;s">
-  <meta property="og:description" content="Replica-Sets Create Secret for Key file MongoDB will use this key to communicate internal cluster.
-$ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt secret &quot;shared-bootstrap-data&quot; created  Deploy MongoDB Replica-Sets YAML apiVersion: v1 kind: Service metadata: name: mongodb-service labels: name: mongo spec: ports: - port: 27017 targetPort: 27017 clusterIP: None selector: role: mongo --- apiVersion: apps/v1 kind: StatefulSet metadata: name: mongod spec: serviceName: mongodb-service replicas: 3 selector: matchLabels: role: mongo environment: test replicaset: MainRepSet template: metadata: labels: role: mongo environment: test replicaset: MainRepSet spec: containers: - name: mongod-container image: mongo:3."><meta property="og:image" content="https://maruftuhin.com/img/maruf-portrait-v1.1.2.jpg">
+  <meta property="og:title" content="Mongodb Replica Set on Kubernetes | Maruf&#39;s">
+  <meta property="og:description" content="Run MongoDB Replica Set on Kubernetes using *Statefulset* and *PersistentVolumeClaim*. Minikube kubernetes cluster is used for this post."><meta property="og:image" content="https://maruftuhin.com/img/maruf-portrait-v1.1.2.jpg">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-01-12T03:07:50&#43;06:00">
@@ -148,7 +146,7 @@ $ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret g
 
   
 
-  <title>Mongodb on Kubernetes | Maruf&#39;s</title>
+  <title>Mongodb Replica Set on Kubernetes | Maruf&#39;s</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -345,7 +343,7 @@ $ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret g
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Mongodb on Kubernetes</h1>
+  <h1 itemprop="name">Mongodb Replica Set on Kubernetes</h1>
 
   
 
@@ -406,7 +404,7 @@ $ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret g
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Mongodb%20on%20Kubernetes&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f"
+         href="https://twitter.com/intent/tweet?text=Mongodb%20Replica%20Set%20on%20Kubernetes&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -420,21 +418,21 @@ $ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret g
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f&amp;title=Mongodb%20on%20Kubernetes"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f&amp;title=Mongodb%20Replica%20Set%20on%20Kubernetes"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f&amp;title=Mongodb%20on%20Kubernetes"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f&amp;title=Mongodb%20Replica%20Set%20on%20Kubernetes"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Mongodb%20on%20Kubernetes&amp;body=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f">
+         href="mailto:?subject=Mongodb%20Replica%20Set%20on%20Kubernetes&amp;body=https%3a%2f%2fmaruftuhin.com%2fblog%2fmongodb-on-kubernetes%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -1116,7 +1114,7 @@ $ mongo
     
     
     
-    <script src="/js/academic.min.c1b0baf12cd491effaeeb294faf1e83e.js"></script>
+    <script src="/js/academic.min.db3d6f315d07c75ac150285a72ff5e1f.js"></script>
 
   </body>
 </html>

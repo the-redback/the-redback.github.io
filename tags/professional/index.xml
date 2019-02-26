@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>professional on Maruf&#39;s</title>
+    <title>Professional on Maruf&#39;s</title>
     <link>https://maruftuhin.com/tags/professional/</link>
-    <description>Recent content in professional on Maruf&#39;s</description>
+    <description>Recent content in Professional on Maruf&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 11 Feb 2019 03:06:15 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 03:10:51 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/tags/professional/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Email Verification</title>
+      <link>https://maruftuhin.com/project/email_verification/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/email_verification/</guid>
+      <description> Automatic Email verification project. Internship project. Tools: Java  </description>
+    </item>
+    
+    <item>
+      <title>Appscode/Analytics</title>
+      <link>https://maruftuhin.com/project/appscode_analytics/</link>
+      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
+      <description> Worked with docker-hub APIs to collect analytic data. Stored analytical datas in Google sheets using GO client. Used pixel tracking [aka, web beacon] to event each view of GitHub or other web pages in real time.  </description>
+    </item>
     
     <item>
       <title>KubeDB</title>
@@ -18,7 +36,7 @@
       <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/kubedb/</guid>
-      <description> A tool to automate database deploy on Kubernetes. It also takes scheduled backup for databases. Added MongoDB, MySQL, Redis and Memcached support to KubeDB. Also worked on PostgreSQL and MongoDB clustering system.  </description>
+      <description> A tool to automate database deploy on Kubernetes using CRD. It also takes scheduled backup of databases. Acted as KubeDB project head for more than a year. Conducted Bi-Weekly KubeDB Community meetings regularly. Added MongoDB, MySQL, Redis and Memcached support to KubeDB. Added MongoDB clustering system. Also, worked on PostgreSQL and Elasticsearch clustering. Worked with prometheus exporter to export database metrics.  </description>
     </item>
     
   </channel>

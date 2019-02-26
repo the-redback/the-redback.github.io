@@ -139,7 +139,7 @@
   <meta property="og:description" content="Software Engineer, Backend"><meta property="og:image" content="https://maruftuhin.com/img/maruf-portrait-v1.1.2.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-01-12T03:07:50&#43;06:00">
+  <meta property="og:updated_time" content="2019-02-27T03:00:07&#43;06:00">
   
 
   
@@ -358,11 +358,28 @@
   
   
   <div>
-    <h2><a href="/blog/mongodb-on-kubernetes/">Mongodb on Kubernetes</a></h2>
+    <h2><a href="/project/appscode_analytics/">Appscode/Analytics</a></h2>
     <div class="article-style">
       
-      Replica-Sets Create Secret for Key file MongoDB will use this key to communicate internal cluster.
-$ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt secret &quot;shared-bootstrap-data&quot; created  Deploy MongoDB Replica-Sets YAML apiVersion: v1 kind: Service metadata: name: mongodb-service labels: name: mongo spec: ports: - port: 27017 targetPort: 27017 clusterIP: None selector: role: mongo --- apiVersion: apps/v1 kind: StatefulSet metadata: name: mongod spec: serviceName: mongodb-service replicas: 3 selector: matchLabels: role: mongo environment: test replicaset: MainRepSet template: metadata: labels: role: mongo environment: test replicaset: MainRepSet spec: containers: - name: mongod-container image: mongo:3.
+      Different esential analytics in Appscode oss tools.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/kubedb/">KubeDB</a></h2>
+    <div class="article-style">
+      
+      Run production-grade databases easily on ***Kubernetes***
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/blog/mongodb-on-kubernetes/">Mongodb Replica Set on Kubernetes</a></h2>
+    <div class="article-style">
+      
+      Run MongoDB Replica Set on Kubernetes using *Statefulset* and *PersistentVolumeClaim*. Minikube kubernetes cluster is used for this post.
       
     </div>
   </div>
@@ -527,7 +544,7 @@ $ openssl rand -base64 741 &gt; ./replica-sets/key.txt $ kubectl create secret g
     
     
     
-    <script src="/js/academic.min.c1b0baf12cd491effaeeb294faf1e83e.js"></script>
+    <script src="/js/academic.min.db3d6f315d07c75ac150285a72ff5e1f.js"></script>
 
   </body>
 </html>
