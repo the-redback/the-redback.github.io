@@ -1,14 +1,14 @@
 +++
-title = "KubeDB"
-date = 2019-02-11T03:06:15+06:00
+title = "Email Verification"
+date = 2019-02-27T03:10:51+06:00
 draft = false
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["Professional","Kubernetes","OSS"]
+tags = ["Professional"]
 
 # Project summary to display on homepage.
-summary = "Run production-grade databases easily on ***Kubernetes***"
+summary = "Internship Project. Implemented using ***Java***."
 
 # Slides (optional).
 #   Associate this page with Markdown slides.
@@ -23,7 +23,7 @@ external_link = ""
 
 # Links (optional).
 url_pdf = ""
-url_code = "https://github.com/kubedb"
+url_code = ""
 url_dataset = ""
 url_slides = ""
 url_video = ""
@@ -31,7 +31,7 @@ url_poster = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com"}]
+# links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com"}]
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -44,12 +44,6 @@ url_poster = ""
   focal_point = ""
 +++
 
-- A tool to automate database deploy on ***Kubernetes*** using ***CRD***. It
-also takes scheduled backup of databases.
-- Acted as ***KubeDB project head*** for more than a year.
-- Conducted ***Bi-Weekly KubeDB Community meetings*** regularly. 
-- Added ***MongoDB***, ***MySQL***, ***Redis*** and ***Memcached*** support to
-KubeDB.
-- Added ***MongoDB clustering*** system. Also, worked on ***PostgreSQL***
-and ***Elasticsearch*** clustering.
-- Worked with ***prometheus*** exporter to export database metrics.
+- Automatic Email verification project.
+- Internship project.
+- Tools: ***Java***

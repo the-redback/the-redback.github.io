@@ -1,5 +1,5 @@
 +++
-title = "Mongodb on Kubernetes"
+title = "Mongodb Replica Set on Kubernetes"
 date = 2019-01-12T03:07:50+06:00
 draft = false
 
@@ -11,6 +11,7 @@ authors = []
 tags = ["Kubernetes","MongoDB","Database Administration"]
 categories = ["Kubernetes"]
 
+summary = "Run MongoDB Replica Set on Kubernetes using *Statefulset* and *PersistentVolumeClaim*. Minikube kubernetes cluster is used for this post."
 type = "post"
 
 # Projects (optional).

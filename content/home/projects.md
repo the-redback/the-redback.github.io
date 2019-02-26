@@ -18,7 +18,7 @@ folder = "project"
 #   1 = List
 #   3 = Card
 #   5 = Showcase
-view = 1
+view = 3
 
 # Widget layout
 # Legend: 0 = two columns (default), 1 = single column
@@ -36,17 +36,25 @@ filter_default = 0
 # To show all items, set `tag` to "*".
 # To filter by a specific tag, set `tag` to an existing tag name.
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
-# [[filter]]
-#   name = "All"
-#   tag = "*"
-#
-# [[filter]]
-#   name = "Deep Learning"
-#   tag = "Deep Learning"
-#
-# [[filter]]
-#   name = "Other"
-#   tag = "Demo"
+[[filter]]
+  name = "All"
+  tag = "*"
+
+[[filter]]
+  name = "Professional"
+  tag = "Professional"
+
+[[filter]]
+  name = "OSS"
+  tag = "OSS"
+
+[[filter]]
+  name = "Academic"
+  tag = "Academic"
+
+[[filter]]
+  name = "Hobby Project"
+  tag = "Hobby"
 
 +++
 
