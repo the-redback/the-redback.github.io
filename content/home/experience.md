@@ -28,20 +28,18 @@ date_format = "January 2006"
   description = """
 
 *AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. An Integrated platform for collaborative coding, testing & deploying containerized apps.*
-
----
-
-- Worked on ***Kubernetes*** ***client-GO*** to build third party ***containerized***
-tools.
--  Worked on ***KubeDB*** tool. Conducted ***Bi-Weekly KubeDB
+  ---
+➢ Worked on ***Kubernetes*** ***client-GO*** to build third party ***containerized***
+tools. <br>
+➢ Worked on ***KubeDB*** tool. Conducted ***Bi-Weekly KubeDB
 Community meetings*** regularly. Acted as ***KubeDB project head*** for
-more than a year. Got involved in other projects too.
-- Worked on ***Pixel Tracking*** [web beacon], different APIs of
-mainstream cloud providers, etc.
-- Created and used Kubernetes cluster on all the mainstream cloud
+more than a year. Got involved in other projects too. <br>
+➢ Worked on ***Pixel Tracking*** [web beacon], different APIs of
+mainstream cloud providers, etc. <br>
+➢ Created and used Kubernetes cluster on all the mainstream cloud
 providers, like, aws, gcs, azure, digitalocean etc. Also, experienced
-many Kubernetes tools.
-- Worked with ***gRPC***, ***Phabricator***, ***Prometheus*** etc.
+many Kubernetes tools. <br>
+➢ Worked with ***gRPC***, ***Phabricator***, ***Prometheus*** etc.
 """
 
 [[experience]]
@@ -53,10 +51,9 @@ many Kubernetes tools.
   date_end = "2016-02-01"
   description = """
   ---
-
-- 2 weeks long internship program.
-- Implemented an Email verification tool in ***Java***.
-- Used ***Elasticsearch*** for data store purpose. 
+➢ 2 weeks long internship program.<br>
+➢ Implemented an Email verification tool in ***Java***.<br>
+➢ Used ***Elasticsearch*** for data store purpose. 
   """
 
 +++
