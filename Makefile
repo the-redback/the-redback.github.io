@@ -10,7 +10,7 @@ build:
 	hugo --source=src
 
 deploy:
-	./deploy.sh ${msg:-}
+	./deploy.sh $(call args)
 
 test:
 	./deploy.sh $(call args)
