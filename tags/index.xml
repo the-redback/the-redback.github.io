@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Maruf&#39;s</title>
+    <link>https://maruftuhin.com/tags/</link>
+    <description>Recent content in Tags on Maruf&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Wed, 27 Feb 2019 03:10:27 +0600</lastBuildDate>
+    
+	<atom:link href="https://maruftuhin.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Academic</title>
+      <link>https://maruftuhin.com/tags/academic/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database Administration</title>
+      <link>https://maruftuhin.com/tags/database-administration/</link>
+      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/database-administration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hobby</title>
+      <link>https://maruftuhin.com/tags/hobby/</link>
+      <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/hobby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://maruftuhin.com/tags/kubernetes/</link>
+      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>https://maruftuhin.com/tags/mongodb/</link>
+      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSS</title>
+      <link>https://maruftuhin.com/tags/oss/</link>
+      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/oss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Professional</title>
+      <link>https://maruftuhin.com/tags/professional/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/tags/professional/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

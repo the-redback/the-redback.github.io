@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic on Maruf&#39;s</title>
+    <link>https://maruftuhin.com/tags/academic/</link>
+    <description>Recent content in Academic on Maruf&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Wed, 27 Feb 2019 03:10:27 +0600</lastBuildDate>
+    
+	<atom:link href="https://maruftuhin.com/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scientific Calculator</title>
+      <link>https://maruftuhin.com/project/scientific_calculator/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Library Management System</title>
+      <link>https://maruftuhin.com/project/library_system/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:14 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/library_system/</guid>
+      <description> Academical Database Project Tools: C# and Microsoft SQL Server.  </description>
+    </item>
+    
+    <item>
+      <title>Department of Student Welfare (DSW) Management System</title>
+      <link>https://maruftuhin.com/project/dsw/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:03 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/dsw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3D Racing Game</title>
+      <link>https://maruftuhin.com/project/3d_racing_game/</link>
+      <pubDate>Wed, 27 Feb 2019 03:06:27 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
+      <description> Final year thesis &amp;amp; project. Developed for both PC and Android. Tools: Unity 5 Game Engine, Android SDK, C#.  </description>
+    </item>
+    
+  </channel>
+</rss>

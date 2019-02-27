@@ -7,12 +7,12 @@ set -exo pipefail
 # ref: https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script
 
 # Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+# if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo --source=src
+cp -R src/public/. .
 
 echo -e "\n\033[1;35mDeploying updates to GitHub...\033[0m\n"
 
-# Go To Public folder
-cd public
 # Add changes to git.
 git add .
 
@@ -24,7 +24,4 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin master
-
-# Come Back up to the Project Root
-cd ..
+git push origin HEAD

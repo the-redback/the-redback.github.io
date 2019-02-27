@@ -2,11 +2,12 @@ all: deploy
 
 export msg="rebuilding site" `date +'%y.%m.%d'`
 
-draft:
-	hugo server -D
+serve:
+	hugo serve -D --source=src
 
 build:
-	hugo
+	hugo --source=src
 
 deploy:
-	./deploy.sh
+	./deploy.sh ${msg}
+

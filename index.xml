@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maruf&#39;s on Maruf&#39;s</title>
+    <link>https://maruftuhin.com/</link>
+    <description>Recent content in Maruf&#39;s on Maruf&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0600</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Data Encryption Project</title>
+      <link>https://maruftuhin.com/project/data_encryption/</link>
+      <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/data_encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Email Verification</title>
+      <link>https://maruftuhin.com/project/email_verification/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/email_verification/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Automatic Email verification project.&lt;/li&gt;
+&lt;li&gt;Internship project.&lt;/li&gt;
+&lt;li&gt;Tools: &lt;strong&gt;&lt;em&gt;Java&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scientific Calculator</title>
+      <link>https://maruftuhin.com/project/scientific_calculator/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Library Management System</title>
+      <link>https://maruftuhin.com/project/library_system/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:14 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/library_system/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Academical Database Project&lt;/li&gt;
+&lt;li&gt;Tools: &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Microsoft SQL Server&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Department of Student Welfare (DSW) Management System</title>
+      <link>https://maruftuhin.com/project/dsw/</link>
+      <pubDate>Wed, 27 Feb 2019 03:10:03 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/dsw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3D Racing Game</title>
+      <link>https://maruftuhin.com/project/3d_racing_game/</link>
+      <pubDate>Wed, 27 Feb 2019 03:06:27 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
+&lt;li&gt;Developed for both &lt;strong&gt;&lt;em&gt;PC&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Android&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tools:&lt;/em&gt; &lt;strong&gt;&lt;em&gt;Unity 5 Game Engine&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Android SDK&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Appscode/Analytics</title>
+      <link>https://maruftuhin.com/project/appscode_analytics/</link>
+      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
+&lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
+&lt;li&gt;Used pixel tracking [aka, web beacon] to event each view of GitHub or other web pages in real time.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>KubeDB</title>
+      <link>https://maruftuhin.com/project/kubedb/</link>
+      <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/project/kubedb/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;A tool to automate database deploy on &lt;strong&gt;&lt;em&gt;Kubernetes&lt;/em&gt;&lt;/strong&gt; using &lt;strong&gt;&lt;em&gt;CRD&lt;/em&gt;&lt;/strong&gt;. It
+also takes scheduled backup of databases.&lt;/li&gt;
+&lt;li&gt;Acted as &lt;strong&gt;&lt;em&gt;KubeDB project head&lt;/em&gt;&lt;/strong&gt; for more than a year.&lt;/li&gt;
+&lt;li&gt;Conducted &lt;strong&gt;&lt;em&gt;Bi-Weekly KubeDB Community meetings&lt;/em&gt;&lt;/strong&gt; regularly.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;&lt;em&gt;MongoDB&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;MySQL&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Redis&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Memcached&lt;/em&gt;&lt;/strong&gt; support to
+KubeDB.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;&lt;em&gt;MongoDB clustering&lt;/em&gt;&lt;/strong&gt; system. Also, worked on &lt;strong&gt;&lt;em&gt;PostgreSQL&lt;/em&gt;&lt;/strong&gt;
+and &lt;strong&gt;&lt;em&gt;Elasticsearch&lt;/em&gt;&lt;/strong&gt; clustering.&lt;/li&gt;
+&lt;li&gt;Worked with &lt;strong&gt;&lt;em&gt;prometheus&lt;/em&gt;&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mongodb Replica Set on Kubernetes</title>
+      <link>https://maruftuhin.com/blog/mongodb-on-kubernetes/</link>
+      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/blog/mongodb-on-kubernetes/</guid>
+      <description>
+
+&lt;h2 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h2&gt;
+
+&lt;h3 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h3&gt;
+
+&lt;p&gt;MongoDB will use this key to communicate internal cluster.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt
+
+$ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt
+secret &amp;quot;shared-bootstrap-data&amp;quot; created
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;deploy-mongodb-replica-sets-yaml&#34;&gt;Deploy MongoDB Replica-Sets YAML&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+  labels:
+    name: mongo
+spec:
+  ports:
+  - port: 27017
+    targetPort: 27017
+  clusterIP: None
+  selector:
+    role: mongo
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mongod
+spec:
+  serviceName: mongodb-service
+  replicas: 3
+  selector:
+    matchLabels:
+      role: mongo
+      environment: test
+      replicaset: MainRepSet
+  template:
+    metadata:
+      labels:
+        role: mongo
+        environment: test
+        replicaset: MainRepSet
+    spec:
+      containers:
+      - name: mongod-container
+        image: mongo:3.4
+        command:
+        - &amp;quot;numactl&amp;quot;
+        - &amp;quot;--interleave=all&amp;quot;
+        - &amp;quot;mongod&amp;quot;
+        - &amp;quot;--bind_ip&amp;quot;
+        - &amp;quot;0.0.0.0&amp;quot;
+        - &amp;quot;--replSet&amp;quot;
+        - &amp;quot;MainRepSet&amp;quot;
+        - &amp;quot;--auth&amp;quot;
+        - &amp;quot;--clusterAuthMode&amp;quot;
+        - &amp;quot;keyFile&amp;quot;
+        - &amp;quot;--keyFile&amp;quot;
+        - &amp;quot;/etc/secrets-volume/internal-auth-mongodb-keyfile&amp;quot;
+        - &amp;quot;--setParameter&amp;quot;
+        - &amp;quot;authenticationMechanisms=SCRAM-SHA-1&amp;quot;
+        resources:
+          requests:
+            cpu: 0.2
+            memory: 200Mi
+        ports:
+        - containerPort: 27017
+        volumeMounts:
+        - name: secrets-volume
+          readOnly: true
+          mountPath: /etc/secrets-volume
+        - name: mongodb-persistent-storage-claim
+          mountPath: /data/db
+      volumes:
+      - name: secrets-volume
+        secret:
+          secretName: shared-bootstrap-data
+          defaultMode: 256
+  volumeClaimTemplates:
+  - metadata:
+      name: mongodb-persistent-storage-claim
+      annotations:
+        volume.beta.kubernetes.io/storage-class: &amp;quot;standard&amp;quot;
+    spec:
+      accessModes: [ &amp;quot;ReadWriteOnce&amp;quot; ]
+      resources:
+        requests:
+          storage: 1Gi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now Deploy the Yaml&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kc create -f ./replica-sets/mongodb-rc.yaml 
+service &amp;quot;mongodb-service&amp;quot; created
+statefulset &amp;quot;mongod&amp;quot; created
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;wait-for-pod-running-and-pvc&#34;&gt;Wait for Pod running and PVC&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kubectl get all
+NAME                  DESIRED   CURRENT   AGE
+statefulsets/mongod   3         3         2m
+
+NAME          READY     STATUS    RESTARTS   AGE
+po/mongod-0   1/1       Running   0          2m
+po/mongod-1   1/1       Running   0          2m
+po/mongod-2   1/1       Running   0          2m
+
+$ kubectl get pvc
+NAME                                        STATUS    VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+mongodb-persistent-storage-claim-mongod-0   Bound     pvc-ba24dc66-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
+mongodb-persistent-storage-claim-mongod-1   Bound     pvc-bf2e51a5-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
+mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;setup-replicaset-configuration&#34;&gt;Setup ReplicaSet Configuration&lt;/h3&gt;
+
+&lt;p&gt;Finally, we need to connect to one of the “mongod” container processes to configure the replica set.&lt;/p&gt;
+
+&lt;p&gt;Run the following command to connect to the first container. In the shell initiate the replica set (we can rely on the hostnames always being the same, due to having employed a StatefulSet):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+$ mongo
+&amp;gt; rs.initiate({_id: &amp;quot;MainRepSet&amp;quot;, version: 1, members: [
+       { _id: 0, host : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot; },
+       { _id: 1, host : &amp;quot;mongod-1.mongodb-service.default.svc.cluster.local:27017&amp;quot; },
+       { _id: 2, host : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot; }
+ ]});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Keep checking the status of the replica set, with the following command, until the replica set is fully initialised and a primary and two secondaries are present:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;gt; rs.status();
+
+# output similar to:
+{
+	&amp;quot;set&amp;quot; : &amp;quot;MainRepSet&amp;quot;,
+	&amp;quot;date&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:31.577Z&amp;quot;),
+	&amp;quot;myState&amp;quot; : 2,
+	&amp;quot;term&amp;quot; : NumberLong(1),
+	&amp;quot;syncingTo&amp;quot; : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+	&amp;quot;heartbeatIntervalMillis&amp;quot; : NumberLong(2000),
+	&amp;quot;optimes&amp;quot; : {
+		&amp;quot;lastCommittedOpTime&amp;quot; : {
+			&amp;quot;ts&amp;quot; : Timestamp(1522152676, 1),
+			&amp;quot;t&amp;quot; : NumberLong(1)
+		},
+		&amp;quot;appliedOpTime&amp;quot; : {
+			&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+			&amp;quot;t&amp;quot; : NumberLong(1)
+		},
+		&amp;quot;durableOpTime&amp;quot; : {
+			&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+			&amp;quot;t&amp;quot; : NumberLong(1)
+		}
+	},
+	&amp;quot;members&amp;quot; : [
+		{
+			&amp;quot;_id&amp;quot; : 0,
+			&amp;quot;name&amp;quot; : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;health&amp;quot; : 1,
+			&amp;quot;state&amp;quot; : 1,
+			&amp;quot;stateStr&amp;quot; : &amp;quot;PRIMARY&amp;quot;,
+			&amp;quot;uptime&amp;quot; : 399,
+			&amp;quot;optime&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDurable&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;optimeDurableDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;lastHeartbeat&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:30.360Z&amp;quot;),
+			&amp;quot;lastHeartbeatRecv&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:30.697Z&amp;quot;),
+			&amp;quot;pingMs&amp;quot; : NumberLong(0),
+			&amp;quot;electionTime&amp;quot; : Timestamp(1522152306, 1),
+			&amp;quot;electionDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:05:06Z&amp;quot;),
+			&amp;quot;configVersion&amp;quot; : 1
+		},
+		{
+			&amp;quot;_id&amp;quot; : 1,
+			&amp;quot;name&amp;quot; : &amp;quot;mongod-1.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;health&amp;quot; : 1,
+			&amp;quot;state&amp;quot; : 2,
+			&amp;quot;stateStr&amp;quot; : &amp;quot;SECONDARY&amp;quot;,
+			&amp;quot;uptime&amp;quot; : 505,
+			&amp;quot;optime&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;syncingTo&amp;quot; : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;configVersion&amp;quot; : 1,
+			&amp;quot;self&amp;quot; : true
+		},
+		{
+			&amp;quot;_id&amp;quot; : 2,
+			&amp;quot;name&amp;quot; : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;health&amp;quot; : 1,
+			&amp;quot;state&amp;quot; : 2,
+			&amp;quot;stateStr&amp;quot; : &amp;quot;SECONDARY&amp;quot;,
+			&amp;quot;uptime&amp;quot; : 399,
+			&amp;quot;optime&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDurable&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;optimeDurableDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;lastHeartbeat&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:30.360Z&amp;quot;),
+			&amp;quot;lastHeartbeatRecv&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:29.915Z&amp;quot;),
+			&amp;quot;pingMs&amp;quot; : NumberLong(0),
+			&amp;quot;syncingTo&amp;quot; : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;configVersion&amp;quot; : 1
+		}
+	],
+	&amp;quot;ok&amp;quot; : 1
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;mongodb-0&lt;/code&gt; has become &lt;code&gt;Primary&lt;/code&gt; and Others two &lt;code&gt;Secondary&lt;/code&gt; Nodes.&lt;/p&gt;
+
+&lt;p&gt;Then run the following command to configure an “admin” user (performing this action results in the “localhost exception” being automatically and permanently disabled):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;&amp;gt; db.getSiblingDB(&amp;quot;admin&amp;quot;).createUser({
+      user : &amp;quot;main_admin&amp;quot;,
+      pwd  : &amp;quot;abc123&amp;quot;,
+      roles: [ { role: &amp;quot;root&amp;quot;, db: &amp;quot;admin&amp;quot; } ]
+ });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;insert-data&#34;&gt;Insert Data&lt;/h3&gt;
+
+&lt;p&gt;Insert Data into &lt;code&gt;mongod-0&lt;/code&gt; pod.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&amp;gt; use test;
+&amp;gt; db.testcoll.insert({a:1});
+&amp;gt; db.testcoll.insert({b:2});
+&amp;gt; db.testcoll.find();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;verify-cluster-data&#34;&gt;Verify Cluster Data&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;exec&lt;/code&gt; into Secondary Pod (here, mongo-1)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kubectl exec -it mongod-1 -c mongod-container bash
+$ mongo
+&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&amp;gt; db.getMongo().setSlaveOk()
+&amp;gt; use test;
+&amp;gt; db.testcoll.find();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;verify-pvc&#34;&gt;Verify PVC&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
+$ kubectl get all
+$ kubectl get persistentvolumes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Recreate MongoDB&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
+$ kubectl get all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Verify Data:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+$ mongo
+&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&amp;gt; use test;
+&amp;gt; db.testcoll.find();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As PVC was not deleted, We will still have existing Data.&lt;/p&gt;
+
+&lt;h3 id=&#34;verify-clusterization&#34;&gt;Verify Clusterization&lt;/h3&gt;
+
+&lt;p&gt;Delete &lt;code&gt;mongod-0&lt;/code&gt; Pod and keep cheking &lt;code&gt;rs.status()&lt;/code&gt;, eventually another node of the remaining two will become &lt;code&gt;Primary&lt;/code&gt; Node.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
