@@ -1,6 +1,7 @@
-all: deploy
+SHELL=/bin/bash
+args = `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
 
-export msg="rebuilding site" `date +'%y.%m.%d'`
+all: deploy
 
 serve:
 	hugo serve -D --source=src
@@ -11,3 +12,5 @@ build:
 deploy:
 	./deploy.sh ${msg:-}
 
+%:
+    @:
