@@ -12,5 +12,8 @@ build:
 deploy:
 	./deploy.sh ${msg:-}
 
+test:
+	./deploy.sh $(call args)
+
 %:
-    @:
+	@:
