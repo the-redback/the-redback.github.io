@@ -9,5 +9,5 @@ build:
 	hugo --source=src
 
 deploy:
-	./deploy.sh ${msg}
+	./deploy.sh ${msg:-}
 
