@@ -76,14 +76,6 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/blog/</loc>
-      <lastmod>2017-01-01T00:00:00+06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://maruftuhin.com/author/admin/</loc>
     </url>
     
@@ -142,15 +134,6 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
-      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://maruftuhin.com/categories/kubernetes/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
       <priority>0</priority>
@@ -160,8 +143,17 @@
     
     <url>
     
+      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
+      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://maruftuhin.com/</loc>
-      <lastmod>2016-04-20T00:00:00+06:00</lastmod>
+      <lastmod>2019-02-27T03:11:03+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -181,6 +173,14 @@
       <loc>https://maruftuhin.com/tags/oss/</loc>
       <lastmod>2019-02-27T03:00:07+06:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/blog/</loc>
+      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
     </url>
     
   

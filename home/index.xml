@@ -7,27 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://maruftuhin.com/home/hero_carousel/</link>
+      <link>https://maruftuhin.com/home/slider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://maruftuhin.com/home/hero_carousel/</guid>
+      <guid>https://maruftuhin.com/home/slider/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Academic</title>
-      <link>https://maruftuhin.com/home/hero/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/home/hero/</guid>
-      <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
     </item>
     
     <item>
@@ -67,42 +57,6 @@
     </item>
     
     <item>
-      <title>Featured Publications</title>
-      <link>https://maruftuhin.com/home/publications_featured/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/home/publications_featured/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Publications</title>
-      <link>https://maruftuhin.com/home/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/home/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Featured Talks</title>
-      <link>https://maruftuhin.com/home/talks_featured/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/home/talks_featured/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://maruftuhin.com/home/talks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/home/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recent Posts</title>
       <link>https://maruftuhin.com/home/blogs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -121,17 +75,7 @@
     </item>
     
     <item>
-      <title>Custom Section</title>
-      <link>https://maruftuhin.com/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
-      
-      <guid>https://maruftuhin.com/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
+      <title>Popular Topics</title>
       <link>https://maruftuhin.com/home/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -145,6 +89,24 @@ To remove this section, either delete content/home/teaching.md or edit the front
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://maruftuhin.com/home/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>https://maruftuhin.com/home/featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/featured/</guid>
       <description></description>
     </item>
     
