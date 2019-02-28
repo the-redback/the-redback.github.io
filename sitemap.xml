@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://maruftuhin.com/blog/docker-cheatsheet/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://maruftuhin.com/project/data_encryption/</loc>
       <lastmod>2019-02-27T03:11:03+06:00</lastmod>
     </url>
@@ -153,7 +161,7 @@
     <url>
     
       <loc>https://maruftuhin.com/</loc>
-      <lastmod>2019-02-27T03:11:03+06:00</lastmod>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -180,7 +188,7 @@
     <url>
     
       <loc>https://maruftuhin.com/blog/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
     </url>
     
   
@@ -215,6 +223,60 @@
     
       <loc>https://maruftuhin.com/tags/</loc>
       <lastmod>2019-02-27T03:10:27+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/bash/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/categories/bash/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/docker/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/categories/docker/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
+      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/categories/kubernetes/</loc>
+      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
       <priority>0</priority>
     </url>
     

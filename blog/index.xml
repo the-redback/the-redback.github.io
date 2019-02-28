@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 04:05:30 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker Cheatsheet</title>
+      <link>https://maruftuhin.com/blog/docker-cheatsheet/</link>
+      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/blog/docker-cheatsheet/</guid>
+      <description>Docker Cheat Sheet Build and run a docker image Build docker images from docker file, goto dockerfile directory and command:
+docker build -t friendlynginx .  Run docker image from locally built image
+docker run -d -p 50053:8088 friendlynginx # -d for running it in background //50053:8088 is the exposed port  Connect with docker hub and push to directory, a directory maruftuhin/nginx is created i docker hub at first, then login</description>
+    </item>
     
     <item>
       <title>Mongodb Replica Set on Kubernetes</title>

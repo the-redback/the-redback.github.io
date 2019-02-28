@@ -20,5 +20,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>bash</title>
+      <link>https://maruftuhin.com/categories/bash/</link>
+      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://maruftuhin.com/categories/docker/</link>
+      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://maruftuhin.com/categories/kubernetes/</link>
+      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
