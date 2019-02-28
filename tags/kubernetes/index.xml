@@ -27,7 +27,8 @@
       <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/kubedb/</guid>
-      <description> A tool to automate database deploy on Kubernetes using CRD. It also takes scheduled backup of databases. Acted as KubeDB project head for more than a year. Conducted Bi-Weekly KubeDB Community meetings regularly. Added MongoDB, MySQL, Redis and Memcached support to KubeDB. Added MongoDB clustering system. Also, worked on PostgreSQL and Elasticsearch clustering. Worked with prometheus exporter to export database metrics.  </description>
+      <description>A tool to automate database deploy on Kubernetes using CRD. It also takes scheduled backup of databases.
+ Acted as KubeDB project head for more than a year. Conducted Bi-Weekly KubeDB Community meetings regularly. Added MongoDB, MySQL, Redis and Memcached support to KubeDB. Added MongoDB clustering system. Also, worked on PostgreSQL and Elasticsearch clustering. Worked with prometheus exporter to export database metrics.  </description>
     </item>
     
     <item>
