@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Essential `docker` commands.">
+  <meta name="description" content="Essential `kubectl` commands">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://maruftuhin.com/blog/docker-cheatsheet/">
+  <link rel="alternate" hreflang="en-us" href="https://maruftuhin.com/blog/kubernetes-cheatsheet/">
 
   
 
@@ -127,35 +127,36 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://maruftuhin.com/blog/docker-cheatsheet/">
+  <link rel="canonical" href="https://maruftuhin.com/blog/kubernetes-cheatsheet/">
 
   
   
   
   
     
+    
   
-  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:card" content="summary">
   
   <meta property="twitter:site" content="@maruf2hin">
   <meta property="twitter:creator" content="@maruf2hin">
   
   <meta property="og:site_name" content="Maruf&#39;s">
-  <meta property="og:url" content="https://maruftuhin.com/blog/docker-cheatsheet/">
-  <meta property="og:title" content="My Docker Cheat Sheet | Maruf&#39;s">
-  <meta property="og:description" content="Essential `docker` commands."><meta property="og:image" content="https://maruftuhin.com/blog/docker-cheatsheet/featured.png">
+  <meta property="og:url" content="https://maruftuhin.com/blog/kubernetes-cheatsheet/">
+  <meta property="og:title" content="My Kubectl Cheat Sheet | Maruf&#39;s">
+  <meta property="og:description" content="Essential `kubectl` commands"><meta property="og:image" content="https://maruftuhin.com/img/maruf-portrait-v1.1.2.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-03-01T04:05:30&#43;06:00">
+  <meta property="article:published_time" content="2019-03-03T00:15:10&#43;06:00">
   
-  <meta property="article:modified_time" content="2019-03-01T04:05:30&#43;06:00">
-  
-
+  <meta property="article:modified_time" content="2019-03-03T00:15:10&#43;06:00">
   
 
   
 
-  <title>My Docker Cheat Sheet | Maruf&#39;s</title>
+  
+
+  <title>My Kubectl Cheat Sheet | Maruf&#39;s</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -346,29 +347,25 @@
 
 
 
+  
 
-<div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('/blog/docker-cheatsheet/featured_hu2c5345fc2a9e7b7ed878a285f0378dab_4205_800x0_resize_lanczos_2.png');"></div>
-  <span class="article-header-caption">Docker logo</span>
-</div>
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">My Kubectl Cheat Sheet</h1>
 
+  
+  <p class="page-subtitle">Essential <code>kubectl</code> commands</p>
+  
 
-<div class="container-fluid split-header d-none d-xl-block">
-  <div class="row">
-    <div class="col-6">
-      <div class="split-header-content">
-        <h1 itemprop="name">My Docker Cheat Sheet</h1>
-
-        
-        <p class="page-subtitle">Essential <code>docker</code> commands.</p>
-        
-
-        
+  
+    
 
 
 
-<meta content="2019-03-01 04:05:30 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-03-01 04:05:30 &#43;0600 &#43;06" itemprop="dateModified">
+<meta content="2019-03-03 00:15:10 &#43;0600 &#43;06" itemprop="datePublished">
+<meta content="2019-03-03 00:15:10 &#43;0600 &#43;06" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -381,7 +378,7 @@
     
       
     
-    <time>Mar 1, 2019</time>
+    <time>Mar 3, 2019</time>
   </span>
   
 
@@ -390,14 +387,14 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    4 min read
+    3 min read
   </span>
   
 
   
   
   <span class="middot-divider"></span>
-  <a href="/blog/docker-cheatsheet/#disqus_thread"></a>
+  <a href="/blog/kubernetes-cheatsheet/#disqus_thread"></a>
   
 
   
@@ -407,148 +404,11 @@
   <span class="article-categories">
     <i class="fas fa-folder"></i>
     
-    <a href="/categories/docker/">docker</a>, 
-    
     <a href="/categories/kubernetes/">kubernetes</a>, 
     
-    <a href="/categories/bash/">bash</a>
+    <a href="/categories/kubectl/">kubectl</a>, 
     
-  </span>
-  
-  
-
-  
-
-</div>
-
-
-        
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-        
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=My%20Docker%20Cheat%20Sheet&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f"
-         target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f"
-         target="_blank" rel="noopener">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f&amp;title=My%20Docker%20Cheat%20Sheet"
-         target="_blank" rel="noopener">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f&amp;title=My%20Docker%20Cheat%20Sheet"
-         target="_blank" rel="noopener">
-        <i class="fab fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=My%20Docker%20Cheat%20Sheet&amp;body=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="split-header-image">
-        <img src="/blog/docker-cheatsheet/featured_hu2c5345fc2a9e7b7ed878a285f0378dab_4205_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
-        <span class="article-header-caption">Docker logo</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="article-container d-xl-none">
-  <h1 itemprop="name">My Docker Cheat Sheet</h1>
-
-  
-  <p class="page-subtitle">Essential <code>docker</code> commands.</p>
-  
-
-  
-
-
-
-<meta content="2019-03-01 04:05:30 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-03-01 04:05:30 &#43;0600 &#43;06" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>Mar 1, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/blog/docker-cheatsheet/#disqus_thread"></a>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    
-    <a href="/categories/docker/">docker</a>, 
-    
-    <a href="/categories/kubernetes/">kubernetes</a>, 
-    
-    <a href="/categories/bash/">bash</a>
+    <a href="/categories/minikube/">minikube</a>
     
   </span>
   
@@ -560,35 +420,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=My%20Docker%20Cheat%20Sheet&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f"
+         href="https://twitter.com/intent/tweet?text=My%20Kubectl%20Cheat%20Sheet&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fkubernetes-cheatsheet%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmaruftuhin.com%2fblog%2fkubernetes-cheatsheet%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f&amp;title=My%20Docker%20Cheat%20Sheet"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmaruftuhin.com%2fblog%2fkubernetes-cheatsheet%2f&amp;title=My%20Kubectl%20Cheat%20Sheet"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f&amp;title=My%20Docker%20Cheat%20Sheet"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmaruftuhin.com%2fblog%2fkubernetes-cheatsheet%2f&amp;title=My%20Kubectl%20Cheat%20Sheet"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=My%20Docker%20Cheat%20Sheet&amp;body=https%3a%2f%2fmaruftuhin.com%2fblog%2fdocker-cheatsheet%2f">
+         href="mailto:?subject=My%20Kubectl%20Cheat%20Sheet&amp;body=https%3a%2f%2fmaruftuhin.com%2fblog%2fkubernetes-cheatsheet%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -600,7 +460,7 @@
 
 </div>
 
-  
+    
 
 
 
@@ -618,6 +478,7 @@
 
 
 
+  
 </div>
 
 
@@ -627,317 +488,256 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h1 id="docker-cheat-sheet">Docker Cheat Sheet</h1>
+<h1 id="kubectl-cheat-sheet">Kubectl Cheat Sheet</h1>
 
-<h3 id="build-and-run-a-docker-image">Build and run a docker image</h3>
-
-<p>Build docker images from docker file, goto dockerfile directory and command:</p>
-
-<pre><code class="language-sh">docker build -t friendlynginx .
+<pre><code class="language-console">&gt; minikube version
+&gt; minikube start
+&gt; kubectl version
+&gt; kubectl get nodes
 </code></pre>
 
-<p>Run docker image from locally built image</p>
+<h3 id="run-app-in-kubernetes">Run app in kubernetes</h3>
 
-<pre><code class="language-sh">docker run -d -p 50053:8088 friendlynginx
-# -d for running it in background //50053:8088 is the exposed port
+<p>example code of kubernetes</p>
+
+<pre><code class="language-console">&gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
 </code></pre>
 
-<p>Connect with docker hub and push to directory, a directory maruftuhin/nginx is created  i docker hub at first, then login</p>
+<p>also run GRPS_Sample //problematic</p>
 
-<pre><code class="language-sh">docker login
-docker tag friendlynginx maruftuhin/nginx:tag
-docker push maruftuhin/nginx
+<pre><code class="language-console">&gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
 </code></pre>
 
-<p>Pull image from docker hub:</p>
+<p>See deployments</p>
 
-<pre><code class="language-sh">docker pull maruftuhin/nginx:tag
+<pre><code class="language-console">&gt; kubectl get deployments
 </code></pre>
 
-<p>Run image using tag , [if locally unavailable, it pulls from online]</p>
+<p>run proxy and echo</p>
 
-<pre><code class="language-sh">docker run -p -d 4000:8088 maruftuhin/nginx:tag
+<pre><code class="language-console">&gt; kubectl proxy
 </code></pre>
 
-<h3 id="list-of-images-and-containers">List of images and containers</h3>
+<p>setting up POD_NAME variable</p>
 
-<p>List of images</p>
+<pre><code class="language-console">&gt; export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
+&gt; echo Name of the Pod: $POD_NAME
 
-<pre><code class="language-sh">docker images
+&gt; curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME
 </code></pre>
 
-<p>List all exited containers</p>
+<h3 id="pods">Pods</h3>
 
-<pre><code class="language-sh">docker ps -a -q -f status=exited
+<pre><code class="language-console">&gt; kubectl get pods
+&gt; kubectl describe pods
+&gt; kubectl logs $POD_NAME
 </code></pre>
 
-<p>List of containers</p>
+<h3 id="execute-commands-on-container">Execute commands on container</h3>
 
-<pre><code class="language-sh">docker ps -a
-# -a for all
+<p>settings up env variables</p>
+
+<pre><code class="language-console">&gt; kubectl exec $POD_NAME env
 </code></pre>
 
-<h3 id="stop-remove-a-container-or-image">Stop/remove a container or image</h3>
+<p>run a conainer</p>
 
-<p>Stop a container</p>
-
-<pre><code class="language-sh">docker stop &lt;container_id&gt;
+<pre><code class="language-console">&gt; kubectl exec -ti $POD_NAME bash
+&gt; exit
 </code></pre>
 
-<p>Start a exited container</p>
+<h3 id="services-on-kubernetes">Services on kubernetes</h3>
 
-<pre><code class="language-sh">docker start &lt;container id&gt;
+<pre><code class="language-console">&gt; kubectl get services
 </code></pre>
 
-<p>Remove an image</p>
+<p>create and expose new service</p>
 
-<pre><code class="language-sh">docker rmi &lt;image_id&gt;
+<pre><code class="language-console">&gt; kubectl expose deployment/kubernetes-bootcamp --type=&quot;NodePort&quot; --port 8080
 </code></pre>
 
-<p>Remove a container</p>
+<p>setting up Node Port variable</p>
 
-<pre><code class="language-sh">docker rm &lt;container id&gt;
-docker rm &lt;container_name&gt;
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+&gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
-<p>Remove more than one image/container</p>
+<p>accessing POD from external</p>
 
-<pre><code class="language-sh">docker rm &lt;container id&gt; &lt;container_id&gt;
+<pre><code class="language-console">&gt; curl host01:$NODE_PORT
 </code></pre>
 
-<h3 id="making-change-in-a-container-image">Making change in a container/image</h3>
+<p>accessing pod from internal</p>
 
-<p>Creates a container for a image and enters it directory</p>
-
-<pre><code class="language-sh">docker run -it &lt;image_id&gt; /bin/bash
+<pre><code class="language-console">&gt; kubectl exec -ti $POD_NAME curl localhost:8080
 </code></pre>
 
-<p>Insert in a existing container [the container must be UP]</p>
+<p>get description of only one deployment</p>
 
-<pre><code class="language-sh">docker exec -it &lt;container_id&gt; bash
-# example: docker exec -it ecf1310ac3ed bash
+<pre><code class="language-console">&gt; kubectl get pods -l &lt;label&gt;
+i.e.
+&gt; kubectl get pods -l run=kubernetes-bootcamp
+&gt; kubectl get services -l run=kubernetes-bootcamp
 </code></pre>
 
-<p>Anything can be installed in that container, example, at first insert into a container and command:</p>
+<ol>
+<li>setting up lable. 1st get POD NAME. then</li>
+</ol>
 
-<pre><code class="language-sh">apt-get update
-apt-get install fish
-apt-get install php    #installs latest php
+<pre><code class="language-console">&gt; export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
+&gt; echo Name of the Pod: $POD_NAME
 </code></pre>
 
-<p>Exit container directory</p>
+<ol>
+<li>label it</li>
+</ol>
 
-<pre><code class="language-sh">exit
+<pre><code class="language-console">&gt; kubectl label pod $POD_NAME app=v1
 </code></pre>
 
-<p>Creates a image/snapshot of a [may be modified] container</p>
+<p>List of pods using label &ldquo;app=v1&rdquo;</p>
 
-<pre><code class="language-sh">docker commit &lt;container_id&gt; new_id_of_image
+<pre><code class="language-console">&gt; kubectl get pods -l app=v1
 </code></pre>
 
-<h3 id="executing-container-commands">Executing container commands</h3>
+<p>delete services with label run=kubernetes-bootcamp</p>
 
-<p>Start a exited container</p>
-
-<pre><code class="language-sh">docker start &lt;container id&gt;
+<pre><code class="language-console">&gt; kubectl delete service -l run=kubernetes-bootcamp
 </code></pre>
 
-<p>Restart a crashed container</p>
+<h3 id="scaling">Scaling</h3>
 
-<pre><code class="language-sh">docker restart &lt;contaienr_id&gt;
+<pre><code class="language-console">&gt; kubectl get deployments
 </code></pre>
 
-<p>Start fish in interactive mode</p>
+<p>scale to 4 replicas. [kubernetes&ndash;bootmcamp] is name of deloyments</p>
 
-<pre><code class="language-sh">docker exec -it &lt;container_id&gt; fish
+<pre><code class="language-console">&gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
 </code></pre>
 
-<p>Start php inside container</p>
+<p>current pods</p>
 
-<pre><code class="language-sh">docker exec -it &lt;container_id&gt; php -a
-echo &quot;hello world&quot;;
-exit
+<pre><code class="language-console">&gt; kubectl get pods -o wide
 </code></pre>
 
-<h3 id="names-of-conatiners-or-images">Names of conatiners or Images</h3>
+<p>Change log</p>
 
-<p>Rename existing container</p>
-
-<pre><code class="language-sh">docker rename &lt;old_name&gt; new_name
+<pre><code class="language-console">&gt; kubectl describe deployments/kubernetes-bootcamp
 </code></pre>
 
-<p>Giving the container a name, while rnning it</p>
+<p>find exposed ip and service</p>
 
-<pre><code class="language-sh">docker run -it --name newName &lt;container_id&gt; bash
+<pre><code class="language-console">&gt; kubectl describe services/kubernetes-bootcamp
 </code></pre>
 
-<h3 id="copy-files-from-a-container">Copy files from a container</h3>
+<p>set environment variable NODE PORT</p>
 
-<p>Create a text file inside container. insert the container and command:</p>
-
-<pre><code class="language-sh">touch test.txt
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+&gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
-<p>Copy from container. Exit from container and command:</p>
+<p>Run this command to see which pod is servicing</p>
 
-<pre><code class="language-sh">docker cp containerName:/test.txt .    #copies test.txt to host root
+<pre><code class="language-console">&gt; curl host01:$NODE_PORT
 </code></pre>
 
-<p>Copy into container</p>
+<p>Scale down service to 2 replicas from 4 replicas</p>
 
-<pre><code class="language-sh">docker cp ./test1.txt  containerName:/
+<pre><code class="language-console">&gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
 </code></pre>
 
-<h3 id="container-hostnames">Container hostnames</h3>
+<p>Description again</p>
 
-<p>Gives a new hostname to the container. it doesn&rsquo;t change the Names of container. but when user is inside the  container, it sees the hostname, in this case, it&rsquo;s root@test.</p>
-
-<pre><code class="language-sh">docker run -it -h test.local &lt;image_id&gt; bash
+<pre><code class="language-console">&gt; kubectl get deployments
+&gt; kubectl get pods -o wide
 </code></pre>
 
-<h3 id="handling-volumes">Handling volumes</h3>
+<h3 id="updating-application">Updating Application</h3>
 
-<p>It links between a directory of host and  directory of container. in command, left side of  &ldquo;:&rdquo; defines the source of host direcotry and right side defines destination into container.In this case, changing in ~/data of directory of host machine also takes place changing in container automatically</p>
-
-<p>Bind mounts, the pasth is absolute here</p>
-
-<pre><code class="language-sh">docker run -it --name test21 -v ~/data:/data &lt;image_id&gt; bash
+<pre><code class="language-console">&gt; kubectl get deployments
+&gt; kubectl get pods
 </code></pre>
 
-<p>Volume help</p>
+<p>current image version of app</p>
 
-<pre><code class="language-sh">docker volume --help
+<pre><code class="language-console">&gt; kubectl describe pods
 </code></pre>
 
-<p>Inspect a docker container</p>
+<p>update the image to version 2</p>
 
-<pre><code class="language-sh">docker inspect &lt;container_id&gt;
+<pre><code class="language-console">&gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
 </code></pre>
 
-<p>Named volume [non-bind mount], here the path is not absolute</p>
+<p>Changes in Pods</p>
 
-<pre><code class="language-sh">docker run -it  -v data:/data &lt;container_id&gt; bash
+<pre><code class="language-console">&gt; kubectl get pods
 </code></pre>
 
-<p>Used volumes of local machine in container</p>
+<h3 id="verify-update">Verify update</h3>
 
-<pre><code class="language-sh">docker volume ls
+<p>service description</p>
+
+<pre><code class="language-console">&gt; kubectl describe services/kubernetes-bootcamp
 </code></pre>
 
-<p>If same volume is used in another container, they will share the volume.</p>
+<p>setting up NODE PORT</p>
 
-<pre><code class="language-sh">docker run -it  -v data:/data &lt;container_id&gt; bash   //shares previous data volume
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+&gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
-<p>Remove docker volume, volume_name is available in  docker volume ls</p>
+<p>rollout status command to see update</p>
 
-<pre><code class="language-sh">docker volume rm &lt;volume_name&gt;
+<pre><code class="language-console">&gt; kubectl rollout status deployments/kubernetes-bootcamp
 </code></pre>
 
-<p>Multiple volume</p>
+<h3 id="rollback-update">Rollback update</h3>
 
-<pre><code class="language-sh">docker run -it  -v data:/data  -v myBin:/myBin &lt;container_id&gt; bash
+<p>First deploy update tag v10 for example</p>
+
+<pre><code class="language-console">&gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
 </code></pre>
 
-<p>Copy volume from another container</p>
+<p>status</p>
 
-<pre><code class="language-sh">docker run -it --name slave --volume-from &lt;master_container_id/Name&gt; &lt;image_id&gt; bash
+<pre><code class="language-console">&gt; kubectl get deployments
+&gt; kubectl get pods
+&gt; kubectl describe pods
+# we can see, not all are v10 applied
 </code></pre>
 
-<p>Inspect docker volume</p>
+<p>rollback to previous working state</p>
 
-<pre><code class="language-sh">docker volume inspect &lt;volume_name&gt;
+<pre><code class="language-console">&gt; kubectl rollout undo deployments/kubernetes-bootcamp
 </code></pre>
 
-<p>Show danglisg volumes [not used by any container]</p>
+<h3 id="run-own-program-docker-grpc">Run own program docker-gRPC</h3>
 
-<pre><code class="language-sh">docker volume ls -f dangling=true
+<pre><code class="language-console">&gt; docker images
+&gt; kubectl run grpc-sample3 --image=maruftuhin/server_grpc_sample:tag --port=8088
+&gt; kubectl get pods
 </code></pre>
 
-<p>Remove one volume that is not used</p>
+<p>access from internal</p>
 
-<pre><code class="language-sh">docker volume rm &lt;volume name&gt;
+<pre><code class="language-console">&gt; kubectl proxy
+&gt; curl --data &quot;{\&quot;name\&quot;: \&quot;pc1\&quot;, \&quot;a\&quot;:2,\&quot;b\&quot;:3}&quot; http://localhost:8001/api/v1/proxy/namespaces/default/pods/&lt;pods id &gt;/echo
 </code></pre>
 
-<p>Removing all unsed volumes</p>
+<p>access from external [Expose ]</p>
 
-<pre><code class="language-sh">docker volume prune
+<pre><code class="language-console">&gt; kubectl expose deployment/grpc-sample3 --type=&quot;NodePort&quot; --port 8088
+&gt; kubectl get services/grpc-sample3
 </code></pre>
 
-<p>Anonymous volume. &ndash;rm will delete anonymous volume after remove container. here /foo is a anonymous volume</p>
+<p>setting $Node_Port variable. but the ports can also be used from &ldquo;kubectl get services/grpc-sample3&rdquo; results</p>
 
-<pre><code class="language-sh">docker run --rm -v /foo -v awesome:/bar busybox top
-</code></pre>
-
-<h3 id="untagged-images">Untagged Images</h3>
-
-<p>Show untagged images</p>
-
-<pre><code class="language-sh">docker images -f &quot;dangling=true&quot; -q
-</code></pre>
-
-<p>Delete all untagged images</p>
-
-<pre><code class="language-sh">docker images -f &quot;dangling=true&quot; -q | xargs docker rmi
-</code></pre>
-
-<h3 id="delete-multiple-images">Delete multiple images</h3>
-
-<p>Delete images of same name</p>
-
-<pre><code class="language-sh">docker images --format '{{.Repository}}:{{.Tag}}' | grep 'imagename' | xargs docker rmi
-# or,
-docker images -q imagename | uniq | xargs docker rmi --force
-</code></pre>
-
-<h3 id="docker-killer-p">Docker killer!!! :P</h3>
-
-<p>Stop all container</p>
-
-<pre><code class="language-sh">docker ps -a -q | xargs docker stop
-</code></pre>
-
-<p>Delete all container</p>
-
-<pre><code class="language-sh">docker ps -a -q | xargs docker rm
-</code></pre>
-
-<p>Removing all unused volumes</p>
-
-<pre><code class="language-sh">docker volume prune
-</code></pre>
-
-<p>Remove untagged dockers</p>
-
-<pre><code class="language-sh">docker images -q -f &quot;dangling=true&quot; | xargs docker rmi
-</code></pre>
-
-<p>Remove stopped containers</p>
-
-<pre><code class="language-sh">docker ps -aq --no-trunc -f status=exited | xargs docker rm
-</code></pre>
-
-<p>Remove all images</p>
-
-<pre><code class="language-sh">docker images -q | xargs docker rmi
-</code></pre>
-
-<h3 id="start-fresh">Start fresh</h3>
-
-<h4 id="dangerous-deletes-everything">Dangerous!!! Deletes everything!!</h4>
-
-<pre><code class="language-sh">sudo systemctl stop docker.service
-sudo rm -rf /var/lib/docker
-sudo systemctl start docker.service
-</code></pre>
-
-<h3 id="copy-local-images-to-minikube">Copy Local images to Minikube</h3>
-
-<p>For bash</p>
-
-<pre><code class="language-sh">docker save &lt;image-name&gt; | pv | (eval $(minikube docker-env) &amp;&amp; docker load)
-# or,
-docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker load)
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template='{{(index .spec.ports 0).nodePort}}')
+&gt; kubectl get services/grpc-sample3
+&gt; kubectl get nodes
+&gt; kubectl get svc grpc-sample3 -o yaml
+&gt; minikube service grpc-sample3 --url
+&gt; curl --data &quot;{\&quot;name\&quot;: \&quot;pc1\&quot;, \&quot;a\&quot;:2,\&quot;b\&quot;:3}&quot; http://192.168.99.100:32258/echo
 </code></pre>
 
     </div>
@@ -947,11 +747,13 @@ docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker 
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/docker/">docker</a>
-  
   <a class="badge badge-light" href="/tags/kubernetes/">kubernetes</a>
   
-  <a class="badge badge-light" href="/tags/bash/">bash</a>
+  <a class="badge badge-light" href="/tags/kubectl/">kubectl</a>
+  
+  <a class="badge badge-light" href="/tags/container/">container</a>
+  
+  <a class="badge badge-light" href="/tags/minikube/">minikube</a>
   
 </div>
 
@@ -1094,21 +896,28 @@ docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker 
 
       
       
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/mongodb-on-kubernetes/">Mongodb Replica Set on Kubernetes</a></li>
+          
+          <li><a href="/blog/docker-cheatsheet/">My Docker Cheat Sheet</a></li>
+          
+        </ul>
+      </div>
+      
     
 
     
     <div class="article-widget">
       <div class="post-nav">
   
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="https://maruftuhin.com/blog/kubernetes-cheatsheet/" rel="next">My Kubectl Cheat Sheet</a>
-  </div>
-  
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="https://maruftuhin.com/blog/mongodb-on-kubernetes/" rel="prev">Mongodb Replica Set on Kubernetes</a>
+    <a href="https://maruftuhin.com/blog/docker-cheatsheet/" rel="prev">My Docker Cheat Sheet</a>
   </div>
   
 </div>

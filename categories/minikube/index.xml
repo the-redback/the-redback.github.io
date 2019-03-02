@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Maruf&#39;s</title>
-    <link>https://maruftuhin.com/blog/</link>
-    <description>Recent content in Posts on Maruf&#39;s</description>
+    <title>minikube on Maruf&#39;s</title>
+    <link>https://maruftuhin.com/categories/minikube/</link>
+    <description>Recent content in minikube on Maruf&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
     <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
     
-	<atom:link href="https://maruftuhin.com/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://maruftuhin.com/categories/minikube/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,17 +24,6 @@
 &amp;gt; kubectl get deployments  run proxy and echo
 &amp;gt; kubectl proxy  setting up POD_NAME variable
 &amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .</description>
-    </item>
-    
-    <item>
-      <title>My Docker Cheat Sheet</title>
-      <link>https://maruftuhin.com/blog/docker-cheatsheet/</link>
-      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      
-      <guid>https://maruftuhin.com/blog/docker-cheatsheet/</guid>
-      <description>Docker Cheat Sheet Build and run a docker image Build docker images from docker file, goto dockerfile directory and command:
-docker build -t friendlynginx .  Run docker image from locally built image
-docker run -d -p 50053:8088 friendlynginx # -d for running it in background //50053:8088 is the exposed port  Connect with docker hub and push to directory, a directory maruftuhin/nginx is created i docker hub at first, then login</description>
     </item>
     
     <item>

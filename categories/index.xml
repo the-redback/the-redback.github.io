@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>MongoDB</title>
+      <link>https://maruftuhin.com/categories/mongodb/</link>
+      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bash</title>
       <link>https://maruftuhin.com/categories/bash/</link>
       <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
@@ -39,11 +48,29 @@
     </item>
     
     <item>
+      <title>kubectl</title>
+      <link>https://maruftuhin.com/categories/kubectl/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/kubectl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>kubernetes</title>
       <link>https://maruftuhin.com/categories/kubernetes/</link>
       <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
       
       <guid>https://maruftuhin.com/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minikube</title>
+      <link>https://maruftuhin.com/categories/minikube/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/minikube/</guid>
       <description></description>
     </item>
     

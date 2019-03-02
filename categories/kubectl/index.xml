@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubectl on Maruf&#39;s</title>
+    <link>https://maruftuhin.com/categories/kubectl/</link>
+    <description>Recent content in kubectl on Maruf&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    
+	<atom:link href="https://maruftuhin.com/categories/kubectl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Kubectl Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/kubernetes-cheatsheet/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/blog/kubernetes-cheatsheet/</guid>
+      <description>Kubectl Cheat Sheet &amp;gt; minikube version &amp;gt; minikube start &amp;gt; kubectl version &amp;gt; kubectl get nodes  Run app in kubernetes example code of kubernetes
+&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080  also run GRPS_Sample //problematic
+&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088  See deployments
+&amp;gt; kubectl get deployments  run proxy and echo
+&amp;gt; kubectl proxy  setting up POD_NAME variable
+&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .</description>
+    </item>
+    
+  </channel>
+</rss>
