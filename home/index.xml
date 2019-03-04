@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Accomplish&amp;shy;ments</title>
-      <link>https://maruftuhin.com/home/accomplishments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/home/accomplishments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://maruftuhin.com/home/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://maruftuhin.com/home/skills/</guid>
-      <description> GO, C, C++, Java, SQL, Bash, Git Kubernetes, Docker MySQL, PostgreSQL, MongoDB AWS, GCP, Azure, Digitalocean etc. Prometheus, gRPC </description>
+      <description> GO C C++ Java SQL Bash Git Kubernetes Docker MySQL PostgreSQL MongoDB AWS GCP Azure Digitalocean Prometheus gRPC </description>
     </item>
     
     <item>
@@ -90,6 +81,24 @@
       
       <guid>https://maruftuhin.com/home/talks/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Accomplish&amp;shy;ments</title>
+      <link>https://maruftuhin.com/home/accomplishments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/accomplishments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Achievements</title>
+      <link>https://maruftuhin.com/home/achievements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/achievements/</guid>
+      <description>Open Source Contribution  Contributed on open source projects including Kubernetes, KubeDB, appscode/osm, appscode/kutil, appscode/analytics etc.  Online Judge  Solved overall 900+ problems on different Online Judges. Solved 330+ problems on UVA Online Judge. [Username: the_redback] Solved 155+ problems on LightOJ [User ID: 5399] Former Candidate Master at CodeForces (Rating:1845, Expert at new rating system) Username: the_redback Former Expert at TopCoder (Rating: 1400) [Username: the_redback] Also participated in many online contests at CodeChef [Username: the_redback], HackerRank [Username: the_redback] and Spoj [Username: maruf2hin]  Onsite Contest Participated as a contestant in many National &amp;amp; International Programming Contests [Team Name: CUET-One_1]</description>
     </item>
     
     <item>
