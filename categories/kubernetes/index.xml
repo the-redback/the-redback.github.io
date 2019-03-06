@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kubernetes on Maruf&#39;s</title>
+    <title>Kubernetes on Maruf&#39;s</title>
     <link>https://maruftuhin.com/categories/kubernetes/</link>
-    <description>Recent content in kubernetes on Maruf&#39;s</description>
+    <description>Recent content in Kubernetes on Maruf&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Kubectl Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/kubernetes-cheatsheet/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/blog/kubernetes-cheatsheet/</guid>
+      <description>Kubectl Cheat Sheet &amp;gt; minikube version &amp;gt; minikube start &amp;gt; kubectl version &amp;gt; kubectl get nodes  Run app in kubernetes example code of kubernetes
+&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080  also run GRPS_Sample //problematic
+&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088  See deployments
+&amp;gt; kubectl get deployments  run proxy and echo
+&amp;gt; kubectl proxy  setting up POD_NAME variable
+&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .</description>
+    </item>
+    
+    <item>
+      <title>My Docker Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/docker-cheatsheet/</link>
+      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/blog/docker-cheatsheet/</guid>
+      <description>Docker Cheat Sheet Build and run a docker image Build docker images from docker file, goto dockerfile directory and command:
+docker build -t friendlynginx .  Run docker image from locally built image
+docker run -d -p 50053:8088 friendlynginx # -d for running it in background //50053:8088 is the exposed port  Connect with docker hub and push to directory, a directory maruftuhin/nginx is created i docker hub at first, then login</description>
+    </item>
     
     <item>
       <title>Mongodb Replica Set on Kubernetes</title>

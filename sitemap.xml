@@ -124,7 +124,35 @@
     
     <url>
     
+      <loc>https://maruftuhin.com/tags/bash/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/categories/bash/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://maruftuhin.com/categories/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/container/</loc>
+      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -134,6 +162,24 @@
     
       <loc>https://maruftuhin.com/tags/database/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/docker/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/categories/docker/</loc>
+      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -151,7 +197,7 @@
     <url>
     
       <loc>https://maruftuhin.com/tags/kubernetes/</loc>
-      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
+      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -160,7 +206,7 @@
     <url>
     
       <loc>https://maruftuhin.com/categories/kubernetes/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -169,6 +215,24 @@
     <url>
     
       <loc>https://maruftuhin.com/</loc>
+      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/tags/minikube/</loc>
+      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://maruftuhin.com/categories/minikube/</loc>
       <lastmod>2019-03-03T00:15:10+06:00</lastmod>
       <priority>0</priority>
     </url>
@@ -247,51 +311,6 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/tags/bash/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/bash/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/container/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/docker/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/docker/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://maruftuhin.com/tags/kubectl/</loc>
       <lastmod>2019-03-03T00:15:10+06:00</lastmod>
       <priority>0</priority>
@@ -310,16 +329,7 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
-      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/kubernetes/</loc>
+      <loc>https://maruftuhin.com/tags/minikube/</loc>
       <lastmod>2019-01-12T03:07:50+06:00</lastmod>
       <priority>0</priority>
     </url>
@@ -328,17 +338,8 @@
     
     <url>
     
-      <loc>https://maruftuhin.com/tags/minikube/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://maruftuhin.com/categories/minikube/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
       <priority>0</priority>
     </url>
     

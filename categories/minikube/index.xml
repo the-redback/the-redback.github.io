@@ -7,24 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/categories/minikube/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>My Kubectl Cheat Sheet</title>
-      <link>https://maruftuhin.com/blog/kubernetes-cheatsheet/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      
-      <guid>https://maruftuhin.com/blog/kubernetes-cheatsheet/</guid>
-      <description>Kubectl Cheat Sheet &amp;gt; minikube version &amp;gt; minikube start &amp;gt; kubectl version &amp;gt; kubectl get nodes  Run app in kubernetes example code of kubernetes
-&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080  also run GRPS_Sample //problematic
-&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088  See deployments
-&amp;gt; kubectl get deployments  run proxy and echo
-&amp;gt; kubectl proxy  setting up POD_NAME variable
-&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .</description>
-    </item>
     
     <item>
       <title>Mongodb Replica Set on Kubernetes</title>
