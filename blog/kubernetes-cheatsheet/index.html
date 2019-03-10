@@ -677,7 +677,7 @@
 
 <h3 id="run-app-in-kubernetes">Run app in kubernetes</h3>
 
-<p>example code of kubernetes</p>
+<p>Run app in kubernetes by kubectl</p>
 
 <pre><code class="language-console">&gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
 </code></pre>
@@ -719,7 +719,7 @@
 <pre><code class="language-console">&gt; kubectl exec $POD_NAME env
 </code></pre>
 
-<p>run a conainer</p>
+<p>run a container</p>
 
 <pre><code class="language-console">&gt; kubectl exec -ti $POD_NAME bash
 &gt; exit
@@ -815,7 +815,7 @@ i.e.
 &gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
-<p>Run this command to see which pod is servicing</p>
+<p>Run this command to see which pod is serving</p>
 
 <pre><code class="language-console">&gt; curl host01:$NODE_PORT
 </code></pre>

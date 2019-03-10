@@ -28,7 +28,7 @@
 
 &lt;h3 id=&#34;run-app-in-kubernetes&#34;&gt;Run app in kubernetes&lt;/h3&gt;
 
-&lt;p&gt;example code of kubernetes&lt;/p&gt;
+&lt;p&gt;Run app in kubernetes by kubectl&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
 &lt;/code&gt;&lt;/pre&gt;
@@ -70,7 +70,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec $POD_NAME env
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;run a conainer&lt;/p&gt;
+&lt;p&gt;run a container&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME bash
 &amp;gt; exit
@@ -166,7 +166,7 @@ i.e.
 &amp;gt; echo NODE_PORT=$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Run this command to see which pod is servicing&lt;/p&gt;
+&lt;p&gt;Run this command to see which pod is serving&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
