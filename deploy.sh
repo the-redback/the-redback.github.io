@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $@
 set -exo pipefail
 # chmod +x update_academic.sh
 # ./update_academic.sh
