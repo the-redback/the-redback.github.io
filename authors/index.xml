@@ -11,5 +11,15 @@
 	<atom:link href="https://maruftuhin.com/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://maruftuhin.com/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/authors/admin/</guid>
+      <description> Hey, I&#39;m Maruf!  I like to tear down build stuff!! 😉  I am a passionate software engineer with 2 years of working experience developing Kubernetes tools in GO. Acted as AppsCode&amp;rsquo;s KubeDB project head for more than a year. Love to participate in programming contests. An enthusiastic team player.
+ </description>
+    </item>
+    
   </channel>
 </rss>

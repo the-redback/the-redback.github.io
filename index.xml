@@ -1,14 +1,205 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maruf&#39;s on Maruf&#39;s</title>
+    <title>Maruf&#39;s</title>
     <link>https://maruftuhin.com/</link>
-    <description>Recent content in Maruf&#39;s on Maruf&#39;s</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content on Maruf&#39;s</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Abdullah Al Maruf</copyright>
     <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+	    <atom:link href="https://maruftuhin.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://maruftuhin.com/home/slider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/slider/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://maruftuhin.com/home/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strengths</title>
+      <link>https://maruftuhin.com/home/strengths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/strengths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://maruftuhin.com/home/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>https://maruftuhin.com/home/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/skills/</guid>
+      <description>
+
+&lt;h3 id=&#34;go-c-c-java&#34;&gt;&lt;code&gt;GO&lt;/code&gt; &lt;code&gt;C&lt;/code&gt; &lt;code&gt;C++&lt;/code&gt; &lt;code&gt;Java&lt;/code&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;sql-bash-git&#34;&gt;&lt;code&gt;SQL&lt;/code&gt; &lt;code&gt;Bash&lt;/code&gt; &lt;code&gt;Git&lt;/code&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;kubernetes-docker&#34;&gt;&lt;code&gt;Kubernetes&lt;/code&gt; &lt;code&gt;Docker&lt;/code&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;mysql-postgresql-mongodb&#34;&gt;&lt;code&gt;MySQL&lt;/code&gt; &lt;code&gt;PostgreSQL&lt;/code&gt; &lt;code&gt;MongoDB&lt;/code&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;aws-gcp-azure-digitalocean&#34;&gt;&lt;code&gt;AWS&lt;/code&gt; &lt;code&gt;GCP&lt;/code&gt; &lt;code&gt;Azure&lt;/code&gt; &lt;code&gt;DigitalOcean&lt;/code&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;prometheus-grpc&#34;&gt;&lt;code&gt;Prometheus&lt;/code&gt; &lt;code&gt;gRPC&lt;/code&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://maruftuhin.com/home/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/projects/</guid>
+      <description>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://maruftuhin.com/home/blogs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/blogs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://maruftuhin.com/home/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accomplish&amp;shy;ments</title>
+      <link>https://maruftuhin.com/home/accomplishments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/accomplishments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>https://maruftuhin.com/home/featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online Judge Handles</title>
+      <link>https://maruftuhin.com/home/online_judge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/online_judge/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Solved overall &lt;strong&gt;&lt;em&gt;900+&lt;/em&gt;&lt;/strong&gt; problems on different Online Judges.&lt;/li&gt;
+&lt;li&gt;Solved &lt;strong&gt;&lt;em&gt;330+&lt;/em&gt;&lt;/strong&gt; problems on &lt;strong&gt;&lt;em&gt;UVA Online Judge&lt;/em&gt;&lt;/strong&gt;. [&lt;a href=&#34;https://uhunt.onlinejudge.org/id/163246&#34; target=&#34;_blank&#34;&gt;the_redback&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Solved &lt;strong&gt;&lt;em&gt;155+&lt;/em&gt;&lt;/strong&gt; problems on &lt;strong&gt;&lt;em&gt;LightOJ&lt;/em&gt;&lt;/strong&gt; [&lt;a href=&#34;http://lightoj.com/login_main.php?url=volume_userstat.php?user_id=5399&#34; target=&#34;_blank&#34;&gt;5399&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Former &lt;strong&gt;&lt;em&gt;Candidate Master&lt;/em&gt;&lt;/strong&gt; at &lt;strong&gt;&lt;em&gt;CodeForces&lt;/em&gt;&lt;/strong&gt; (Rating:1845, Expert at new rating system) [&lt;a href=&#34;http://codeforces.com/profile/the_redback&#34; target=&#34;_blank&#34;&gt;the_redback&lt;/a&gt;] solved 300+ problems.&lt;/li&gt;
+&lt;li&gt;Former &lt;strong&gt;&lt;em&gt;Expert&lt;/em&gt;&lt;/strong&gt; at TopCoder (Rating: 1400) [&lt;a href=&#34;https://www.topcoder.com/members/the_redback/&#34; target=&#34;_blank&#34;&gt;the_redback&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Also participated in many online contests at &lt;strong&gt;&lt;em&gt;CodeChef&lt;/em&gt;&lt;/strong&gt; [&lt;a href=&#34;http://www.codechef.com/users/the_redback&#34; target=&#34;_blank&#34;&gt;the_redback&lt;/a&gt;], &lt;strong&gt;&lt;em&gt;HackerRank&lt;/em&gt;&lt;/strong&gt; [&lt;a href=&#34;https://www.hackerrank.com/the_redback&#34; target=&#34;_blank&#34;&gt;the_redback&lt;/a&gt;] and &lt;strong&gt;&lt;em&gt;Spoj&lt;/em&gt;&lt;/strong&gt; [&lt;a href=&#34;http://www.spoj.com/users/maruf2hin/&#34; target=&#34;_blank&#34;&gt;maruf2hin&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Timeline</title>
+      <link>https://maruftuhin.com/home/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/timeline/</guid>
+      <description>&lt;!-- 
+
+---
+
+### Onsite Competitive Programming Contest
+
+Participated as a contestant in many National &amp; International Programming Contests [Team Name: ***CUET-One_1***]
+
+- Got ***18th position***, ***7th varsity rank*** and ***1st divisional rank*** at ***ICPC-2014*** Dhaka Site at BUBT.
+- Got ***18th position***, ***8th varsity rank*** and ***1st divisional rank*** at ***ICPC-2015*** Dhaka Site at NSU.
+- Got ***6th position*** at national level IUPC-2016 at ***SUB***.
+- Got ***13th position*** at ***NCPC-2015*** at ***RUET***.
+- Got ***20th position*** at ***NCPC-2016*** at ***UAP***
+- Got ***1st position*** at regional IUPC-2015 at ***USTC***.
+- Got ***1st Runner Up position*** at regional IUPC-2014 at ***IIUC***.
+- Got ***2nd Runner Up position*** at regional IUPC-2014 at ***CUET IUPC***.
+- Also performed well in other contests.
+
+---
+
+### Extra Curriculum
+
+- Former ***President*** of ***CUET Computer Club***
+- Former member of ***CUET Debating Society***
+- Organizer of ***NCPC 2017*** and ***CUET CSE FEST 2015***
+- Organized several programming contests in CUET
+- Provided problem set in several IUPC.
+- Attended many self-developing training courses.
+- Also attended ***BAPS-BUBT National Programming Camp 2016*** 
+- 
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Popular Topics</title>
+      <link>https://maruftuhin.com/home/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://maruftuhin.com/home/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://maruftuhin.com/home/contact/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>My Kubectl Cheat Sheet</title>

@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>minikube on Maruf&#39;s</title>
+    <title>Minikube on Maruf&#39;s</title>
     <link>https://maruftuhin.com/categories/minikube/</link>
-    <description>Recent content in minikube on Maruf&#39;s</description>
+    <description>Recent content in Minikube on Maruf&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Abdullah Al Maruf</copyright>
-    <lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
     
 	<atom:link href="https://maruftuhin.com/categories/minikube/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Kubectl Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/kubernetes-cheatsheet/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/blog/kubernetes-cheatsheet/</guid>
+      <description>Essential &lt;code&gt;kubectl&lt;/code&gt; commands</description>
+    </item>
     
     <item>
       <title>Mongodb Replica Set on Kubernetes</title>
@@ -18,8 +27,7 @@
       <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
       
       <guid>https://maruftuhin.com/blog/mongodb-on-kubernetes/</guid>
-      <description>Replica-Sets Create Secret for Key file MongoDB will use this key to communicate internal cluster.
-$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt secret &amp;quot;shared-bootstrap-data&amp;quot; created  Deploy MongoDB Replica-Sets YAML apiVersion: v1 kind: Service metadata: name: mongodb-service labels: name: mongo spec: ports: - port: 27017 targetPort: 27017 clusterIP: None selector: role: mongo --- apiVersion: apps/v1 kind: StatefulSet metadata: name: mongod spec: serviceName: mongodb-service replicas: 3 selector: matchLabels: role: mongo environment: test replicaset: MainRepSet template: metadata: labels: role: mongo environment: test replicaset: MainRepSet spec: containers: - name: mongod-container image: mongo:3.</description>
+      <description>Run MongoDB Replica Set on Kubernetes using &lt;em&gt;Statefulset&lt;/em&gt; and &lt;em&gt;PersistentVolumeClaim&lt;/em&gt;. Minikube kubernetes cluster is used for this post.</description>
     </item>
     
   </channel>

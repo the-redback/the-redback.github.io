@@ -1,347 +1,272 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/blog/kubernetes-cheatsheet/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/slider/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/blog/docker-cheatsheet/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/about/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/data_encryption/</loc>
-      <lastmod>2019-02-27T03:11:03+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/strengths/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/email_verification/</loc>
-      <lastmod>2019-02-27T03:10:51+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/experience/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/scientific_calculator/</loc>
-      <lastmod>2019-02-27T03:10:27+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/skills/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/library_system/</loc>
-      <lastmod>2019-02-27T03:10:14+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/projects/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/dsw/</loc>
-      <lastmod>2019-02-27T03:10:03+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/blogs/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/3d_racing_game/</loc>
-      <lastmod>2019-02-27T03:06:27+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/talks/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/appscode_analytics/</loc>
-      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/accomplishments/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/kubedb/</loc>
-      <lastmod>2019-02-11T03:06:15+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/featured/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/blog/mongodb-on-kubernetes/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/online_judge/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/author/admin/</loc>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/timeline/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/academic/</loc>
-      <lastmod>2019-02-27T03:10:27+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/tags/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/author/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/home/contact/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/categories/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/bash/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/container/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/bash/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/categories/kubernetes/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/kubernetes/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/container/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/database/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/categories/minikube/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/docker/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/minikube/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/docker/</loc>
-      <lastmod>2019-03-01T04:05:30+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/blog/kubernetes-cheatsheet/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/hobby/</loc>
-      <lastmod>2019-02-27T03:11:03+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/blog/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/kubernetes/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/kubernetes/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/categories/kubectl/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/kubectl/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/minikube/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/categories/bash/</loc>
+    <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/minikube/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/bash/</loc>
+    <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/mongodb/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/categories/docker/</loc>
+    <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/mongodb/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/docker/</loc>
+    <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/oss/</loc>
-      <lastmod>2019-02-27T03:00:07+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/blog/docker-cheatsheet/</loc>
+    <lastmod>2019-03-01T04:05:30+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/blog/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/project/data_encryption/</loc>
+    <lastmod>2019-02-27T03:11:03+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/professional/</loc>
-      <lastmod>2019-02-27T03:10:51+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/hobby/</loc>
+    <lastmod>2019-02-27T03:11:03+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/project/</loc>
-      <lastmod>2019-02-27T03:11:03+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/project/</loc>
+    <lastmod>2019-02-27T03:11:03+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/project/email_verification/</loc>
+    <lastmod>2019-02-27T03:10:51+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/</loc>
-      <lastmod>2019-02-27T03:10:27+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/professional/</loc>
+    <lastmod>2019-02-27T03:10:51+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/kubectl/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/tags/academic/</loc>
+    <lastmod>2019-02-27T03:10:27+06:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/kubectl/</loc>
-      <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/project/scientific_calculator/</loc>
+    <lastmod>2019-02-27T03:10:27+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/tags/minikube/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/project/library_system/</loc>
+    <lastmod>2019-02-27T03:10:14+06:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>https://maruftuhin.com/categories/minikube/</loc>
-      <lastmod>2019-01-12T03:07:50+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://maruftuhin.com/project/dsw/</loc>
+    <lastmod>2019-02-27T03:10:03+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/3d_racing_game/</loc>
+    <lastmod>2019-02-27T03:06:27+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/appscode_analytics/</loc>
+    <lastmod>2019-02-27T03:00:07+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/oss/</loc>
+    <lastmod>2019-02-27T03:00:07+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/kubedb/</loc>
+    <lastmod>2019-02-11T03:06:15+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/database/</loc>
+    <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/categories/mongodb/</loc>
+    <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/mongodb/</loc>
+    <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/blog/mongodb-on-kubernetes/</loc>
+    <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/authors/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/authors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/home/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/publication_types/</loc>
+    <priority>0</priority>
+  </url>
   
 </urlset>

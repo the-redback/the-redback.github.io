@@ -18,9 +18,7 @@
       <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
       
       <guid>https://maruftuhin.com/blog/docker-cheatsheet/</guid>
-      <description>Docker Cheat Sheet Build and run a docker image Build docker images from docker file, goto dockerfile directory and command:
-docker build -t friendlynginx .  Run docker image from locally built image
-docker run -d -p 50053:8088 friendlynginx # -d for running it in background //50053:8088 is the exposed port  Connect with docker hub and push to directory, a directory maruftuhin/nginx is created i docker hub at first, then login</description>
+      <description>Essential &lt;code&gt;docker&lt;/code&gt; commands.</description>
     </item>
     
   </channel>
