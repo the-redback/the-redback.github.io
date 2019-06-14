@@ -4,12 +4,12 @@
     <title>Hobby on Maruf&#39;s</title>
     <link>https://maruftuhin.com/tags/hobby/</link>
     <description>Recent content in Hobby on Maruf&#39;s</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019 Abdullah Al Maruf</copyright>
+    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
     <lastBuildDate>Wed, 27 Feb 2019 03:11:03 +0600</lastBuildDate>
     
-	<atom:link href="https://maruftuhin.com/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://maruftuhin.com/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +18,7 @@
       <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/data_encryption/</guid>
-      <description>Data encryption project in &lt;strong&gt;&lt;em&gt;Java&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description></description>
     </item>
     
   </channel>

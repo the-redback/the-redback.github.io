@@ -4,12 +4,12 @@
     <title>Academic on Maruf&#39;s</title>
     <link>https://maruftuhin.com/tags/academic/</link>
     <description>Recent content in Academic on Maruf&#39;s</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019 Abdullah Al Maruf</copyright>
+    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
     <lastBuildDate>Wed, 27 Feb 2019 03:10:27 +0600</lastBuildDate>
     
-	<atom:link href="https://maruftuhin.com/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://maruftuhin.com/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +18,7 @@
       <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
-      <description>Academic project. Implemented using &lt;strong&gt;&lt;em&gt;Java swing&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description></description>
     </item>
     
     <item>
@@ -27,7 +27,11 @@
       <pubDate>Wed, 27 Feb 2019 03:10:14 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/library_system/</guid>
-      <description>Academic project. Implemented using &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Microsoft SQL Server&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Academical Database Project&lt;/li&gt;
+&lt;li&gt;Tools: &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Microsoft SQL Server&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -36,7 +40,7 @@
       <pubDate>Wed, 27 Feb 2019 03:10:03 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/dsw/</guid>
-      <description>Academic project. Implemented using &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;MySQL&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description></description>
     </item>
     
     <item>
@@ -45,7 +49,12 @@
       <pubDate>Wed, 27 Feb 2019 03:06:27 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
-      <description>Final year thesis &amp;amp; project. Developed for both &lt;strong&gt;&lt;em&gt;PC&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Android&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
+&lt;li&gt;Developed for both &lt;strong&gt;&lt;em&gt;PC&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Android&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tools:&lt;/em&gt; &lt;strong&gt;&lt;em&gt;Unity 5 Game Engine&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Android SDK&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

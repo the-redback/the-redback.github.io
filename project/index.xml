@@ -4,12 +4,12 @@
     <title>Projects on Maruf&#39;s</title>
     <link>https://maruftuhin.com/project/</link>
     <description>Recent content in Projects on Maruf&#39;s</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019 Abdullah Al Maruf</copyright>
+    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
     <lastBuildDate>Wed, 27 Feb 2019 03:11:03 +0600</lastBuildDate>
     
-	<atom:link href="https://maruftuhin.com/project/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://maruftuhin.com/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +18,7 @@
       <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/data_encryption/</guid>
-      <description>Data encryption project in &lt;strong&gt;&lt;em&gt;Java&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description></description>
     </item>
     
     <item>
@@ -27,7 +27,12 @@
       <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/email_verification/</guid>
-      <description>Internship Project. Implemented using &lt;strong&gt;&lt;em&gt;Java&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Automatic Email verification project.&lt;/li&gt;
+&lt;li&gt;Internship project.&lt;/li&gt;
+&lt;li&gt;Tools: &lt;strong&gt;&lt;em&gt;Java&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -36,7 +41,7 @@
       <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
-      <description>Academic project. Implemented using &lt;strong&gt;&lt;em&gt;Java swing&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description></description>
     </item>
     
     <item>
@@ -45,7 +50,11 @@
       <pubDate>Wed, 27 Feb 2019 03:10:14 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/library_system/</guid>
-      <description>Academic project. Implemented using &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Microsoft SQL Server&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Academical Database Project&lt;/li&gt;
+&lt;li&gt;Tools: &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Microsoft SQL Server&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -54,7 +63,7 @@
       <pubDate>Wed, 27 Feb 2019 03:10:03 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/dsw/</guid>
-      <description>Academic project. Implemented using &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;MySQL&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description></description>
     </item>
     
     <item>
@@ -63,7 +72,12 @@
       <pubDate>Wed, 27 Feb 2019 03:06:27 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
-      <description>Final year thesis &amp;amp; project. Developed for both &lt;strong&gt;&lt;em&gt;PC&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Android&lt;/em&gt;&lt;/strong&gt;.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
+&lt;li&gt;Developed for both &lt;strong&gt;&lt;em&gt;PC&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Android&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tools:&lt;/em&gt; &lt;strong&gt;&lt;em&gt;Unity 5 Game Engine&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Android SDK&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;C#&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -72,7 +86,12 @@
       <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
-      <description>Different esential analytics in Appscode oss tools.</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
+&lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
+&lt;li&gt;Used pixel tracking [aka, web beacon] to event each view of GitHub or other web pages in real time.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -81,7 +100,18 @@
       <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
       
       <guid>https://maruftuhin.com/project/kubedb/</guid>
-      <description>Run production-grade databases easily on &lt;strong&gt;&lt;em&gt;Kubernetes&lt;/em&gt;&lt;/strong&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;&lt;em&gt;Kubernetes&lt;/em&gt;&lt;/strong&gt; using &lt;strong&gt;&lt;em&gt;CRD&lt;/em&gt;&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Acted as &lt;strong&gt;&lt;em&gt;KubeDB project head&lt;/em&gt;&lt;/strong&gt; for more than a year.&lt;/li&gt;
+&lt;li&gt;Conducted &lt;strong&gt;&lt;em&gt;Bi-Weekly KubeDB Community meetings&lt;/em&gt;&lt;/strong&gt; regularly.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;&lt;em&gt;MongoDB&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;MySQL&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Redis&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Memcached&lt;/em&gt;&lt;/strong&gt; support to
+KubeDB.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;&lt;em&gt;MongoDB clustering&lt;/em&gt;&lt;/strong&gt; system. Also, worked on &lt;strong&gt;&lt;em&gt;PostgreSQL&lt;/em&gt;&lt;/strong&gt;
+and &lt;strong&gt;&lt;em&gt;Elasticsearch&lt;/em&gt;&lt;/strong&gt; clustering.&lt;/li&gt;
+&lt;li&gt;Worked with &lt;strong&gt;&lt;em&gt;prometheus&lt;/em&gt;&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

@@ -3,62 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://maruftuhin.com/home/slider/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/strengths/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/experience/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/skills/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/blogs/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/talks/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/accomplishments/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/featured/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/online_judge/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/timeline/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/home/contact/</loc>
-  </url>
-  
-  <url>
     <loc>https://maruftuhin.com/categories/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
     <priority>0</priority>
@@ -101,12 +45,12 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/blog/kubernetes-cheatsheet/</loc>
+    <loc>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/blog/</loc>
+    <loc>https://maruftuhin.com/post/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
   </url>
   
@@ -153,7 +97,7 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/blog/docker-cheatsheet/</loc>
+    <loc>https://maruftuhin.com/blog/my-docker-cheat-sheet/</loc>
     <lastmod>2019-03-01T04:05:30+06:00</lastmod>
   </url>
   
@@ -246,7 +190,7 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/blog/mongodb-on-kubernetes/</loc>
+    <loc>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</loc>
     <lastmod>2019-01-12T03:07:50+06:00</lastmod>
   </url>
   
@@ -255,12 +199,12 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/authors/</loc>
+    <loc>https://maruftuhin.com/privacy/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/home/</loc>
+    <loc>https://maruftuhin.com/authors/</loc>
     <priority>0</priority>
   </url>
   
