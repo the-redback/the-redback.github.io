@@ -22,20 +22,20 @@
     </item>
     
     <item>
-      <title>Minikube</title>
-      <link>https://maruftuhin.com/categories/minikube/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      
-      <guid>https://maruftuhin.com/categories/minikube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>kubectl</title>
       <link>https://maruftuhin.com/categories/kubectl/</link>
       <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
       
       <guid>https://maruftuhin.com/categories/kubectl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minikube</title>
+      <link>https://maruftuhin.com/categories/minikube/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      
+      <guid>https://maruftuhin.com/categories/minikube/</guid>
       <description></description>
     </item>
     

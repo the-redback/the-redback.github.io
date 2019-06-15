@@ -33,18 +33,6 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/categories/minikube/</loc>
-    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/tags/minikube/</loc>
-    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
   </url>
@@ -68,6 +56,18 @@
   
   <url>
     <loc>https://maruftuhin.com/tags/kubectl/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/categories/minikube/</loc>
+    <lastmod>2019-03-03T00:15:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/minikube/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
     <priority>0</priority>
   </url>
