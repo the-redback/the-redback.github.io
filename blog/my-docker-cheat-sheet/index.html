@@ -720,14 +720,18 @@
 
 
 
-  <div class="article-container">
+  <div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
 
-    <div class="article-style" itemprop="articleBody">
       
+      <div class="container" style="margin-right: 0px;">
+        
+          <div class="article-style" itemprop="articleBody">
+            
 
-<h1 id="docker-cheat-sheet">Docker Cheat Sheet</h1>
+<h2 id="docker-cheat-sheet">Docker Cheat Sheet</h2>
 
-<h3 id="build-and-run-a-docker-image">Build and run a docker image</h3>
+<h2 id="build-and-run-a-docker-image">Build and run a docker image</h2>
 
 <p>Build docker images from docker file, goto dockerfile directory and command:</p>
 
@@ -757,7 +761,7 @@ docker push maruftuhin/nginx
 <pre><code class="language-bash">docker run -p -d 4000:8088 maruftuhin/nginx:tag
 </code></pre>
 
-<h3 id="list-of-images-and-containers">List of images and containers</h3>
+<h2 id="list-of-images-and-containers">List of images and containers</h2>
 
 <p>List of images</p>
 
@@ -1038,9 +1042,9 @@ sudo systemctl start docker.service
 docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker load)
 </code></pre>
 
-    </div>
+          </div>
 
-    
+          
 
 <div class="article-tags">
   
@@ -1054,8 +1058,8 @@ docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker 
 
 
 
-    
-      
+          
+          
 
 
 
@@ -1194,27 +1198,27 @@ docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker 
 
 
 
-      
-      
-      <div class="article-widget">
-        <div class="hr-light"></div>
-        <h3>Related</h3>
-        <ul>
           
-          <li><a href="/project/appscode_analytics/">Appscode/Analytics</a></li>
           
-          <li><a href="/project/kubedb/">KubeDB</a></li>
+          <div class="article-widget">
+            <div class="hr-light"></div>
+            <h3>Related</h3>
+            <ul>
+              
+              <li><a href="/project/appscode_analytics/">Appscode/Analytics</a></li>
+              
+              <li><a href="/project/kubedb/">KubeDB</a></li>
+              
+              <li><a href="/blog/mongodb-replica-set-on-kubernetes/">Mongodb Replica Set on Kubernetes</a></li>
+              
+            </ul>
+          </div>
           
-          <li><a href="/blog/mongodb-replica-set-on-kubernetes/">Mongodb Replica Set on Kubernetes</a></li>
           
-        </ul>
-      </div>
-      
-    
 
-    
+          
 
-    
+          
 <section id="comments">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -1240,7 +1244,47 @@ docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker 
 
 
 
-  </div>
+        </div>
+        <div class="manual-margin" style="width: 6%;"></div>
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+          <ul class="nav toc-top">
+            <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+          </ul>
+
+          <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#docker-cheat-sheet">Docker Cheat Sheet</a></li>
+<li><a href="#build-and-run-a-docker-image">Build and run a docker image</a></li>
+<li><a href="#list-of-images-and-containers">List of images and containers</a>
+<ul>
+<li><a href="#stop-remove-a-container-or-image">Stop/remove a container or image</a></li>
+<li><a href="#making-change-in-a-container-image">Making change in a container/image</a></li>
+<li><a href="#executing-container-commands">Executing container commands</a></li>
+<li><a href="#names-of-conatiners-or-images">Names of conatiners or Images</a></li>
+<li><a href="#copy-files-from-a-container">Copy files from a container</a></li>
+<li><a href="#container-hostnames">Container hostnames</a></li>
+<li><a href="#handling-volumes">Handling volumes</a></li>
+<li><a href="#untagged-images">Untagged Images</a></li>
+<li><a href="#delete-multiple-images">Delete multiple images</a></li>
+<li><a href="#docker-killer-p">Docker killer!!! :P</a></li>
+<li><a href="#start-fresh">Start fresh</a>
+<ul>
+<li><a href="#dangerous-deletes-everything">Dangerous!!! Deletes everything!!</a></li>
+</ul></li>
+<li><a href="#copy-local-images-to-minikube">Copy Local images to Minikube</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+          
+        </div>
+        
+      </div>
+    </div>
 </article>
 
       

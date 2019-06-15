@@ -20,7 +20,9 @@
       <guid>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</guid>
       <description>
 
-&lt;h1 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h1&gt;
+&lt;h2 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h2&gt;
+
+&lt;p&gt;Run MongoDB Replica Set on Kubernetes using &lt;em&gt;Statefulset&lt;/em&gt; and &lt;em&gt;PersistentVolumeClaim&lt;/em&gt;. Minikube kubernetes cluster is used for this post.&lt;/p&gt;
 
 &lt;h2 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h2&gt;
 

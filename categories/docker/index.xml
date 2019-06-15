@@ -20,9 +20,9 @@
       <guid>https://maruftuhin.com/blog/my-docker-cheat-sheet/</guid>
       <description>
 
-&lt;h1 id=&#34;docker-cheat-sheet&#34;&gt;Docker Cheat Sheet&lt;/h1&gt;
+&lt;h2 id=&#34;docker-cheat-sheet&#34;&gt;Docker Cheat Sheet&lt;/h2&gt;
 
-&lt;h3 id=&#34;build-and-run-a-docker-image&#34;&gt;Build and run a docker image&lt;/h3&gt;
+&lt;h2 id=&#34;build-and-run-a-docker-image&#34;&gt;Build and run a docker image&lt;/h2&gt;
 
 &lt;p&gt;Build docker images from docker file, goto dockerfile directory and command:&lt;/p&gt;
 
@@ -52,7 +52,7 @@ docker push maruftuhin/nginx
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -p -d 4000:8088 maruftuhin/nginx:tag
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;list-of-images-and-containers&#34;&gt;List of images and containers&lt;/h3&gt;
+&lt;h2 id=&#34;list-of-images-and-containers&#34;&gt;List of images and containers&lt;/h2&gt;
 
 &lt;p&gt;List of images&lt;/p&gt;
 

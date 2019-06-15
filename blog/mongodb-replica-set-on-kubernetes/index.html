@@ -482,8 +482,6 @@
         <h1 itemprop="name">Mongodb Replica Set on Kubernetes</h1>
 
         
-        <p class="page-subtitle">Run MongoDB Replica Set on Kubernetes using <em>Statefulset</em> and <em>PersistentVolumeClaim</em>. Minikube kubernetes cluster is used for this post.</p>
-        
 
         
 
@@ -607,8 +605,6 @@
   <h1 itemprop="name">Mongodb Replica Set on Kubernetes</h1>
 
   
-  <p class="page-subtitle">Run MongoDB Replica Set on Kubernetes using <em>Statefulset</em> and <em>PersistentVolumeClaim</em>. Minikube kubernetes cluster is used for this post.</p>
-  
 
   
 
@@ -720,12 +716,18 @@
 
 
 
-  <div class="article-container">
+  <div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
 
-    <div class="article-style" itemprop="articleBody">
       
+      <div class="container" style="margin-right: 0px;">
+        
+          <div class="article-style" itemprop="articleBody">
+            
 
-<h1 id="replica-sets">Replica-Sets</h1>
+<h2 id="replica-sets">Replica-Sets</h2>
+
+<p>Run MongoDB Replica Set on Kubernetes using <em>Statefulset</em> and <em>PersistentVolumeClaim</em>. Minikube kubernetes cluster is used for this post.</p>
 
 <h2 id="create-secret-for-key-file">Create Secret for Key file</h2>
 
@@ -1016,9 +1018,9 @@ $ mongo
 
 <p>Delete <code>mongod-0</code> Pod and keep cheking <code>rs.status()</code>, eventually another node of the remaining two will become <code>Primary</code> Node.</p>
 
-    </div>
+          </div>
 
-    
+          
 
 <div class="article-tags">
   
@@ -1036,8 +1038,8 @@ $ mongo
 
 
 
-    
-      
+          
+          
 
 
 
@@ -1176,13 +1178,13 @@ $ mongo
 
 
 
-      
-      
-    
+          
+          
+          
 
-    
+          
 
-    
+          
 <section id="comments">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -1208,7 +1210,36 @@ $ mongo
 
 
 
-  </div>
+        </div>
+        <div class="manual-margin" style="width: 6%;"></div>
+        
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+          <ul class="nav toc-top">
+            <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+          </ul>
+
+          <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#replica-sets">Replica-Sets</a></li>
+<li><a href="#create-secret-for-key-file">Create Secret for Key file</a></li>
+<li><a href="#deploy-mongodb-replica-sets-yaml">Deploy MongoDB Replica-Sets YAML</a></li>
+<li><a href="#wait-for-pod-running-and-pvc">Wait for Pod running and PVC</a></li>
+<li><a href="#setup-replicaset-configuration">Setup ReplicaSet Configuration</a></li>
+<li><a href="#insert-data">Insert Data</a></li>
+<li><a href="#verify-cluster-data">Verify Cluster Data</a></li>
+<li><a href="#verify-pvc">Verify PVC</a></li>
+<li><a href="#verify-clusterization">Verify Clusterization</a></li>
+</ul></li>
+</ul>
+</nav>
+
+          
+        </div>
+        
+      </div>
+    </div>
 </article>
 
       
