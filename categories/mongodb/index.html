@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.3.1">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -37,8 +37,6 @@
 
 
   
-
-  
   
   
   <meta name="theme-color" content="#0095eb">
@@ -61,12 +59,14 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/mono-blue.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/mono-blue.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -74,13 +74,14 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,500,700|Roboto+Mono|Amatic+SC:700">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,500,700%7CRoboto+Mono%7CAmatic+SC:700&display=swap">
   
 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.5e5e254e03363632f3eda6151bc80164.css">
+  <link rel="stylesheet" href="/css/academic.min.015d3bb0907750d7c83b2a39e7344d4a.css">
 
   
     
@@ -93,7 +94,7 @@
     
     
     
-    <link rel="stylesheet" href="/css/academic.d45d31b1d904d865b1790f851d57ba63.css">
+    <link rel="stylesheet" href="/css/academic.d51b5e5b842ea681a16b0e111d238d14.css">
   
 
   
@@ -107,7 +108,7 @@
       ga('require', 'urlChangeTracker');
       ga('send', 'pageview');
     </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
     
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
@@ -116,11 +117,10 @@
 
   
   <link rel="alternate" href="/categories/mongodb/index.xml" type="application/rss+xml" title="Maruf&#39;s">
-  <link rel="feed" href="/categories/mongodb/index.xml" type="application/rss+xml" title="Maruf&#39;s">
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://maruftuhin.com/categories/mongodb/">
@@ -132,6 +132,7 @@
     
     
   
+  
   <meta property="twitter:card" content="summary">
   
   <meta property="twitter:site" content="@maruf2hin">
@@ -141,15 +142,20 @@
   <meta property="og:url" content="https://maruftuhin.com/categories/mongodb/">
   <meta property="og:title" content="MongoDB | Maruf&#39;s">
   <meta property="og:description" content="Software Engineer, Backend"><meta property="og:image" content="https://maruftuhin.com/img/icon-192.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="twitter:image" content="https://maruftuhin.com/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-01-12T03:07:50&#43;06:00">
+    <meta property="og:updated_time" content="2019-01-12T03:07:50&#43;06:00">
   
+
+  
+
+
+
 
   
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
   window.addEventListener("load", function(){
     window.cookieconsent.initialise({
@@ -185,8 +191,7 @@
 
 </head>
 
-
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -204,7 +209,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -221,7 +226,7 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -476,7 +481,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1 itemprop="name">MongoDB</h1>
+  <h1>MongoDB</h1>
 
   
 
@@ -523,15 +528,15 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
         
       
 
@@ -541,11 +546,7 @@
 
     
     
-
-    
-    
-    
-    <script id="dsq-count-scr" src="//maruftuhin-com.disqus.com/count.js" async></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -600,6 +601,11 @@
 
     
     
+    <script id="dsq-count-scr" src="https://maruftuhin-com.disqus.com/count.js" async></script>
+    
+
+    
+    
     
     
     
@@ -612,7 +618,7 @@
     
     
     
-    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+    <script src="/js/academic.min.130521ecfc6f534c52c158217bbff718.js"></script>
 
     
 
@@ -626,7 +632,10 @@
     <footer class="site-footer">
   
   <p class="powered-by">
-    <a href="/privacy/"></a>
+    
+      <a href="/privacy/"></a>
+    
+        
   </p>
   
 

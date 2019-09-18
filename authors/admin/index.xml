@@ -3,36 +3,14 @@
   <channel>
     <title>Maruf&#39;s</title>
     <link>https://maruftuhin.com/authors/admin/</link>
-    <description>Recent content on Maruf&#39;s</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
-    
-	    <atom:link href="https://maruftuhin.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
+      <atom:link href="https://maruftuhin.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Maruf&#39;s</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright>
+    <image>
+      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <title>Maruf&#39;s</title>
       <link>https://maruftuhin.com/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://maruftuhin.com/authors/admin/</guid>
-      <description>
-
-&lt;h1 class=&#34;amatic&#34;&gt;
-  Hey, I&#39;m Maruf!
-&lt;/h1&gt;
-
-&lt;h2 id=&#34;i-like-to-tear-down-build-stuff&#34;&gt;I like to &lt;del&gt;tear down&lt;/del&gt; build stuff!! 😉&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I am a passionate software engineer with 2 years of working experience
-developing Kubernetes tools in GO. Acted as AppsCode&amp;rsquo;s KubeDB
-project head for more than a year. Love to participate in
-programming contests. An enthusiastic team player.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
+    </image>
     
   </channel>
 </rss>

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Maruf&#39;s</title>
+    <title>Projects | Maruf&#39;s</title>
     <link>https://maruftuhin.com/project/</link>
-    <description>Recent content in Projects on Maruf&#39;s</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
-    <lastBuildDate>Wed, 27 Feb 2019 03:11:03 +0600</lastBuildDate>
-    
-	    <atom:link href="https://maruftuhin.com/project/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://maruftuhin.com/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Wed, 27 Feb 2019 03:11:03 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <title>Projects</title>
+      <link>https://maruftuhin.com/project/</link>
+    </image>
     
     <item>
       <title>Data Encryption Project</title>
       <link>https://maruftuhin.com/project/data_encryption/</link>
       <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/data_encryption/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>Email Verification</title>
       <link>https://maruftuhin.com/project/email_verification/</link>
       <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/email_verification/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Automatic Email verification project.&lt;/li&gt;
@@ -39,7 +37,6 @@
       <title>Scientific Calculator</title>
       <link>https://maruftuhin.com/project/scientific_calculator/</link>
       <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
       <description></description>
     </item>
@@ -48,7 +45,6 @@
       <title>Library Management System</title>
       <link>https://maruftuhin.com/project/library_system/</link>
       <pubDate>Wed, 27 Feb 2019 03:10:14 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/library_system/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Academical Database Project&lt;/li&gt;
@@ -61,7 +57,6 @@
       <title>Department of Student Welfare (DSW) Management System</title>
       <link>https://maruftuhin.com/project/dsw/</link>
       <pubDate>Wed, 27 Feb 2019 03:10:03 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/dsw/</guid>
       <description></description>
     </item>
@@ -70,7 +65,6 @@
       <title>3D Racing Game</title>
       <link>https://maruftuhin.com/project/3d_racing_game/</link>
       <pubDate>Wed, 27 Feb 2019 03:06:27 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
@@ -84,7 +78,6 @@
       <title>Appscode/Analytics</title>
       <link>https://maruftuhin.com/project/appscode_analytics/</link>
       <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
@@ -98,7 +91,6 @@
       <title>KubeDB</title>
       <link>https://maruftuhin.com/project/kubedb/</link>
       <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/kubedb/</guid>
       <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;&lt;em&gt;Kubernetes&lt;/em&gt;&lt;/strong&gt; using &lt;strong&gt;&lt;em&gt;CRD&lt;/em&gt;&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
 

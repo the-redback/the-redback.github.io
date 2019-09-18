@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Maruf&#39;s</title>
+    <title>Docker | Maruf&#39;s</title>
     <link>https://maruftuhin.com/categories/docker/</link>
-    <description>Recent content in Docker on Maruf&#39;s</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
-    <lastBuildDate>Fri, 01 Mar 2019 04:05:30 +0600</lastBuildDate>
-    
-	    <atom:link href="https://maruftuhin.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://maruftuhin.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <description>Docker</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Mar 2019 04:05:30 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <title>Docker</title>
+      <link>https://maruftuhin.com/categories/docker/</link>
+    </image>
     
     <item>
       <title>My Docker Cheat Sheet</title>
       <link>https://maruftuhin.com/blog/my-docker-cheat-sheet/</link>
       <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/blog/my-docker-cheat-sheet/</guid>
       <description>
 

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kubernetes on Maruf&#39;s</title>
+    <title>Kubernetes | Maruf&#39;s</title>
     <link>https://maruftuhin.com/categories/kubernetes/</link>
-    <description>Recent content in Kubernetes on Maruf&#39;s</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
-    <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
-    
-	    <atom:link href="https://maruftuhin.com/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://maruftuhin.com/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kubernetes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <title>Kubernetes</title>
+      <link>https://maruftuhin.com/categories/kubernetes/</link>
+    </image>
     
     <item>
       <title>My Kubectl Cheat Sheet</title>
       <link>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</link>
       <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</guid>
       <description>
 
@@ -113,19 +112,17 @@ i.e.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
-&lt;li&gt;setting up lable. 1st get POD NAME. then&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;setting up lable. 1st get POD NAME. then&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
 &amp;gt; echo Name of the Pod: $POD_NAME
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;label it&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;label it&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl label pod $POD_NAME app=v1
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;List of pods using label &amp;ldquo;app=v1&amp;rdquo;&lt;/p&gt;
 
@@ -278,7 +275,6 @@ i.e.
       <title>My Docker Cheat Sheet</title>
       <link>https://maruftuhin.com/blog/my-docker-cheat-sheet/</link>
       <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/blog/my-docker-cheat-sheet/</guid>
       <description>
 
@@ -601,15 +597,14 @@ docker save &amp;lt;image-name&amp;gt; | (eval $(minikube docker-env) &amp;amp;&
       <title>Mongodb Replica Set on Kubernetes</title>
       <link>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</link>
       <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</guid>
       <description>
 
-&lt;h2 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h2&gt;
+&lt;h3 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h3&gt;
 
 &lt;p&gt;Run MongoDB Replica Set on Kubernetes using &lt;em&gt;Statefulset&lt;/em&gt; and &lt;em&gt;PersistentVolumeClaim&lt;/em&gt;. Minikube kubernetes cluster is used for this post.&lt;/p&gt;
 
-&lt;h2 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h2&gt;
+&lt;h3 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h3&gt;
 
 &lt;p&gt;MongoDB will use this key to communicate internal cluster.&lt;/p&gt;
 
@@ -619,7 +614,7 @@ $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-
 secret &amp;quot;shared-bootstrap-data&amp;quot; created
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;deploy-mongodb-replica-sets-yaml&#34;&gt;Deploy MongoDB Replica-Sets YAML&lt;/h2&gt;
+&lt;h3 id=&#34;deploy-mongodb-replica-sets-yaml&#34;&gt;Deploy MongoDB Replica-Sets YAML&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;apiVersion: v1
 kind: Service
@@ -708,7 +703,7 @@ service &amp;quot;mongodb-service&amp;quot; created
 statefulset &amp;quot;mongod&amp;quot; created
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;wait-for-pod-running-and-pvc&#34;&gt;Wait for Pod running and PVC&lt;/h2&gt;
+&lt;h3 id=&#34;wait-for-pod-running-and-pvc&#34;&gt;Wait for Pod running and PVC&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl get all
 NAME                  DESIRED   CURRENT   AGE
@@ -726,7 +721,7 @@ mongodb-persistent-storage-claim-mongod-1   Bound     pvc-bf2e51a5-319a-11e8-8dd
 mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;setup-replicaset-configuration&#34;&gt;Setup ReplicaSet Configuration&lt;/h2&gt;
+&lt;h3 id=&#34;setup-replicaset-configuration&#34;&gt;Setup ReplicaSet Configuration&lt;/h3&gt;
 
 &lt;p&gt;Finally, we need to connect to one of the “mongod” container processes to configure the replica set.&lt;/p&gt;
 
@@ -847,7 +842,7 @@ $ mongo
  });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;insert-data&#34;&gt;Insert Data&lt;/h2&gt;
+&lt;h3 id=&#34;insert-data&#34;&gt;Insert Data&lt;/h3&gt;
 
 &lt;p&gt;Insert Data into &lt;code&gt;mongod-0&lt;/code&gt; pod.&lt;/p&gt;
 
@@ -858,7 +853,7 @@ $ mongo
 &amp;gt; db.testcoll.find();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;verify-cluster-data&#34;&gt;Verify Cluster Data&lt;/h2&gt;
+&lt;h3 id=&#34;verify-cluster-data&#34;&gt;Verify Cluster Data&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;exec&lt;/code&gt; into Secondary Pod (here, mongo-1)&lt;/p&gt;
 
@@ -870,7 +865,7 @@ $ mongo
 &amp;gt; db.testcoll.find();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;verify-pvc&#34;&gt;Verify PVC&lt;/h2&gt;
+&lt;h3 id=&#34;verify-pvc&#34;&gt;Verify PVC&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
@@ -894,7 +889,7 @@ $ mongo
 
 &lt;p&gt;As PVC was not deleted, We will still have existing Data.&lt;/p&gt;
 
-&lt;h2 id=&#34;verify-clusterization&#34;&gt;Verify Clusterization&lt;/h2&gt;
+&lt;h3 id=&#34;verify-clusterization&#34;&gt;Verify Clusterization&lt;/h3&gt;
 
 &lt;p&gt;Delete &lt;code&gt;mongod-0&lt;/code&gt; Pod and keep cheking &lt;code&gt;rs.status()&lt;/code&gt;, eventually another node of the remaining two will become &lt;code&gt;Primary&lt;/code&gt; Node.&lt;/p&gt;
 </description>

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hobby on Maruf&#39;s</title>
+    <title>Hobby | Maruf&#39;s</title>
     <link>https://maruftuhin.com/tags/hobby/</link>
-    <description>Recent content in Hobby on Maruf&#39;s</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
-    <lastBuildDate>Wed, 27 Feb 2019 03:11:03 +0600</lastBuildDate>
-    
-	    <atom:link href="https://maruftuhin.com/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://maruftuhin.com/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hobby</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Wed, 27 Feb 2019 03:11:03 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <title>Hobby</title>
+      <link>https://maruftuhin.com/tags/hobby/</link>
+    </image>
     
     <item>
       <title>Data Encryption Project</title>
       <link>https://maruftuhin.com/project/data_encryption/</link>
       <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/project/data_encryption/</guid>
       <description></description>
     </item>

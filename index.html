@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.3.1">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -37,8 +37,6 @@
 
 
   
-
-  
   
   
   <meta name="theme-color" content="#0095eb">
@@ -61,12 +59,14 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/mono-blue.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/mono-blue.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -74,13 +74,14 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,500,700|Roboto+Mono|Amatic+SC:700">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,500,700%7CRoboto+Mono%7CAmatic+SC:700&display=swap">
   
 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.5e5e254e03363632f3eda6151bc80164.css">
+  <link rel="stylesheet" href="/css/academic.min.015d3bb0907750d7c83b2a39e7344d4a.css">
 
   
     
@@ -93,7 +94,7 @@
     
     
     
-    <link rel="stylesheet" href="/css/academic.d45d31b1d904d865b1790f851d57ba63.css">
+    <link rel="stylesheet" href="/css/academic.d51b5e5b842ea681a16b0e111d238d14.css">
   
 
   
@@ -107,7 +108,7 @@
       ga('require', 'urlChangeTracker');
       ga('send', 'pageview');
     </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
     
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
@@ -116,11 +117,10 @@
 
   
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Maruf&#39;s">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Maruf&#39;s">
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://maruftuhin.com/">
@@ -132,6 +132,7 @@
     
     
   
+  
   <meta property="twitter:card" content="summary">
   
   <meta property="twitter:site" content="@maruf2hin">
@@ -141,15 +142,34 @@
   <meta property="og:url" content="https://maruftuhin.com/">
   <meta property="og:title" content="Maruf&#39;s">
   <meta property="og:description" content="Software Engineer, Backend"><meta property="og:image" content="https://maruftuhin.com/img/icon-192.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="twitter:image" content="https://maruftuhin.com/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-03-03T00:15:10&#43;06:00">
+    <meta property="og:updated_time" content="2019-03-03T00:15:10&#43;06:00">
   
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://maruftuhin.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://maruftuhin.com/"
+}
+</script>
+
+
+  
+
 
   
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
   window.addEventListener("load", function(){
     window.cookieconsent.initialise({
@@ -185,8 +205,7 @@
 
 </head>
 
-
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -204,7 +223,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -221,7 +240,7 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -458,6 +477,15 @@
   
 
 
+
+
+
+
+
+
+
+
+
 <span class="js-widget-page d-none"></span>
 
 
@@ -518,29 +546,27 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+<div class="row">
   <div class="col-12 col-lg-4">
     <div id="profile">
 
       
       
-      <img class="portrait" src="/authors/admin/avatar_hu7586bec796e943426be44009cc1195f7_25513_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+      <img class="portrait" src="/authors/admin/avatar_hu7586bec796e943426be44009cc1195f7_25513_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
       
 
       <div class="portrait-title">
-        <h2 itemprop="name">Abdullah Al Maruf</h2>
-        <h3 itemprop="jobTitle">Software Engineer, Backend</h3>
+        <h2>Abdullah Al Maruf</h2>
+        <h3>Software Engineer, Backend</h3>
 
         
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="https://appscode.com/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">AppsCode Ltd.</span>
+        <h3>
+          <a href="https://appscode.com/" target="_blank" rel="noopener">
+          <span>AppsCode Ltd.</span>
           </a>
         </h3>
         
       </div>
-
-      <link itemprop="url" href="">
 
       <ul class="network-icon" aria-hidden="true">
         
@@ -554,7 +580,7 @@
         
         
         <li>
-          <a itemprop="sameAs" href="mailto:maruf.2hin@gmail.com" >
+          <a href="mailto:maruf.2hin@gmail.com" >
             <i class="fas fa-envelope big-icon"></i>
           </a>
         </li>
@@ -571,7 +597,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://twitter.com/maruf2hin" target="_blank" rel="noopener">
+          <a href="https://twitter.com/maruf2hin" target="_blank" rel="noopener">
             <i class="fab fa-twitter big-icon"></i>
           </a>
         </li>
@@ -588,7 +614,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://github.com/the-redback" target="_blank" rel="noopener">
+          <a href="https://github.com/the-redback" target="_blank" rel="noopener">
             <i class="fab fa-github big-icon"></i>
           </a>
         </li>
@@ -605,7 +631,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://www.linkedin.com/in/maruftuhin/" target="_blank" rel="noopener">
+          <a href="https://www.linkedin.com/in/maruftuhin/" target="_blank" rel="noopener">
             <i class="fab fa-linkedin big-icon"></i>
           </a>
         </li>
@@ -622,7 +648,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://stackoverflow.com/users/4628962/maruf-tuhin" target="_blank" rel="noopener">
+          <a href="https://stackoverflow.com/users/4628962/maruf-tuhin" target="_blank" rel="noopener">
             <i class="fab fa-stack-overflow big-icon"></i>
           </a>
         </li>
@@ -639,7 +665,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://www.facebook.com/maruf.2hin" target="_blank" rel="noopener">
+          <a href="https://www.facebook.com/maruf.2hin" target="_blank" rel="noopener">
             <i class="fab fa-facebook big-icon"></i>
           </a>
         </li>
@@ -648,7 +674,7 @@
 
     </div>
   </div>
-  <div class="col-12 col-lg-8" itemprop="description">
+  <div class="col-12 col-lg-8">
 
     
     
@@ -751,7 +777,7 @@ programming contests. An enthusiastic team player.</p>
   
   
 
-  <section id="strengths" class="home-section wg-featurette dark parallax " style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(&#39;https://maruftuhin.com/img/strengths.jpg&#39;);" >
+  <section id="strengths" class="home-section wg-featurette dark parallax " style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/strengths.jpg&#39;);" >
     <div class="container">
       
 
@@ -919,16 +945,10 @@ programming contests. An enthusiastic team player.</p>
             <div class="card-text"><em>AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. An Integrated platform for collaborative coding, testing &amp; deploying containerized apps.</em></p>
 
 <ul>
-<li>Worked on <strong><em>Kubernetes</em></strong> <strong><em>client-GO</em></strong> to build third party <strong><em>containerized</em></strong>
-tools. <br></li>
-<li>Worked on <strong><em>KubeDB</em></strong> tool. Conducted <strong><em>Bi-Weekly KubeDB
-Community meetings</em></strong> regularly. Acted as <strong><em>KubeDB project head</em></strong> for
-more than a year. Got involved in other projects too. <br></li>
-<li>Worked on <strong><em>Pixel Tracking</em></strong> [web beacon], different APIs of
-mainstream cloud providers, etc. <br></li>
-<li>Created and used Kubernetes cluster on all the mainstream cloud
-providers, like, aws, gcs, azure, digitalocean etc. Also, experienced
-many Kubernetes tools. <br></li>
+<li>Worked on <strong><em>Kubernetes</em></strong> <strong><em>client-GO</em></strong> to build third party <strong><em>containerized</em></strong> tools. <br></li>
+<li>Worked on <strong><em>KubeDB</em></strong> tool. Conducted <strong><em>Bi-Weekly KubeDB Community meetings</em></strong> regularly. Acted as <strong><em>KubeDB project head</em></strong> for more than a year. Got involved in other projects too. <br></li>
+<li>Worked on <strong><em>Pixel Tracking</em></strong> [web beacon], different APIs of mainstream cloud providers, etc. <br></li>
+<li>Created and used Kubernetes cluster on all the mainstream cloud providers, like, aws, gcs, azure, digitalocean etc. Also, experienced many Kubernetes tools. <br></li>
 <li>Worked with <strong><em>gRPC</em></strong>, <strong><em>Phabricator</em></strong>, <strong><em>Prometheus</em></strong> etc.</li>
 </ul></div>
           </div>
@@ -958,9 +978,9 @@ many Kubernetes tools. <br></li>
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Intern</h4>
             <h4 class="card-title exp-company text-muted my-0"><a href="https://appscode.com" target="_blank" rel="noopener">AppsCode. Ltd.</a></h4>
             <div class="text-muted exp-meta">
-              January 2016 –
+              Jan 2016 –
               
-                February 2016
+                Feb 2016
               
               
                 <span class="middot-divider"></span>
@@ -1022,7 +1042,7 @@ many Kubernetes tools. <br></li>
   
   
 
-  <section id="skills" class="home-section wg-blank dark parallax skill" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(&#39;https://maruftuhin.com/img/skill-learn.jpg&#39;);" >
+  <section id="skills" class="home-section wg-blank dark parallax skill" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/skill-learn.jpg&#39;);" >
     <div class="container">
       
 
@@ -1119,8 +1139,7 @@ many Kubernetes tools. <br></li>
 
 
 
-    <p><p><br></p>
-</p>
+    
 
     
 
@@ -1178,17 +1197,25 @@ many Kubernetes tools. <br></li>
 
     <div class="isotope projects-container js-layout-masonry ">
       
+
         
         
         
           
           
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1199,23 +1226,34 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="https://github.com/the-redback/encryption-project" target="_blank" rel="noopener">Data Encryption Project</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Data encryption project in <strong><em>Java</em></strong>.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1226,26 +1264,37 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="/project/email_verification/" >Email Verification</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Internship Project. Implemented using <strong><em>Java</em></strong>.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
           
           
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1261,23 +1310,34 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="https://github.com/the-redback/scientific-calculator-using-java-swing" target="_blank" rel="noopener">Scientific Calculator</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Academic project. Implemented using <strong><em>Java swing</em></strong>.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1288,26 +1348,37 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="/project/library_system/" >Library Management System</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Academic project. Implemented using <strong><em>C#</em></strong> and <strong><em>Microsoft SQL Server</em></strong>.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
           
           
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1318,23 +1389,34 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="https://github.com/the-redback/dsw-department-of-student-welfare-management-system" target="_blank" rel="noopener">Department of Student Welfare (DSW) Management System</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Academic project. Implemented using <strong><em>C#</em></strong> and <strong><em>MySQL</em></strong>.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1345,23 +1427,34 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="/project/3d_racing_game/" >3D Racing Game</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Final year thesis &amp; project. Developed for both <strong><em>PC</em></strong> and <strong><em>Android</em></strong>.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1372,23 +1465,34 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="/project/appscode_analytics/" >Appscode/Analytics</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Different esential analytics in Appscode oss tools.</p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
+
         
         
         
+
         
           
 
 
 
+
+
+
+
+
+  
 
 
 
@@ -1404,14 +1508,17 @@ many Kubernetes tools. <br></li>
     
     <div class="card-text">
       <h4><a href="/project/kubedb/" >KubeDB</a></h4>
-      <div class="card-desription">
+      
+      <div class="article-style">
         <p>Run production-grade databases easily on <strong><em>Kubernetes</em></strong></p>
       </div>
+      
     </div>
   </div>
 </div>
 
         
+
       
     </div>
 
@@ -1521,7 +1628,6 @@ many Kubernetes tools. <br></li>
 
 
 
-  
 
 
 
@@ -1530,15 +1636,15 @@ many Kubernetes tools. <br></li>
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/blog/my-kubectl-cheat-sheet/" itemprop="url">My Kubectl Cheat Sheet</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/blog/my-kubectl-cheat-sheet/" >My Kubectl Cheat Sheet</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Essential <code>kubectl</code> commands
     </div>
     
@@ -1552,9 +1658,6 @@ many Kubernetes tools. <br></li>
 
 
 
-<meta content="2019-03-03 00:15:10 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-03-03 00:15:10 &#43;0600 &#43;06" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1566,7 +1669,7 @@ many Kubernetes tools. <br></li>
     
       
     
-    <time>Mar 3, 2019</time>
+    Mar 3, 2019
   </span>
   
 
@@ -1581,6 +1684,7 @@ many Kubernetes tools. <br></li>
 
   
   
+  
   <span class="middot-divider"></span>
   <a href="/blog/my-kubectl-cheat-sheet/#disqus_thread"></a>
   
@@ -1589,8 +1693,7 @@ many Kubernetes tools. <br></li>
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/kubectl/">kubectl</a>, <a href="/categories/minikube/">Minikube</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/kubectl/">kubectl</a>, <a href="/categories/minikube/">Minikube</a></span>
   
 
   
@@ -1607,8 +1710,8 @@ many Kubernetes tools. <br></li>
     
     
     
-    <a href="/blog/my-kubectl-cheat-sheet/">
-      <img src="/blog/my-kubectl-cheat-sheet/featured_hu1bbcc97f6553e83b49bca190cf5f7a6e_58884_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/blog/my-kubectl-cheat-sheet/" >
+      <img src="/blog/my-kubectl-cheat-sheet/featured_hu1bbcc97f6553e83b49bca190cf5f7a6e_58884_150x0_resize_lanczos_2.png" alt="">
     </a>
     
   </div>
@@ -1625,7 +1728,6 @@ many Kubernetes tools. <br></li>
 
 
 
-  
 
 
 
@@ -1634,15 +1736,15 @@ many Kubernetes tools. <br></li>
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/blog/my-docker-cheat-sheet/" itemprop="url">My Docker Cheat Sheet</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/blog/my-docker-cheat-sheet/" >My Docker Cheat Sheet</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Essential <code>docker</code> commands.
     </div>
     
@@ -1656,9 +1758,6 @@ many Kubernetes tools. <br></li>
 
 
 
-<meta content="2019-03-01 04:05:30 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-03-01 04:05:30 &#43;0600 &#43;06" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1670,7 +1769,7 @@ many Kubernetes tools. <br></li>
     
       
     
-    <time>Mar 1, 2019</time>
+    Mar 1, 2019
   </span>
   
 
@@ -1685,6 +1784,7 @@ many Kubernetes tools. <br></li>
 
   
   
+  
   <span class="middot-divider"></span>
   <a href="/blog/my-docker-cheat-sheet/#disqus_thread"></a>
   
@@ -1693,8 +1793,7 @@ many Kubernetes tools. <br></li>
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/docker/">Docker</a>, <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/bash/">Bash</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/docker/">Docker</a>, <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/bash/">Bash</a></span>
   
 
   
@@ -1711,8 +1810,8 @@ many Kubernetes tools. <br></li>
     
     
     
-    <a href="/blog/my-docker-cheat-sheet/">
-      <img src="/blog/my-docker-cheat-sheet/featured_hu2c5345fc2a9e7b7ed878a285f0378dab_4205_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/blog/my-docker-cheat-sheet/" >
+      <img src="/blog/my-docker-cheat-sheet/featured_hu2c5345fc2a9e7b7ed878a285f0378dab_4205_150x0_resize_lanczos_2.png" alt="">
     </a>
     
   </div>
@@ -1729,7 +1828,6 @@ many Kubernetes tools. <br></li>
 
 
 
-  
 
 
 
@@ -1738,15 +1836,15 @@ many Kubernetes tools. <br></li>
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/blog/mongodb-replica-set-on-kubernetes/" itemprop="url">Mongodb Replica Set on Kubernetes</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/blog/mongodb-replica-set-on-kubernetes/" >Mongodb Replica Set on Kubernetes</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Run MongoDB Replica Set on Kubernetes using <em>Statefulset</em> and <em>PersistentVolumeClaim</em>. Minikube kubernetes cluster is used for this post.
     </div>
     
@@ -1760,9 +1858,6 @@ many Kubernetes tools. <br></li>
 
 
 
-<meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1774,7 +1869,7 @@ many Kubernetes tools. <br></li>
     
       
     
-    <time>Jan 12, 2019</time>
+    Jan 12, 2019
   </span>
   
 
@@ -1789,6 +1884,7 @@ many Kubernetes tools. <br></li>
 
   
   
+  
   <span class="middot-divider"></span>
   <a href="/blog/mongodb-replica-set-on-kubernetes/#disqus_thread"></a>
   
@@ -1797,8 +1893,7 @@ many Kubernetes tools. <br></li>
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/mongodb/">MongoDB</a>, <a href="/categories/minikube/">minikube</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/mongodb/">MongoDB</a>, <a href="/categories/minikube/">minikube</a></span>
   
 
   
@@ -1815,8 +1910,8 @@ many Kubernetes tools. <br></li>
     
     
     
-    <a href="/blog/mongodb-replica-set-on-kubernetes/">
-      <img src="/blog/mongodb-replica-set-on-kubernetes/featured_hu142ae99c5ebe5a0be73901446c9341ee_74719_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/blog/mongodb-replica-set-on-kubernetes/" >
+      <img src="/blog/mongodb-replica-set-on-kubernetes/featured_hu142ae99c5ebe5a0be73901446c9341ee_74719_150x0_resize_lanczos_2.png" alt="">
     </a>
     
   </div>
@@ -2257,6 +2352,21 @@ Participated as a contestant in many National & International Programming Contes
       
 
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>Popular Topics</h1>
@@ -2266,8 +2376,6 @@ Participated as a contestant in many National & International Programming Contes
     
 
     
-      
-      
 
       
       
@@ -2280,62 +2388,62 @@ Participated as a contestant in many National & International Programming Contes
           
           
           
-          <a href="/tags/academic/" style="font-size:2.115299544597441rem">Academic</a>
+          <a href="/tags/academic/" style="font-size:3.3rem">Academic</a>
         
           
           
           
-          <a href="/tags/bash/" style="font-size:0.8rem">Bash</a>
+          <a href="/tags/bash/" style="font-size:0.7rem">Bash</a>
         
           
           
           
-          <a href="/tags/container/" style="font-size:0.8rem">Container</a>
+          <a href="/tags/container/" style="font-size:0.7rem">Container</a>
         
           
           
           
-          <a href="/tags/database/" style="font-size:0.8rem">Database</a>
+          <a href="/tags/database/" style="font-size:0.7rem">Database</a>
         
           
           
           
-          <a href="/tags/docker/" style="font-size:0.8rem">Docker</a>
+          <a href="/tags/docker/" style="font-size:0.7rem">Docker</a>
         
           
           
           
-          <a href="/tags/hobby/" style="font-size:0.8rem">Hobby</a>
+          <a href="/tags/hobby/" style="font-size:0.7rem">Hobby</a>
         
           
           
           
-          <a href="/tags/kubectl/" style="font-size:1.4576497722987207rem">kubectl</a>
+          <a href="/tags/kubectl/" style="font-size:2rem">kubectl</a>
         
           
           
           
-          <a href="/tags/kubernetes/" style="font-size:2.3270154828966763rem">Kubernetes</a>
+          <a href="/tags/kubernetes/" style="font-size:3.718506523353571rem">Kubernetes</a>
         
           
           
           
-          <a href="/tags/minikube/" style="font-size:1.4576497722987207rem">Minikube</a>
+          <a href="/tags/minikube/" style="font-size:2rem">Minikube</a>
         
           
           
           
-          <a href="/tags/mongodb/" style="font-size:0.8rem">MongoDB</a>
+          <a href="/tags/mongodb/" style="font-size:0.7rem">MongoDB</a>
         
           
           
           
-          <a href="/tags/oss/" style="font-size:1.4576497722987207rem">OSS</a>
+          <a href="/tags/oss/" style="font-size:2rem">OSS</a>
         
           
           
           
-          <a href="/tags/professional/" style="font-size:1.8423502277012793rem">Professional</a>
+          <a href="/tags/professional/" style="font-size:2.7604512509375025rem">Professional</a>
         
       </div>
     
@@ -2383,6 +2491,7 @@ Participated as a contestant in many National & International Programming Contes
 
 
 
+
 <div class="row contact-widget">
   <div class="col-12 col-lg-4 section-heading">
     <h1>Contact</h1>
@@ -2393,27 +2502,37 @@ Participated as a contestant in many National & International Programming Contes
 
     
 
-    <ul class="fa-ul" itemscope>
+    <ul class="fa-ul">
 
       
       <li>
         <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:maruf.2hin@gmail.com">maruf.2hin@gmail.com</a></span>
+        <span id="person-email"><a href="mailto:maruf.2hin@gmail.com">maruf.2hin@gmail.com</a></span>
       </li>
       
 
       
       <li>
         <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone" itemprop="telephone"><a href="tel:&#43;8801722777603">&#43;8801722777603</a></span>
+        <span id="person-telephone"><a href="tel:&#43;8801722777603">&#43;8801722777603</a></span>
       </li>
       
 
       
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Uttara, Dhaka, Bangladesh</span>
-      </li>
+      
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+          <span id="person-address">Dhaka, 1230, Bangladesh</span>
+        </li>
+      
+
       
 
       
@@ -2484,15 +2603,15 @@ Participated as a contestant in many National & International Programming Contes
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
         
       
 
@@ -2502,11 +2621,7 @@ Participated as a contestant in many National & International Programming Contes
 
     
     
-
-    
-    
-    
-    <script id="dsq-count-scr" src="//maruftuhin-com.disqus.com/count.js" async></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -2561,6 +2676,11 @@ Participated as a contestant in many National & International Programming Contes
 
     
     
+    <script id="dsq-count-scr" src="https://maruftuhin-com.disqus.com/count.js" async></script>
+    
+
+    
+    
     
     
     
@@ -2573,7 +2693,7 @@ Participated as a contestant in many National & International Programming Contes
     
     
     
-    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+    <script src="/js/academic.min.130521ecfc6f534c52c158217bbff718.js"></script>
 
     
 
@@ -2587,7 +2707,10 @@ Participated as a contestant in many National & International Programming Contes
     <footer class="site-footer">
   
   <p class="powered-by">
-    <a href="/privacy/"></a>
+    
+      <a href="/privacy/"></a>
+    
+        
   </p>
   
 

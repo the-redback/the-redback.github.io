@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.3.1">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -37,8 +37,6 @@
 
 
   
-
-  
   
   
   <meta name="theme-color" content="#0095eb">
@@ -61,12 +59,14 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/mono-blue.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/mono-blue.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
 
     
 
@@ -74,13 +74,14 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,500,700|Roboto+Mono|Amatic+SC:700">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,500,700%7CRoboto+Mono%7CAmatic+SC:700&display=swap">
   
 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.5e5e254e03363632f3eda6151bc80164.css">
+  <link rel="stylesheet" href="/css/academic.min.015d3bb0907750d7c83b2a39e7344d4a.css">
 
   
     
@@ -93,7 +94,7 @@
     
     
     
-    <link rel="stylesheet" href="/css/academic.d45d31b1d904d865b1790f851d57ba63.css">
+    <link rel="stylesheet" href="/css/academic.d51b5e5b842ea681a16b0e111d238d14.css">
   
 
   
@@ -107,7 +108,7 @@
       ga('require', 'urlChangeTracker');
       ga('send', 'pageview');
     </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
     
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
@@ -116,8 +117,8 @@
 
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/">
@@ -128,6 +129,7 @@
   
     
   
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@maruf2hin">
@@ -137,17 +139,85 @@
   <meta property="og:url" content="https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/">
   <meta property="og:title" content="Mongodb Replica Set on Kubernetes | Maruf&#39;s">
   <meta property="og:description" content="Run MongoDB Replica Set on Kubernetes using *Statefulset* and *PersistentVolumeClaim*. Minikube kubernetes cluster is used for this post."><meta property="og:image" content="https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/featured.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="twitter:image" content="https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/featured.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-01-12T03:07:50&#43;06:00">
+    
+      <meta property="article:published_time" content="2019-01-12T03:07:50&#43;06:00">
+    
+    <meta property="article:modified_time" content="2019-01-12T03:07:50&#43;06:00">
   
-  <meta property="article:modified_time" content="2019-01-12T03:07:50&#43;06:00">
+
   
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/"
+  },
+  "headline": "Mongodb Replica Set on Kubernetes",
+  
+  "image": [
+    "https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/featured.png"
+  ],
+  
+  "datePublished": "2019-01-12T03:07:50+06:00",
+  "dateModified": "2019-01-12T03:07:50+06:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Abdullah Al Maruf"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Maruf's",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://maruftuhin.com/img/icon-512.png"
+    }
+  },
+  "description": "Run MongoDB Replica Set on Kubernetes using *Statefulset* and *PersistentVolumeClaim*. Minikube kubernetes cluster is used for this post."
+}
+</script>
+
+  
+
+  
+
 
   
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
   window.addEventListener("load", function(){
     window.cookieconsent.initialise({
@@ -183,8 +253,7 @@
 
 </head>
 
-
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -202,7 +271,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -219,7 +288,7 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -453,7 +522,7 @@
 </nav>
 
 
-  <article class="article" itemscope itemtype="http://schema.org/Article">
+  <article class="article">
 
   
 
@@ -469,26 +538,25 @@
 
 
 
-<div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('/blog/mongodb-replica-set-on-kubernetes/featured_hu142ae99c5ebe5a0be73901446c9341ee_74719_800x0_resize_lanczos_2.png');"></div>
+
+
+
+
+
+
+
   
-</div>
+  
 
 
-<div class="container-fluid split-header d-none d-xl-block">
-  <div class="row">
-    <div class="col-6">
-      <div class="split-header-content">
-        <h1 itemprop="name">Mongodb Replica Set on Kubernetes</h1>
+<div class="article-container pt-3">
+  <h1>Mongodb Replica Set on Kubernetes</h1>
 
-        
+  
 
-        
+  
 
 
-
-<meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -501,7 +569,7 @@
     
       
     
-    <time>Jan 12, 2019</time>
+    Jan 12, 2019
   </span>
   
 
@@ -516,6 +584,7 @@
 
   
   
+  
   <span class="middot-divider"></span>
   <a href="/blog/mongodb-replica-set-on-kubernetes/#disqus_thread"></a>
   
@@ -524,32 +593,11 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/mongodb/">MongoDB</a>, <a href="/categories/minikube/">minikube</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/mongodb/">MongoDB</a>, <a href="/categories/minikube/">minikube</a></span>
   
 
   
-
-</div>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+    
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     
@@ -635,202 +683,47 @@
 </div>
 
 
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="split-header-image">
-        <img src="/blog/mongodb-replica-set-on-kubernetes/featured_hu142ae99c5ebe5a0be73901446c9341ee_74719_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
-        
-      </div>
-    </div>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 680px; max-height: 500px;">
+  <div style="position: relative">
+    <img src="/blog/mongodb-replica-set-on-kubernetes/featured.png" alt="" class="featured-image">
+    
   </div>
 </div>
 
-<div class="article-container d-xl-none">
-  <h1 itemprop="name">Mongodb Replica Set on Kubernetes</h1>
-
-  
-
-  
 
 
+  <div class="article-container">
 
-<meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="datePublished">
-<meta content="2019-01-12 03:07:50 &#43;0600 &#43;06" itemprop="dateModified">
+    <div class="article-style">
+      
 
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>Jan 12, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/blog/mongodb-replica-set-on-kubernetes/#disqus_thread"></a>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder"></i>
-    <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/mongodb/">MongoDB</a>, <a href="/categories/minikube/">minikube</a></span>
-  
-
-  
-    
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/&amp;text=Mongodb%20Replica%20Set%20on%20Kubernetes" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/&amp;t=Mongodb%20Replica%20Set%20on%20Kubernetes" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=Mongodb%20Replica%20Set%20on%20Kubernetes&amp;body=https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/&amp;title=Mongodb%20Replica%20Set%20on%20Kubernetes" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://web.whatsapp.com/send?text=Mongodb%20Replica%20Set%20on%20Kubernetes%20https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/&amp;title=Mongodb%20Replica%20Set%20on%20Kubernetes" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-
-  
-
-</div>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-  <div class="container-fluid docs">
-    <div class="row flex-xl-nowrap">
-
-      
-      <div class="container" style="margin-right: 0px; margin-left: auto;">
-        
-          <div class="article-style" itemprop="articleBody">
-            <div style="width: 5%; float: left;" class="article-like-btn">
-              
-              
-              <span class="likebtn-wrapper" data-theme="google" data-rich_snippet="true" data-vert="true"
-                data-show_like_label="false" data-counter_type="subtract_dislikes" data-counter_frmt="comma"
-                data-counter_zero_show="true" data-counter_count="true" data-share_size="small"
-                data-site_id="5d045c866fd08b936be51736"></span>
-              <script>(function (d, e, s) { if (d.getElementById("likebtn_wjs")) return; a = d.createElement(e); m = d.getElementsByTagName(e)[0]; a.async = 1; a.id = "likebtn_wjs"; a.src = s; m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");</script>
-              
-            </div>
-            <div style="margin-left: 5%;">
-              
-
-<h2 id="replica-sets">Replica-Sets</h2>
+<h3 id="replica-sets">Replica-Sets</h3>
 
 <p>Run MongoDB Replica Set on Kubernetes using <em>Statefulset</em> and <em>PersistentVolumeClaim</em>. Minikube kubernetes cluster is used for this post.</p>
 
-<h2 id="create-secret-for-key-file">Create Secret for Key file</h2>
+<h3 id="create-secret-for-key-file">Create Secret for Key file</h3>
 
 <p>MongoDB will use this key to communicate internal cluster.</p>
 
@@ -840,7 +733,7 @@ $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-
 secret &quot;shared-bootstrap-data&quot; created
 </code></pre>
 
-<h2 id="deploy-mongodb-replica-sets-yaml">Deploy MongoDB Replica-Sets YAML</h2>
+<h3 id="deploy-mongodb-replica-sets-yaml">Deploy MongoDB Replica-Sets YAML</h3>
 
 <pre><code class="language-yaml">apiVersion: v1
 kind: Service
@@ -929,7 +822,7 @@ service &quot;mongodb-service&quot; created
 statefulset &quot;mongod&quot; created
 </code></pre>
 
-<h2 id="wait-for-pod-running-and-pvc">Wait for Pod running and PVC</h2>
+<h3 id="wait-for-pod-running-and-pvc">Wait for Pod running and PVC</h3>
 
 <pre><code class="language-bash">$ kubectl get all
 NAME                  DESIRED   CURRENT   AGE
@@ -947,7 +840,7 @@ mongodb-persistent-storage-claim-mongod-1   Bound     pvc-bf2e51a5-319a-11e8-8dd
 mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
 </code></pre>
 
-<h2 id="setup-replicaset-configuration">Setup ReplicaSet Configuration</h2>
+<h3 id="setup-replicaset-configuration">Setup ReplicaSet Configuration</h3>
 
 <p>Finally, we need to connect to one of the “mongod” container processes to configure the replica set.</p>
 
@@ -1068,7 +961,7 @@ $ mongo
  });
 </code></pre>
 
-<h2 id="insert-data">Insert Data</h2>
+<h3 id="insert-data">Insert Data</h3>
 
 <p>Insert Data into <code>mongod-0</code> pod.</p>
 
@@ -1079,7 +972,7 @@ $ mongo
 &gt; db.testcoll.find();
 </code></pre>
 
-<h2 id="verify-cluster-data">Verify Cluster Data</h2>
+<h3 id="verify-cluster-data">Verify Cluster Data</h3>
 
 <p><code>exec</code> into Secondary Pod (here, mongo-1)</p>
 
@@ -1091,7 +984,7 @@ $ mongo
 &gt; db.testcoll.find();
 </code></pre>
 
-<h2 id="verify-pvc">Verify PVC</h2>
+<h3 id="verify-pvc">Verify PVC</h3>
 
 <pre><code class="language-bash">$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
@@ -1115,14 +1008,16 @@ $ mongo
 
 <p>As PVC was not deleted, We will still have existing Data.</p>
 
-<h2 id="verify-clusterization">Verify Clusterization</h2>
+<h3 id="verify-clusterization">Verify Clusterization</h3>
 
 <p>Delete <code>mongod-0</code> Pod and keep cheking <code>rs.status()</code>, eventually another node of the remaining two will become <code>Primary</code> Node.</p>
 
-            </div>
-          </div>
+    </div>
 
-          
+    
+
+
+    
 
 <div class="article-tags">
   
@@ -1140,38 +1035,39 @@ $ mongo
 
 
 
-          
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hu7586bec796e943426be44009cc1195f7_25513_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu7586bec796e943426be44009cc1195f7_25513_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://maruftuhin.com/">Abdullah Al Maruf</a></h5>
+      <h5 class="card-title"><a href="https://maruftuhin.com/">Abdullah Al Maruf</a></h5>
       <h6 class="card-subtitle">Software Engineer, Backend</h6>
-      <p class="card-text" itemprop="description">Its not who I am underneath, but what I do that defines me. -Batman.</p>
+      <p class="card-text">Its not who I am underneath, but what I do that defines me. -Batman.</p>
       <ul class="network-icon" aria-hidden="true">
         
           
@@ -1184,7 +1080,7 @@ $ mongo
           
           
           <li>
-            <a itemprop="sameAs" href="mailto:maruf.2hin@gmail.com" >
+            <a href="mailto:maruf.2hin@gmail.com" >
               <i class="fas fa-envelope"></i>
             </a>
           </li>
@@ -1201,7 +1097,7 @@ $ mongo
             
           
           <li>
-            <a itemprop="sameAs" href="https://twitter.com/maruf2hin" target="_blank" rel="noopener">
+            <a href="https://twitter.com/maruf2hin" target="_blank" rel="noopener">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
@@ -1218,7 +1114,7 @@ $ mongo
             
           
           <li>
-            <a itemprop="sameAs" href="https://github.com/the-redback" target="_blank" rel="noopener">
+            <a href="https://github.com/the-redback" target="_blank" rel="noopener">
               <i class="fab fa-github"></i>
             </a>
           </li>
@@ -1235,7 +1131,7 @@ $ mongo
             
           
           <li>
-            <a itemprop="sameAs" href="https://www.linkedin.com/in/maruftuhin/" target="_blank" rel="noopener">
+            <a href="https://www.linkedin.com/in/maruftuhin/" target="_blank" rel="noopener">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
@@ -1252,7 +1148,7 @@ $ mongo
             
           
           <li>
-            <a itemprop="sameAs" href="https://stackoverflow.com/users/4628962/maruf-tuhin" target="_blank" rel="noopener">
+            <a href="https://stackoverflow.com/users/4628962/maruf-tuhin" target="_blank" rel="noopener">
               <i class="fab fa-stack-overflow"></i>
             </a>
           </li>
@@ -1269,7 +1165,7 @@ $ mongo
             
           
           <li>
-            <a itemprop="sameAs" href="https://www.facebook.com/maruf.2hin" target="_blank" rel="noopener">
+            <a href="https://www.facebook.com/maruf.2hin" target="_blank" rel="noopener">
               <i class="fab fa-facebook"></i>
             </a>
           </li>
@@ -1280,68 +1176,44 @@ $ mongo
 
 
 
-          
-          
-          
+      
+      
+    
 
-          
+    
 
-          
+    
 <section id="comments">
-  <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
     
     
     
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "maruftuhin-com" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "maruftuhin-com" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
 </section>
 
 
 
-        </div>
-        <div style="width: 6%;"></div>
-        
-        <div class="d-none d-xl-block col-xl-2 docs-toc">
-          <ul class="nav toc-top">
-            <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-          </ul>
-
-          <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#replica-sets">Replica-Sets</a></li>
-<li><a href="#create-secret-for-key-file">Create Secret for Key file</a></li>
-<li><a href="#deploy-mongodb-replica-sets-yaml">Deploy MongoDB Replica-Sets YAML</a></li>
-<li><a href="#wait-for-pod-running-and-pvc">Wait for Pod running and PVC</a></li>
-<li><a href="#setup-replicaset-configuration">Setup ReplicaSet Configuration</a></li>
-<li><a href="#insert-data">Insert Data</a></li>
-<li><a href="#verify-cluster-data">Verify Cluster Data</a></li>
-<li><a href="#verify-pvc">Verify PVC</a></li>
-<li><a href="#verify-clusterization">Verify Clusterization</a></li>
-</ul></li>
-</ul>
-</nav>
-
-          
-        </div>
-        
-      </div>
-    </div>
+  </div>
 </article>
 
       
@@ -1363,15 +1235,15 @@ $ mongo
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
         
       
 
@@ -1381,11 +1253,7 @@ $ mongo
 
     
     
-
-    
-    
-    
-    <script id="dsq-count-scr" src="//maruftuhin-com.disqus.com/count.js" async></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
     
 
     
@@ -1440,6 +1308,11 @@ $ mongo
 
     
     
+    <script id="dsq-count-scr" src="https://maruftuhin-com.disqus.com/count.js" async></script>
+    
+
+    
+    
     
     
     
@@ -1452,7 +1325,7 @@ $ mongo
     
     
     
-    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+    <script src="/js/academic.min.130521ecfc6f534c52c158217bbff718.js"></script>
 
     
 
@@ -1466,7 +1339,10 @@ $ mongo
     <footer class="site-footer">
   
   <p class="powered-by">
-    <a href="/privacy/"></a>
+    
+      <a href="/privacy/"></a>
+    
+        
   </p>
   
 

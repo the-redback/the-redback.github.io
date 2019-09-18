@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Container on Maruf&#39;s</title>
+    <title>Container | Maruf&#39;s</title>
     <link>https://maruftuhin.com/tags/container/</link>
-    <description>Recent content in Container on Maruf&#39;s</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Abdullah Al Maruf</copyright>
-    <lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
-    
-	    <atom:link href="https://maruftuhin.com/tags/container/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://maruftuhin.com/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <description>Container</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <title>Container</title>
+      <link>https://maruftuhin.com/tags/container/</link>
+    </image>
     
     <item>
       <title>My Kubectl Cheat Sheet</title>
       <link>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</link>
       <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      
       <guid>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</guid>
       <description>
 
@@ -113,19 +112,17 @@ i.e.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
-&lt;li&gt;setting up lable. 1st get POD NAME. then&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;setting up lable. 1st get POD NAME. then&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
 &amp;gt; echo Name of the Pod: $POD_NAME
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;label it&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;label it&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl label pod $POD_NAME app=v1
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;List of pods using label &amp;ldquo;app=v1&amp;rdquo;&lt;/p&gt;
 
