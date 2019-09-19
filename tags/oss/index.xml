@@ -30,16 +30,16 @@
       <link>https://maruftuhin.com/project/kubedb/</link>
       <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
       <guid>https://maruftuhin.com/project/kubedb/</guid>
-      <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;&lt;em&gt;Kubernetes&lt;/em&gt;&lt;/strong&gt; using &lt;strong&gt;&lt;em&gt;CRD&lt;/em&gt;&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Acted as &lt;strong&gt;&lt;em&gt;KubeDB project head&lt;/em&gt;&lt;/strong&gt; for more than a year.&lt;/li&gt;
-&lt;li&gt;Conducted &lt;strong&gt;&lt;em&gt;Bi-Weekly KubeDB Community meetings&lt;/em&gt;&lt;/strong&gt; regularly.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;&lt;em&gt;MongoDB&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;MySQL&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Redis&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Memcached&lt;/em&gt;&lt;/strong&gt; support to
+&lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
+&lt;li&gt;Conducted &lt;strong&gt;Bi-Weekly KubeDB Community meetings&lt;/strong&gt; regularly.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;MongoDB&lt;/strong&gt;, &lt;strong&gt;MySQL&lt;/strong&gt;, &lt;strong&gt;Redis&lt;/strong&gt; and &lt;strong&gt;Memcached&lt;/strong&gt; support to
 KubeDB.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;&lt;em&gt;MongoDB clustering&lt;/em&gt;&lt;/strong&gt; system. Also, worked on &lt;strong&gt;&lt;em&gt;PostgreSQL&lt;/em&gt;&lt;/strong&gt;
-and &lt;strong&gt;&lt;em&gt;Elasticsearch&lt;/em&gt;&lt;/strong&gt; clustering.&lt;/li&gt;
-&lt;li&gt;Worked with &lt;strong&gt;&lt;em&gt;prometheus&lt;/em&gt;&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;MongoDB clustering&lt;/strong&gt; system. Also, worked on &lt;strong&gt;PostgreSQL&lt;/strong&gt;
+and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
+&lt;li&gt;Worked with &lt;strong&gt;prometheus&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
