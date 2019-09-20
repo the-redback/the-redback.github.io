@@ -727,7 +727,7 @@
 
 <p>MongoDB will use this key to communicate internal cluster.</p>
 
-<pre><code class="language-bash">$ openssl rand -base64 741 &gt; ./replica-sets/key.txt
+<pre><code class="language-console">$ openssl rand -base64 741 &gt; ./replica-sets/key.txt
 
 $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt
 secret &quot;shared-bootstrap-data&quot; created
@@ -817,14 +817,14 @@ spec:
 
 <p>Now Deploy the Yaml</p>
 
-<pre><code class="language-bash">$ kc create -f ./replica-sets/mongodb-rc.yaml 
+<pre><code class="language-console">$ kc create -f ./replica-sets/mongodb-rc.yaml 
 service &quot;mongodb-service&quot; created
 statefulset &quot;mongod&quot; created
 </code></pre>
 
 <h3 id="wait-for-pod-running-and-pvc">Wait for Pod running and PVC</h3>
 
-<pre><code class="language-bash">$ kubectl get all
+<pre><code class="language-console">$ kubectl get all
 NAME                  DESIRED   CURRENT   AGE
 statefulsets/mongod   3         3         2m
 
@@ -846,7 +846,7 @@ mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd
 
 <p>Run the following command to connect to the first container. In the shell initiate the replica set (we can rely on the hostnames always being the same, due to having employed a StatefulSet):</p>
 
-<pre><code class="language-bash">$ kubectl exec -it mongod-0 -c mongod-container bash
+<pre><code class="language-console">$ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 &gt; rs.initiate({_id: &quot;MainRepSet&quot;, version: 1, members: [
        { _id: 0, host : &quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&quot; },
@@ -954,7 +954,7 @@ $ mongo
 
 <p>Then run the following command to configure an “admin” user (performing this action results in the “localhost exception” being automatically and permanently disabled):</p>
 
-<pre><code class="language-bash">&gt; db.getSiblingDB(&quot;admin&quot;).createUser({
+<pre><code class="language-console">&gt; db.getSiblingDB(&quot;admin&quot;).createUser({
       user : &quot;main_admin&quot;,
       pwd  : &quot;abc123&quot;,
       roles: [ { role: &quot;root&quot;, db: &quot;admin&quot; } ]
@@ -965,7 +965,7 @@ $ mongo
 
 <p>Insert Data into <code>mongod-0</code> pod.</p>
 
-<pre><code class="language-bash">&gt; db.getSiblingDB('admin').auth(&quot;main_admin&quot;, &quot;abc123&quot;);
+<pre><code class="language-console">&gt; db.getSiblingDB('admin').auth(&quot;main_admin&quot;, &quot;abc123&quot;);
 &gt; use test;
 &gt; db.testcoll.insert({a:1});
 &gt; db.testcoll.insert({b:2});
@@ -976,7 +976,7 @@ $ mongo
 
 <p><code>exec</code> into Secondary Pod (here, mongo-1)</p>
 
-<pre><code class="language-bash">$ kubectl exec -it mongod-1 -c mongod-container bash
+<pre><code class="language-console">$ kubectl exec -it mongod-1 -c mongod-container bash
 $ mongo
 &gt; db.getSiblingDB('admin').auth(&quot;main_admin&quot;, &quot;abc123&quot;);
 &gt; db.getMongo().setSlaveOk()
@@ -986,20 +986,20 @@ $ mongo
 
 <h3 id="verify-pvc">Verify PVC</h3>
 
-<pre><code class="language-bash">$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
+<pre><code class="language-console">$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 $ kubectl get persistentvolumes
 </code></pre>
 
 <p>Recreate MongoDB</p>
 
-<pre><code class="language-bash">$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
+<pre><code class="language-console">$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 </code></pre>
 
 <p>Verify Data:</p>
 
-<pre><code class="language-bash">$ kubectl exec -it mongod-0 -c mongod-container bash
+<pre><code class="language-console">$ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 &gt; db.getSiblingDB('admin').auth(&quot;main_admin&quot;, &quot;abc123&quot;);
 &gt; use test;
@@ -1244,6 +1244,8 @@ $ mongo
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/console.min.js"></script>
         
       
 

@@ -727,47 +727,47 @@
 
 <p>Build docker images from docker file, goto dockerfile directory and command:</p>
 
-<pre><code class="language-bash">docker build -t friendlynginx .
+<pre><code class="language-console">docker build -t friendlynginx .
 </code></pre>
 
 <p>Run docker image from locally built image</p>
 
-<pre><code class="language-bash">docker run -d -p 50053:8088 friendlynginx
+<pre><code class="language-console">docker run -d -p 50053:8088 friendlynginx
 # -d for running it in background //50053:8088 is the exposed port
 </code></pre>
 
 <p>Connect with docker hub and push to directory, a directory maruftuhin/nginx is created  i docker hub at first, then login</p>
 
-<pre><code class="language-bash">docker login
+<pre><code class="language-console">docker login
 docker tag friendlynginx maruftuhin/nginx:tag
 docker push maruftuhin/nginx
 </code></pre>
 
 <p>Pull image from docker hub:</p>
 
-<pre><code class="language-bash">docker pull maruftuhin/nginx:tag
+<pre><code class="language-console">docker pull maruftuhin/nginx:tag
 </code></pre>
 
 <p>Run image using tag , [if locally unavailable, it pulls from online]</p>
 
-<pre><code class="language-bash">docker run -p -d 4000:8088 maruftuhin/nginx:tag
+<pre><code class="language-console">docker run -p -d 4000:8088 maruftuhin/nginx:tag
 </code></pre>
 
 <h2 id="list-of-images-and-containers">List of images and containers</h2>
 
 <p>List of images</p>
 
-<pre><code class="language-bash">docker images
+<pre><code class="language-console">docker images
 </code></pre>
 
 <p>List all exited containers</p>
 
-<pre><code class="language-bash">docker ps -a -q -f status=exited
+<pre><code class="language-console">docker ps -a -q -f status=exited
 </code></pre>
 
 <p>List of containers</p>
 
-<pre><code class="language-bash">docker ps -a
+<pre><code class="language-console">docker ps -a
 # -a for all
 </code></pre>
 
@@ -775,80 +775,80 @@ docker push maruftuhin/nginx
 
 <p>Stop a container</p>
 
-<pre><code class="language-bash">docker stop &lt;container_id&gt;
+<pre><code class="language-console">docker stop &lt;container_id&gt;
 </code></pre>
 
 <p>Start a exited container</p>
 
-<pre><code class="language-bash">docker start &lt;container id&gt;
+<pre><code class="language-console">docker start &lt;container id&gt;
 </code></pre>
 
 <p>Remove an image</p>
 
-<pre><code class="language-bash">docker rmi &lt;image_id&gt;
+<pre><code class="language-console">docker rmi &lt;image_id&gt;
 </code></pre>
 
 <p>Remove a container</p>
 
-<pre><code class="language-bash">docker rm &lt;container id&gt;
+<pre><code class="language-console">docker rm &lt;container id&gt;
 docker rm &lt;container_name&gt;
 </code></pre>
 
 <p>Remove more than one image/container</p>
 
-<pre><code class="language-bash">docker rm &lt;container id&gt; &lt;container_id&gt;
+<pre><code class="language-console">docker rm &lt;container id&gt; &lt;container_id&gt;
 </code></pre>
 
 <h3 id="making-change-in-a-container-image">Making change in a container/image</h3>
 
 <p>Creates a container for a image and enters it directory</p>
 
-<pre><code class="language-bash">docker run -it &lt;image_id&gt; /bin/bash
+<pre><code class="language-console">docker run -it &lt;image_id&gt; /bin/bash
 </code></pre>
 
 <p>Insert in a existing container [the container must be UP]</p>
 
-<pre><code class="language-bash">docker exec -it &lt;container_id&gt; bash
+<pre><code class="language-console">docker exec -it &lt;container_id&gt; bash
 # example: docker exec -it ecf1310ac3ed bash
 </code></pre>
 
 <p>Anything can be installed in that container, example, at first insert into a container and command:</p>
 
-<pre><code class="language-bash">apt-get update
+<pre><code class="language-console">apt-get update
 apt-get install fish
 apt-get install php    #installs latest php
 </code></pre>
 
 <p>Exit container directory</p>
 
-<pre><code class="language-bash">exit
+<pre><code class="language-console">exit
 </code></pre>
 
 <p>Creates a image/snapshot of a [may be modified] container</p>
 
-<pre><code class="language-bash">docker commit &lt;container_id&gt; new_id_of_image
+<pre><code class="language-console">docker commit &lt;container_id&gt; new_id_of_image
 </code></pre>
 
 <h3 id="executing-container-commands">Executing container commands</h3>
 
 <p>Start a exited container</p>
 
-<pre><code class="language-bash">docker start &lt;container id&gt;
+<pre><code class="language-console">docker start &lt;container id&gt;
 </code></pre>
 
 <p>Restart a crashed container</p>
 
-<pre><code class="language-bash">docker restart &lt;contaienr_id&gt;
+<pre><code class="language-console">docker restart &lt;contaienr_id&gt;
 </code></pre>
 
 <p>Start fish in interactive mode</p>
 
-<pre><code class="language-bash">docker exec -it &lt;container_id&gt; fish
+<pre><code class="language-console">docker exec -it &lt;container_id&gt; fish
 </code></pre>
 
 <p>Start php inside container</p>
 
-<pre><code class="language-bash">docker exec -it &lt;container_id&gt; php -a
+<pre><code class="language-console">docker exec -it &lt;container_id&gt; php -a
 echo &quot;hello world&quot;;
 exit
 </code></pre>
@@ -857,36 +857,36 @@ exit
 
 <p>Rename existing container</p>
 
-<pre><code class="language-bash">docker rename &lt;old_name&gt; new_name
+<pre><code class="language-console">docker rename &lt;old_name&gt; new_name
 </code></pre>
 
 <p>Giving the container a name, while rnning it</p>
 
-<pre><code class="language-bash">docker run -it --name newName &lt;container_id&gt; bash
+<pre><code class="language-console">docker run -it --name newName &lt;container_id&gt; bash
 </code></pre>
 
 <h3 id="copy-files-from-a-container">Copy files from a container</h3>
 
 <p>Create a text file inside container. insert the container and command:</p>
 
-<pre><code class="language-bash">touch test.txt
+<pre><code class="language-console">touch test.txt
 </code></pre>
 
 <p>Copy from container. Exit from container and command:</p>
 
-<pre><code class="language-bash">docker cp containerName:/test.txt .    #copies test.txt to host root
+<pre><code class="language-console">docker cp containerName:/test.txt .    #copies test.txt to host root
 </code></pre>
 
 <p>Copy into container</p>
 
-<pre><code class="language-bash">docker cp ./test1.txt  containerName:/
+<pre><code class="language-console">docker cp ./test1.txt  containerName:/
 </code></pre>
 
 <h3 id="container-hostnames">Container hostnames</h3>
 
 <p>Gives a new hostname to the container. it doesn&rsquo;t change the Names of container. but when user is inside the  container, it sees the hostname, in this case, it&rsquo;s root@test.</p>
 
-<pre><code class="language-bash">docker run -it -h test.local &lt;image_id&gt; bash
+<pre><code class="language-console">docker run -it -h test.local &lt;image_id&gt; bash
 </code></pre>
 
 <h3 id="handling-volumes">Handling volumes</h3>
@@ -895,91 +895,91 @@ exit
 
 <p>Bind mounts, the pasth is absolute here</p>
 
-<pre><code class="language-bash">docker run -it --name test21 -v ~/data:/data &lt;image_id&gt; bash
+<pre><code class="language-console">docker run -it --name test21 -v ~/data:/data &lt;image_id&gt; bash
 </code></pre>
 
 <p>Volume help</p>
 
-<pre><code class="language-bash">docker volume --help
+<pre><code class="language-console">docker volume --help
 </code></pre>
 
 <p>Inspect a docker container</p>
 
-<pre><code class="language-bash">docker inspect &lt;container_id&gt;
+<pre><code class="language-console">docker inspect &lt;container_id&gt;
 </code></pre>
 
 <p>Named volume [non-bind mount], here the path is not absolute</p>
 
-<pre><code class="language-bash">docker run -it  -v data:/data &lt;container_id&gt; bash
+<pre><code class="language-console">docker run -it  -v data:/data &lt;container_id&gt; bash
 </code></pre>
 
 <p>Used volumes of local machine in container</p>
 
-<pre><code class="language-bash">docker volume ls
+<pre><code class="language-console">docker volume ls
 </code></pre>
 
 <p>If same volume is used in another container, they will share the volume.</p>
 
-<pre><code class="language-bash">docker run -it  -v data:/data &lt;container_id&gt; bash   //shares previous data volume
+<pre><code class="language-console">docker run -it  -v data:/data &lt;container_id&gt; bash   //shares previous data volume
 </code></pre>
 
 <p>Remove docker volume, volume_name is available in  docker volume ls</p>
 
-<pre><code class="language-bash">docker volume rm &lt;volume_name&gt;
+<pre><code class="language-console">docker volume rm &lt;volume_name&gt;
 </code></pre>
 
 <p>Multiple volume</p>
 
-<pre><code class="language-bash">docker run -it  -v data:/data  -v myBin:/myBin &lt;container_id&gt; bash
+<pre><code class="language-console">docker run -it  -v data:/data  -v myBin:/myBin &lt;container_id&gt; bash
 </code></pre>
 
 <p>Copy volume from another container</p>
 
-<pre><code class="language-bash">docker run -it --name slave --volume-from &lt;master_container_id/Name&gt; &lt;image_id&gt; bash
+<pre><code class="language-console">docker run -it --name slave --volume-from &lt;master_container_id/Name&gt; &lt;image_id&gt; bash
 </code></pre>
 
 <p>Inspect docker volume</p>
 
-<pre><code class="language-bash">docker volume inspect &lt;volume_name&gt;
+<pre><code class="language-console">docker volume inspect &lt;volume_name&gt;
 </code></pre>
 
 <p>Show danglisg volumes [not used by any container]</p>
 
-<pre><code class="language-bash">docker volume ls -f dangling=true
+<pre><code class="language-console">docker volume ls -f dangling=true
 </code></pre>
 
 <p>Remove one volume that is not used</p>
 
-<pre><code class="language-bash">docker volume rm &lt;volume name&gt;
+<pre><code class="language-console">docker volume rm &lt;volume name&gt;
 </code></pre>
 
 <p>Removing all unsed volumes</p>
 
-<pre><code class="language-bash">docker volume prune
+<pre><code class="language-console">docker volume prune
 </code></pre>
 
 <p>Anonymous volume. &ndash;rm will delete anonymous volume after remove container. here /foo is a anonymous volume</p>
 
-<pre><code class="language-bash">docker run --rm -v /foo -v awesome:/bar busybox top
+<pre><code class="language-console">docker run --rm -v /foo -v awesome:/bar busybox top
 </code></pre>
 
 <h3 id="untagged-images">Untagged Images</h3>
 
 <p>Show untagged images</p>
 
-<pre><code class="language-bash">docker images -f &quot;dangling=true&quot; -q
+<pre><code class="language-console">docker images -f &quot;dangling=true&quot; -q
 </code></pre>
 
 <p>Delete all untagged images</p>
 
-<pre><code class="language-bash">docker images -f &quot;dangling=true&quot; -q | xargs docker rmi
+<pre><code class="language-console">docker images -f &quot;dangling=true&quot; -q | xargs docker rmi
 </code></pre>
 
 <h3 id="delete-multiple-images">Delete multiple images</h3>
 
 <p>Delete images of same name</p>
 
-<pre><code class="language-bash">docker images --format '{{.Repository}}:{{.Tag}}' | grep 'imagename' | xargs docker rmi
+<pre><code class="language-console">docker images --format '{{.Repository}}:{{.Tag}}' | grep 'imagename' | xargs docker rmi
 # or,
 docker images -q imagename | uniq | xargs docker rmi --force
 </code></pre>
@@ -988,39 +988,39 @@ docker images -q imagename | uniq | xargs docker rmi --force
 
 <p>Stop all container</p>
 
-<pre><code class="language-bash">docker ps -a -q | xargs docker stop
+<pre><code class="language-console">docker ps -a -q | xargs docker stop
 </code></pre>
 
 <p>Delete all container</p>
 
-<pre><code class="language-bash">docker ps -a -q | xargs docker rm
+<pre><code class="language-console">docker ps -a -q | xargs docker rm
 </code></pre>
 
 <p>Removing all unused volumes</p>
 
-<pre><code class="language-bash">docker volume prune
+<pre><code class="language-console">docker volume prune
 </code></pre>
 
 <p>Remove untagged dockers</p>
 
-<pre><code class="language-bash">docker images -q -f &quot;dangling=true&quot; | xargs docker rmi
+<pre><code class="language-console">docker images -q -f &quot;dangling=true&quot; | xargs docker rmi
 </code></pre>
 
 <p>Remove stopped containers</p>
 
-<pre><code class="language-bash">docker ps -aq --no-trunc -f status=exited | xargs docker rm
+<pre><code class="language-console">docker ps -aq --no-trunc -f status=exited | xargs docker rm
 </code></pre>
 
 <p>Remove all images</p>
 
-<pre><code class="language-bash">docker images -q | xargs docker rmi
+<pre><code class="language-console">docker images -q | xargs docker rmi
 </code></pre>
 
 <h3 id="start-fresh">Start fresh</h3>
 
 <h4 id="dangerous-deletes-everything">Dangerous!!! Deletes everything!!</h4>
 
-<pre><code class="language-bash">sudo systemctl stop docker.service
+<pre><code class="language-console">sudo systemctl stop docker.service
 sudo rm -rf /var/lib/docker
 sudo systemctl start docker.service
 </code></pre>
@@ -1029,7 +1029,7 @@ sudo systemctl start docker.service
 
 <p>For bash</p>
 
-<pre><code class="language-bash">docker save &lt;image-name&gt; | pv | (eval $(minikube docker-env) &amp;&amp; docker load)
+<pre><code class="language-console">docker save &lt;image-name&gt; | pv | (eval $(minikube docker-env) &amp;&amp; docker load)
 # or,
 docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker load)
 </code></pre>
@@ -1276,6 +1276,8 @@ docker save &lt;image-name&gt; | (eval $(minikube docker-env) &amp;&amp; docker 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/console.min.js"></script>
         
       
 

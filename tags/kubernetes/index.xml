@@ -21,7 +21,7 @@
 
 &lt;h1 id=&#34;kubectl-cheat-sheet&#34;&gt;Kubectl Cheat Sheet&lt;/h1&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; minikube version
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; minikube version
 &amp;gt; minikube start
 &amp;gt; kubectl version
 &amp;gt; kubectl get nodes
@@ -31,27 +31,27 @@
 
 &lt;p&gt;Run app in kubernetes by kubectl&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;also run GRPS_Sample //problematic&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;See deployments&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get deployments
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;run proxy and echo&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl proxy
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl proxy
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;setting up POD_NAME variable&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
 &amp;gt; echo Name of the Pod: $POD_NAME
 
 &amp;gt; curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME
@@ -59,7 +59,7 @@
 
 &lt;h3 id=&#34;pods&#34;&gt;Pods&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get pods
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods
 &amp;gt; kubectl describe pods
 &amp;gt; kubectl logs $POD_NAME
 &lt;/code&gt;&lt;/pre&gt;
@@ -68,44 +68,44 @@
 
 &lt;p&gt;settings up env variables&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl exec $POD_NAME env
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec $POD_NAME env
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;run a container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME bash
 &amp;gt; exit
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;services-on-kubernetes&#34;&gt;Services on kubernetes&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get services
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get services
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;create and expose new service&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl expose deployment/kubernetes-bootcamp --type=&amp;quot;NodePort&amp;quot; --port 8080
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl expose deployment/kubernetes-bootcamp --type=&amp;quot;NodePort&amp;quot; --port 8080
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;setting up Node Port variable&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
 &amp;gt; echo NODE_PORT=$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;accessing POD from external&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; curl host01:$NODE_PORT
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;accessing pod from internal&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME curl localhost:8080
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME curl localhost:8080
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;get description of only one deployment&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get pods -l &amp;lt;label&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -l &amp;lt;label&amp;gt;
 i.e.
 &amp;gt; kubectl get pods -l run=kubernetes-bootcamp
 &amp;gt; kubectl get services -l run=kubernetes-bootcamp
@@ -114,122 +114,122 @@ i.e.
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;setting up lable. 1st get POD NAME. then&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
 &amp;gt; echo Name of the Pod: $POD_NAME
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;label it&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl label pod $POD_NAME app=v1
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl label pod $POD_NAME app=v1
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;List of pods using label &amp;ldquo;app=v1&amp;rdquo;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get pods -l app=v1
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -l app=v1
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;delete services with label run=kubernetes-bootcamp&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl delete service -l run=kubernetes-bootcamp
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl delete service -l run=kubernetes-bootcamp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;scaling&#34;&gt;Scaling&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get deployments
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;scale to 4 replicas. [kubernetes&amp;ndash;bootmcamp] is name of deloyments&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;current pods&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get pods -o wide
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -o wide
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Change log&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl describe deployments/kubernetes-bootcamp
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe deployments/kubernetes-bootcamp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;find exposed ip and service&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;set environment variable NODE PORT&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
 &amp;gt; echo NODE_PORT=$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Run this command to see which pod is serving&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; curl host01:$NODE_PORT
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Scale down service to 2 replicas from 4 replicas&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Description again&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get deployments
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
 &amp;gt; kubectl get pods -o wide
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;updating-application&#34;&gt;Updating Application&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get deployments
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
 &amp;gt; kubectl get pods
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;current image version of app&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl describe pods
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe pods
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;update the image to version 2&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Changes in Pods&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get pods
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;verify-update&#34;&gt;Verify update&lt;/h3&gt;
 
 &lt;p&gt;service description&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;setting up NODE PORT&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
 &amp;gt; echo NODE_PORT=$NODE_PORT
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;rollout status command to see update&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl rollout status deployments/kubernetes-bootcamp
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl rollout status deployments/kubernetes-bootcamp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;rollback-update&#34;&gt;Rollback update&lt;/h3&gt;
 
 &lt;p&gt;First deploy update tag v10 for example&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;status&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl get deployments
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
 &amp;gt; kubectl get pods
 &amp;gt; kubectl describe pods
 # we can see, not all are v10 applied
@@ -237,31 +237,31 @@ i.e.
 
 &lt;p&gt;rollback to previous working state&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl rollout undo deployments/kubernetes-bootcamp
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl rollout undo deployments/kubernetes-bootcamp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;run-own-program-docker-grpc&#34;&gt;Run own program docker-gRPC&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; docker images
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; docker images
 &amp;gt; kubectl run grpc-sample3 --image=maruftuhin/server_grpc_sample:tag --port=8088
 &amp;gt; kubectl get pods
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;access from internal&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl proxy
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl proxy
 &amp;gt; curl --data &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;pc1\&amp;quot;, \&amp;quot;a\&amp;quot;:2,\&amp;quot;b\&amp;quot;:3}&amp;quot; http://localhost:8001/api/v1/proxy/namespaces/default/pods/&amp;lt;pods id &amp;gt;/echo
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;access from external [Expose ]&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; kubectl expose deployment/grpc-sample3 --type=&amp;quot;NodePort&amp;quot; --port 8088
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl expose deployment/grpc-sample3 --type=&amp;quot;NodePort&amp;quot; --port 8088
 &amp;gt; kubectl get services/grpc-sample3
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;setting $Node_Port variable. but the ports can also be used from &amp;ldquo;kubectl get services/grpc-sample3&amp;rdquo; results&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
 &amp;gt; kubectl get services/grpc-sample3
 &amp;gt; kubectl get nodes
 &amp;gt; kubectl get svc grpc-sample3 -o yaml
@@ -284,47 +284,47 @@ i.e.
 
 &lt;p&gt;Build docker images from docker file, goto dockerfile directory and command:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker build -t friendlynginx .
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker build -t friendlynginx .
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Run docker image from locally built image&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -d -p 50053:8088 friendlynginx
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -d -p 50053:8088 friendlynginx
 # -d for running it in background //50053:8088 is the exposed port
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Connect with docker hub and push to directory, a directory maruftuhin/nginx is created  i docker hub at first, then login&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker login
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker login
 docker tag friendlynginx maruftuhin/nginx:tag
 docker push maruftuhin/nginx
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Pull image from docker hub:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker pull maruftuhin/nginx:tag
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker pull maruftuhin/nginx:tag
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Run image using tag , [if locally unavailable, it pulls from online]&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -p -d 4000:8088 maruftuhin/nginx:tag
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -p -d 4000:8088 maruftuhin/nginx:tag
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;list-of-images-and-containers&#34;&gt;List of images and containers&lt;/h2&gt;
 
 &lt;p&gt;List of images&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker images
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;List all exited containers&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps -a -q -f status=exited
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a -q -f status=exited
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;List of containers&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps -a
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a
 # -a for all
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -332,80 +332,80 @@ docker push maruftuhin/nginx
 
 &lt;p&gt;Stop a container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker stop &amp;lt;container_id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker stop &amp;lt;container_id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Start a exited container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker start &amp;lt;container id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker start &amp;lt;container id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove an image&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker rmi &amp;lt;image_id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rmi &amp;lt;image_id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove a container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker rm &amp;lt;container id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rm &amp;lt;container id&amp;gt;
 docker rm &amp;lt;container_name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove more than one image/container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker rm &amp;lt;container id&amp;gt; &amp;lt;container_id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rm &amp;lt;container id&amp;gt; &amp;lt;container_id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;making-change-in-a-container-image&#34;&gt;Making change in a container/image&lt;/h3&gt;
 
 &lt;p&gt;Creates a container for a image and enters it directory&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it &amp;lt;image_id&amp;gt; /bin/bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it &amp;lt;image_id&amp;gt; /bin/bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Insert in a existing container [the container must be UP]&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; bash
 # example: docker exec -it ecf1310ac3ed bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Anything can be installed in that container, example, at first insert into a container and command:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;apt-get update
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;apt-get update
 apt-get install fish
 apt-get install php    #installs latest php
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Exit container directory&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;exit
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;exit
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Creates a image/snapshot of a [may be modified] container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker commit &amp;lt;container_id&amp;gt; new_id_of_image
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker commit &amp;lt;container_id&amp;gt; new_id_of_image
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;executing-container-commands&#34;&gt;Executing container commands&lt;/h3&gt;
 
 &lt;p&gt;Start a exited container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker start &amp;lt;container id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker start &amp;lt;container id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Restart a crashed container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker restart &amp;lt;contaienr_id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker restart &amp;lt;contaienr_id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Start fish in interactive mode&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; fish
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; fish
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Start php inside container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; php -a
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; php -a
 echo &amp;quot;hello world&amp;quot;;
 exit
 &lt;/code&gt;&lt;/pre&gt;
@@ -414,36 +414,36 @@ exit
 
 &lt;p&gt;Rename existing container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker rename &amp;lt;old_name&amp;gt; new_name
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rename &amp;lt;old_name&amp;gt; new_name
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Giving the container a name, while rnning it&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it --name newName &amp;lt;container_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it --name newName &amp;lt;container_id&amp;gt; bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;copy-files-from-a-container&#34;&gt;Copy files from a container&lt;/h3&gt;
 
 &lt;p&gt;Create a text file inside container. insert the container and command:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;touch test.txt
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;touch test.txt
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Copy from container. Exit from container and command:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker cp containerName:/test.txt .    #copies test.txt to host root
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker cp containerName:/test.txt .    #copies test.txt to host root
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Copy into container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker cp ./test1.txt  containerName:/
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker cp ./test1.txt  containerName:/
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;container-hostnames&#34;&gt;Container hostnames&lt;/h3&gt;
 
 &lt;p&gt;Gives a new hostname to the container. it doesn&amp;rsquo;t change the Names of container. but when user is inside the  container, it sees the hostname, in this case, it&amp;rsquo;s root@test.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it -h test.local &amp;lt;image_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it -h test.local &amp;lt;image_id&amp;gt; bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;handling-volumes&#34;&gt;Handling volumes&lt;/h3&gt;
@@ -452,91 +452,91 @@ exit
 
 &lt;p&gt;Bind mounts, the pasth is absolute here&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it --name test21 -v ~/data:/data &amp;lt;image_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it --name test21 -v ~/data:/data &amp;lt;image_id&amp;gt; bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Volume help&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume --help
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume --help
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Inspect a docker container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker inspect &amp;lt;container_id&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker inspect &amp;lt;container_id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Named volume [non-bind mount], here the path is not absolute&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it  -v data:/data &amp;lt;container_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it  -v data:/data &amp;lt;container_id&amp;gt; bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Used volumes of local machine in container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume ls
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume ls
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;If same volume is used in another container, they will share the volume.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it  -v data:/data &amp;lt;container_id&amp;gt; bash   //shares previous data volume
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it  -v data:/data &amp;lt;container_id&amp;gt; bash   //shares previous data volume
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove docker volume, volume_name is available in  docker volume ls&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume rm &amp;lt;volume_name&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume rm &amp;lt;volume_name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Multiple volume&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it  -v data:/data  -v myBin:/myBin &amp;lt;container_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it  -v data:/data  -v myBin:/myBin &amp;lt;container_id&amp;gt; bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Copy volume from another container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it --name slave --volume-from &amp;lt;master_container_id/Name&amp;gt; &amp;lt;image_id&amp;gt; bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it --name slave --volume-from &amp;lt;master_container_id/Name&amp;gt; &amp;lt;image_id&amp;gt; bash
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Inspect docker volume&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume inspect &amp;lt;volume_name&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume inspect &amp;lt;volume_name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Show danglisg volumes [not used by any container]&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume ls -f dangling=true
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume ls -f dangling=true
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove one volume that is not used&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume rm &amp;lt;volume name&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume rm &amp;lt;volume name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Removing all unsed volumes&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume prune
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume prune
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Anonymous volume. &amp;ndash;rm will delete anonymous volume after remove container. here /foo is a anonymous volume&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run --rm -v /foo -v awesome:/bar busybox top
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run --rm -v /foo -v awesome:/bar busybox top
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;untagged-images&#34;&gt;Untagged Images&lt;/h3&gt;
 
 &lt;p&gt;Show untagged images&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker images -f &amp;quot;dangling=true&amp;quot; -q
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -f &amp;quot;dangling=true&amp;quot; -q
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Delete all untagged images&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker images -f &amp;quot;dangling=true&amp;quot; -q | xargs docker rmi
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -f &amp;quot;dangling=true&amp;quot; -q | xargs docker rmi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;delete-multiple-images&#34;&gt;Delete multiple images&lt;/h3&gt;
 
 &lt;p&gt;Delete images of same name&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker images --format &#39;{{.Repository}}:{{.Tag}}&#39; | grep &#39;imagename&#39; | xargs docker rmi
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images --format &#39;{{.Repository}}:{{.Tag}}&#39; | grep &#39;imagename&#39; | xargs docker rmi
 # or,
 docker images -q imagename | uniq | xargs docker rmi --force
 &lt;/code&gt;&lt;/pre&gt;
@@ -545,39 +545,39 @@ docker images -q imagename | uniq | xargs docker rmi --force
 
 &lt;p&gt;Stop all container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps -a -q | xargs docker stop
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a -q | xargs docker stop
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Delete all container&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps -a -q | xargs docker rm
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a -q | xargs docker rm
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Removing all unused volumes&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker volume prune
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume prune
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove untagged dockers&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker images -q -f &amp;quot;dangling=true&amp;quot; | xargs docker rmi
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -q -f &amp;quot;dangling=true&amp;quot; | xargs docker rmi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove stopped containers&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker ps -aq --no-trunc -f status=exited | xargs docker rm
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -aq --no-trunc -f status=exited | xargs docker rm
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Remove all images&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker images -q | xargs docker rmi
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -q | xargs docker rmi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;start-fresh&#34;&gt;Start fresh&lt;/h3&gt;
 
 &lt;h4 id=&#34;dangerous-deletes-everything&#34;&gt;Dangerous!!! Deletes everything!!&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo systemctl stop docker.service
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;sudo systemctl stop docker.service
 sudo rm -rf /var/lib/docker
 sudo systemctl start docker.service
 &lt;/code&gt;&lt;/pre&gt;
@@ -586,7 +586,7 @@ sudo systemctl start docker.service
 
 &lt;p&gt;For bash&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker save &amp;lt;image-name&amp;gt; | pv | (eval $(minikube docker-env) &amp;amp;&amp;amp; docker load)
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker save &amp;lt;image-name&amp;gt; | pv | (eval $(minikube docker-env) &amp;amp;&amp;amp; docker load)
 # or,
 docker save &amp;lt;image-name&amp;gt; | (eval $(minikube docker-env) &amp;amp;&amp;amp; docker load)
 &lt;/code&gt;&lt;/pre&gt;
@@ -640,7 +640,7 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
 
 &lt;p&gt;MongoDB will use this key to communicate internal cluster.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt
 
 $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt
 secret &amp;quot;shared-bootstrap-data&amp;quot; created
@@ -730,14 +730,14 @@ spec:
 
 &lt;p&gt;Now Deploy the Yaml&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kc create -f ./replica-sets/mongodb-rc.yaml 
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kc create -f ./replica-sets/mongodb-rc.yaml 
 service &amp;quot;mongodb-service&amp;quot; created
 statefulset &amp;quot;mongod&amp;quot; created
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;wait-for-pod-running-and-pvc&#34;&gt;Wait for Pod running and PVC&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl get all
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl get all
 NAME                  DESIRED   CURRENT   AGE
 statefulsets/mongod   3         3         2m
 
@@ -759,7 +759,7 @@ mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd
 
 &lt;p&gt;Run the following command to connect to the first container. In the shell initiate the replica set (we can rely on the hostnames always being the same, due to having employed a StatefulSet):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 &amp;gt; rs.initiate({_id: &amp;quot;MainRepSet&amp;quot;, version: 1, members: [
        { _id: 0, host : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot; },
@@ -867,7 +867,7 @@ $ mongo
 
 &lt;p&gt;Then run the following command to configure an “admin” user (performing this action results in the “localhost exception” being automatically and permanently disabled):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; db.getSiblingDB(&amp;quot;admin&amp;quot;).createUser({
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; db.getSiblingDB(&amp;quot;admin&amp;quot;).createUser({
       user : &amp;quot;main_admin&amp;quot;,
       pwd  : &amp;quot;abc123&amp;quot;,
       roles: [ { role: &amp;quot;root&amp;quot;, db: &amp;quot;admin&amp;quot; } ]
@@ -878,7 +878,7 @@ $ mongo
 
 &lt;p&gt;Insert Data into &lt;code&gt;mongod-0&lt;/code&gt; pod.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
 &amp;gt; use test;
 &amp;gt; db.testcoll.insert({a:1});
 &amp;gt; db.testcoll.insert({b:2});
@@ -889,7 +889,7 @@ $ mongo
 
 &lt;p&gt;&lt;code&gt;exec&lt;/code&gt; into Secondary Pod (here, mongo-1)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl exec -it mongod-1 -c mongod-container bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-1 -c mongod-container bash
 $ mongo
 &amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
 &amp;gt; db.getMongo().setSlaveOk()
@@ -899,20 +899,20 @@ $ mongo
 
 &lt;h3 id=&#34;verify-pvc&#34;&gt;Verify PVC&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 $ kubectl get persistentvolumes
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Recreate MongoDB&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Verify Data:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 &amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
 &amp;gt; use test;

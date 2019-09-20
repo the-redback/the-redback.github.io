@@ -27,7 +27,7 @@
 
 &lt;p&gt;MongoDB will use this key to communicate internal cluster.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt
 
 $ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt
 secret &amp;quot;shared-bootstrap-data&amp;quot; created
@@ -117,14 +117,14 @@ spec:
 
 &lt;p&gt;Now Deploy the Yaml&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kc create -f ./replica-sets/mongodb-rc.yaml 
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kc create -f ./replica-sets/mongodb-rc.yaml 
 service &amp;quot;mongodb-service&amp;quot; created
 statefulset &amp;quot;mongod&amp;quot; created
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;wait-for-pod-running-and-pvc&#34;&gt;Wait for Pod running and PVC&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl get all
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl get all
 NAME                  DESIRED   CURRENT   AGE
 statefulsets/mongod   3         3         2m
 
@@ -146,7 +146,7 @@ mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd
 
 &lt;p&gt;Run the following command to connect to the first container. In the shell initiate the replica set (we can rely on the hostnames always being the same, due to having employed a StatefulSet):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 &amp;gt; rs.initiate({_id: &amp;quot;MainRepSet&amp;quot;, version: 1, members: [
        { _id: 0, host : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot; },
@@ -254,7 +254,7 @@ $ mongo
 
 &lt;p&gt;Then run the following command to configure an “admin” user (performing this action results in the “localhost exception” being automatically and permanently disabled):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; db.getSiblingDB(&amp;quot;admin&amp;quot;).createUser({
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; db.getSiblingDB(&amp;quot;admin&amp;quot;).createUser({
       user : &amp;quot;main_admin&amp;quot;,
       pwd  : &amp;quot;abc123&amp;quot;,
       roles: [ { role: &amp;quot;root&amp;quot;, db: &amp;quot;admin&amp;quot; } ]
@@ -265,7 +265,7 @@ $ mongo
 
 &lt;p&gt;Insert Data into &lt;code&gt;mongod-0&lt;/code&gt; pod.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
 &amp;gt; use test;
 &amp;gt; db.testcoll.insert({a:1});
 &amp;gt; db.testcoll.insert({b:2});
@@ -276,7 +276,7 @@ $ mongo
 
 &lt;p&gt;&lt;code&gt;exec&lt;/code&gt; into Secondary Pod (here, mongo-1)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl exec -it mongod-1 -c mongod-container bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-1 -c mongod-container bash
 $ mongo
 &amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
 &amp;gt; db.getMongo().setSlaveOk()
@@ -286,20 +286,20 @@ $ mongo
 
 &lt;h3 id=&#34;verify-pvc&#34;&gt;Verify PVC&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 $ kubectl get persistentvolumes
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Recreate MongoDB&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
 $ kubectl get all
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Verify Data:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
 $ mongo
 &amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
 &amp;gt; use test;

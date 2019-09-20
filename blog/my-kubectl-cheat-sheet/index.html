@@ -723,7 +723,7 @@
 
 <h1 id="kubectl-cheat-sheet">Kubectl Cheat Sheet</h1>
 
-<pre><code class="language-bash">&gt; minikube version
+<pre><code class="language-console">&gt; minikube version
 &gt; minikube start
 &gt; kubectl version
 &gt; kubectl get nodes
@@ -733,27 +733,27 @@
 
 <p>Run app in kubernetes by kubectl</p>
 
-<pre><code class="language-bash">&gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
+<pre><code class="language-console">&gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
 </code></pre>
 
 <p>also run GRPS_Sample //problematic</p>
 
-<pre><code class="language-bash">&gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
+<pre><code class="language-console">&gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
 </code></pre>
 
 <p>See deployments</p>
 
-<pre><code class="language-bash">&gt; kubectl get deployments
+<pre><code class="language-console">&gt; kubectl get deployments
 </code></pre>
 
 <p>run proxy and echo</p>
 
-<pre><code class="language-bash">&gt; kubectl proxy
+<pre><code class="language-console">&gt; kubectl proxy
 </code></pre>
 
 <p>setting up POD_NAME variable</p>
 
-<pre><code class="language-bash">&gt; export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
+<pre><code class="language-console">&gt; export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
 &gt; echo Name of the Pod: $POD_NAME
 
 &gt; curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME
@@ -761,7 +761,7 @@
 
 <h3 id="pods">Pods</h3>
 
-<pre><code class="language-bash">&gt; kubectl get pods
+<pre><code class="language-console">&gt; kubectl get pods
 &gt; kubectl describe pods
 &gt; kubectl logs $POD_NAME
 </code></pre>
@@ -770,44 +770,44 @@
 
 <p>settings up env variables</p>
 
-<pre><code class="language-bash">&gt; kubectl exec $POD_NAME env
+<pre><code class="language-console">&gt; kubectl exec $POD_NAME env
 </code></pre>
 
 <p>run a container</p>
 
-<pre><code class="language-bash">&gt; kubectl exec -ti $POD_NAME bash
+<pre><code class="language-console">&gt; kubectl exec -ti $POD_NAME bash
 &gt; exit
 </code></pre>
 
 <h3 id="services-on-kubernetes">Services on kubernetes</h3>
 
-<pre><code class="language-bash">&gt; kubectl get services
+<pre><code class="language-console">&gt; kubectl get services
 </code></pre>
 
 <p>create and expose new service</p>
 
-<pre><code class="language-bash">&gt; kubectl expose deployment/kubernetes-bootcamp --type=&quot;NodePort&quot; --port 8080
+<pre><code class="language-console">&gt; kubectl expose deployment/kubernetes-bootcamp --type=&quot;NodePort&quot; --port 8080
 </code></pre>
 
 <p>setting up Node Port variable</p>
 
-<pre><code class="language-bash">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
 &gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
 <p>accessing POD from external</p>
 
-<pre><code class="language-bash">&gt; curl host01:$NODE_PORT
+<pre><code class="language-console">&gt; curl host01:$NODE_PORT
 </code></pre>
 
 <p>accessing pod from internal</p>
 
-<pre><code class="language-bash">&gt; kubectl exec -ti $POD_NAME curl localhost:8080
+<pre><code class="language-console">&gt; kubectl exec -ti $POD_NAME curl localhost:8080
 </code></pre>
 
 <p>get description of only one deployment</p>
 
-<pre><code class="language-bash">&gt; kubectl get pods -l &lt;label&gt;
+<pre><code class="language-console">&gt; kubectl get pods -l &lt;label&gt;
 i.e.
 &gt; kubectl get pods -l run=kubernetes-bootcamp
 &gt; kubectl get services -l run=kubernetes-bootcamp
@@ -816,122 +816,122 @@ i.e.
 <ol>
 <li><p>setting up lable. 1st get POD NAME. then</p>
 
-<pre><code class="language-bash">&gt; export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
+<pre><code class="language-console">&gt; export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
 &gt; echo Name of the Pod: $POD_NAME
 </code></pre></li>
 
 <li><p>label it</p>
 
-<pre><code class="language-bash">&gt; kubectl label pod $POD_NAME app=v1
+<pre><code class="language-console">&gt; kubectl label pod $POD_NAME app=v1
 </code></pre></li>
 </ol>
 
 <p>List of pods using label &ldquo;app=v1&rdquo;</p>
 
-<pre><code class="language-bash">&gt; kubectl get pods -l app=v1
+<pre><code class="language-console">&gt; kubectl get pods -l app=v1
 </code></pre>
 
 <p>delete services with label run=kubernetes-bootcamp</p>
 
-<pre><code class="language-bash">&gt; kubectl delete service -l run=kubernetes-bootcamp
+<pre><code class="language-console">&gt; kubectl delete service -l run=kubernetes-bootcamp
 </code></pre>
 
 <h3 id="scaling">Scaling</h3>
 
-<pre><code class="language-bash">&gt; kubectl get deployments
+<pre><code class="language-console">&gt; kubectl get deployments
 </code></pre>
 
 <p>scale to 4 replicas. [kubernetes&ndash;bootmcamp] is name of deloyments</p>
 
-<pre><code class="language-bash">&gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
+<pre><code class="language-console">&gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
 </code></pre>
 
 <p>current pods</p>
 
-<pre><code class="language-bash">&gt; kubectl get pods -o wide
+<pre><code class="language-console">&gt; kubectl get pods -o wide
 </code></pre>
 
 <p>Change log</p>
 
-<pre><code class="language-bash">&gt; kubectl describe deployments/kubernetes-bootcamp
+<pre><code class="language-console">&gt; kubectl describe deployments/kubernetes-bootcamp
 </code></pre>
 
 <p>find exposed ip and service</p>
 
-<pre><code class="language-bash">&gt; kubectl describe services/kubernetes-bootcamp
+<pre><code class="language-console">&gt; kubectl describe services/kubernetes-bootcamp
 </code></pre>
 
 <p>set environment variable NODE PORT</p>
 
-<pre><code class="language-bash">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
 &gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
 <p>Run this command to see which pod is serving</p>
 
-<pre><code class="language-bash">&gt; curl host01:$NODE_PORT
+<pre><code class="language-console">&gt; curl host01:$NODE_PORT
 </code></pre>
 
 <p>Scale down service to 2 replicas from 4 replicas</p>
 
-<pre><code class="language-bash">&gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
+<pre><code class="language-console">&gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
 </code></pre>
 
 <p>Description again</p>
 
-<pre><code class="language-bash">&gt; kubectl get deployments
+<pre><code class="language-console">&gt; kubectl get deployments
 &gt; kubectl get pods -o wide
 </code></pre>
 
 <h3 id="updating-application">Updating Application</h3>
 
-<pre><code class="language-bash">&gt; kubectl get deployments
+<pre><code class="language-console">&gt; kubectl get deployments
 &gt; kubectl get pods
 </code></pre>
 
 <p>current image version of app</p>
 
-<pre><code class="language-bash">&gt; kubectl describe pods
+<pre><code class="language-console">&gt; kubectl describe pods
 </code></pre>
 
 <p>update the image to version 2</p>
 
-<pre><code class="language-bash">&gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+<pre><code class="language-console">&gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
 </code></pre>
 
 <p>Changes in Pods</p>
 
-<pre><code class="language-bash">&gt; kubectl get pods
+<pre><code class="language-console">&gt; kubectl get pods
 </code></pre>
 
 <h3 id="verify-update">Verify update</h3>
 
 <p>service description</p>
 
-<pre><code class="language-bash">&gt; kubectl describe services/kubernetes-bootcamp
+<pre><code class="language-console">&gt; kubectl describe services/kubernetes-bootcamp
 </code></pre>
 
 <p>setting up NODE PORT</p>
 
-<pre><code class="language-bash">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
 &gt; echo NODE_PORT=$NODE_PORT
 </code></pre>
 
 <p>rollout status command to see update</p>
 
-<pre><code class="language-bash">&gt; kubectl rollout status deployments/kubernetes-bootcamp
+<pre><code class="language-console">&gt; kubectl rollout status deployments/kubernetes-bootcamp
 </code></pre>
 
 <h3 id="rollback-update">Rollback update</h3>
 
 <p>First deploy update tag v10 for example</p>
 
-<pre><code class="language-bash">&gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
+<pre><code class="language-console">&gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
 </code></pre>
 
 <p>status</p>
 
-<pre><code class="language-bash">&gt; kubectl get deployments
+<pre><code class="language-console">&gt; kubectl get deployments
 &gt; kubectl get pods
 &gt; kubectl describe pods
 # we can see, not all are v10 applied
@@ -939,31 +939,31 @@ i.e.
 
 <p>rollback to previous working state</p>
 
-<pre><code class="language-bash">&gt; kubectl rollout undo deployments/kubernetes-bootcamp
+<pre><code class="language-console">&gt; kubectl rollout undo deployments/kubernetes-bootcamp
 </code></pre>
 
 <h3 id="run-own-program-docker-grpc">Run own program docker-gRPC</h3>
 
-<pre><code class="language-bash">&gt; docker images
+<pre><code class="language-console">&gt; docker images
 &gt; kubectl run grpc-sample3 --image=maruftuhin/server_grpc_sample:tag --port=8088
 &gt; kubectl get pods
 </code></pre>
 
 <p>access from internal</p>
 
-<pre><code class="language-bash">&gt; kubectl proxy
+<pre><code class="language-console">&gt; kubectl proxy
 &gt; curl --data &quot;{\&quot;name\&quot;: \&quot;pc1\&quot;, \&quot;a\&quot;:2,\&quot;b\&quot;:3}&quot; http://localhost:8001/api/v1/proxy/namespaces/default/pods/&lt;pods id &gt;/echo
 </code></pre>
 
 <p>access from external [Expose ]</p>
 
-<pre><code class="language-bash">&gt; kubectl expose deployment/grpc-sample3 --type=&quot;NodePort&quot; --port 8088
+<pre><code class="language-console">&gt; kubectl expose deployment/grpc-sample3 --type=&quot;NodePort&quot; --port 8088
 &gt; kubectl get services/grpc-sample3
 </code></pre>
 
 <p>setting $Node_Port variable. but the ports can also be used from &ldquo;kubectl get services/grpc-sample3&rdquo; results</p>
 
-<pre><code class="language-bash">&gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template='{{(index .spec.ports 0).nodePort}}')
+<pre><code class="language-console">&gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template='{{(index .spec.ports 0).nodePort}}')
 &gt; kubectl get services/grpc-sample3
 &gt; kubectl get nodes
 &gt; kubectl get svc grpc-sample3 -o yaml
@@ -1217,6 +1217,8 @@ i.e.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/console.min.js"></script>
         
       
 
