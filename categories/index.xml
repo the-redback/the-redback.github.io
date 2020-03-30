@@ -5,60 +5,12 @@
     <link>https://maruftuhin.com/categories/</link>
       <atom:link href="https://maruftuhin.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Categories</title>
       <link>https://maruftuhin.com/categories/</link>
     </image>
-    
-    <item>
-      <title>kubectl</title>
-      <link>https://maruftuhin.com/categories/kubectl/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/categories/kubectl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://maruftuhin.com/categories/kubernetes/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/categories/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Minikube</title>
-      <link>https://maruftuhin.com/categories/minikube/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/categories/minikube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bash</title>
-      <link>https://maruftuhin.com/categories/bash/</link>
-      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      <guid>https://maruftuhin.com/categories/bash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://maruftuhin.com/categories/docker/</link>
-      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      <guid>https://maruftuhin.com/categories/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MongoDB</title>
-      <link>https://maruftuhin.com/categories/mongodb/</link>
-      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
-      <guid>https://maruftuhin.com/categories/mongodb/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

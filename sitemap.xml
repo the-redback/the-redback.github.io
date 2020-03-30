@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -38,12 +38,12 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/categories/minikube/</loc>
+    <loc>https://maruftuhin.com/tags/minikube/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/tags/minikube/</loc>
+    <loc>https://maruftuhin.com/categories/minikube/</loc>
     <lastmod>2019-03-03T00:15:10+06:00</lastmod>
   </url>
   
@@ -73,12 +73,12 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/categories/docker/</loc>
+    <loc>https://maruftuhin.com/tags/docker/</loc>
     <lastmod>2019-03-01T04:05:30+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/tags/docker/</loc>
+    <loc>https://maruftuhin.com/categories/docker/</loc>
     <lastmod>2019-03-01T04:05:30+06:00</lastmod>
   </url>
   

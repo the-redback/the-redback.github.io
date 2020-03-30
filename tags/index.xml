@@ -5,108 +5,12 @@
     <link>https://maruftuhin.com/tags/</link>
       <atom:link href="https://maruftuhin.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/img/icon-192.png</url>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Tags</title>
       <link>https://maruftuhin.com/tags/</link>
     </image>
-    
-    <item>
-      <title>Container</title>
-      <link>https://maruftuhin.com/tags/container/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/container/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubectl</title>
-      <link>https://maruftuhin.com/tags/kubectl/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/kubectl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://maruftuhin.com/tags/kubernetes/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Minikube</title>
-      <link>https://maruftuhin.com/tags/minikube/</link>
-      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/minikube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bash</title>
-      <link>https://maruftuhin.com/tags/bash/</link>
-      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/bash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://maruftuhin.com/tags/docker/</link>
-      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hobby</title>
-      <link>https://maruftuhin.com/tags/hobby/</link>
-      <pubDate>Wed, 27 Feb 2019 03:11:03 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/hobby/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Professional</title>
-      <link>https://maruftuhin.com/tags/professional/</link>
-      <pubDate>Wed, 27 Feb 2019 03:10:51 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/professional/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Academic</title>
-      <link>https://maruftuhin.com/tags/academic/</link>
-      <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OSS</title>
-      <link>https://maruftuhin.com/tags/oss/</link>
-      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/oss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Database</title>
-      <link>https://maruftuhin.com/tags/database/</link>
-      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MongoDB</title>
-      <link>https://maruftuhin.com/tags/mongodb/</link>
-      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
-      <guid>https://maruftuhin.com/tags/mongodb/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

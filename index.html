@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Software Engineer, Backend">
+  <meta name="description" content="Software Engineer • SRE">
 
   
   <link rel="alternate" hreflang="en-us" href="https://maruftuhin.com/">
@@ -44,12 +44,15 @@
 
   
   
+
+  
+  
   
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -59,15 +62,127 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/googlecode.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/googlecode.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/googlecode.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -81,50 +196,66 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.015d3bb0907750d7c83b2a39e7344d4a.css">
+  
+  <link rel="stylesheet" href="/css/academic.css">
 
   
-    
-    
-    
-    
-      
-    
-      
-    
-    
-    
-    <link rel="stylesheet" href="/css/academic.321fdc3000f9ab9c33f3dbc8239f1509.css">
-  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132258392-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-132258392-1', { 'anonymize_ip': true });
 
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-132258392-1', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
-  
+
 
   
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Maruf&#39;s">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://maruftuhin.com/">
 
+  
   
   
   
@@ -141,8 +272,8 @@
   <meta property="og:site_name" content="Maruf&#39;s">
   <meta property="og:url" content="https://maruftuhin.com/">
   <meta property="og:title" content="Maruf&#39;s">
-  <meta property="og:description" content="Software Engineer, Backend"><meta property="og:image" content="https://maruftuhin.com/img/icon-192.png">
-  <meta property="twitter:image" content="https://maruftuhin.com/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Software Engineer • SRE"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2019-03-03T00:15:10&#43;06:00">
   
@@ -167,10 +298,14 @@
 
 
   
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
   window.addEventListener("load", function(){
     window.cookieconsent.initialise({
       "palette": {
@@ -191,7 +326,7 @@
         "href": "/privacy/"
       }
     })});
-</script>
+  </script>
 
 
 
@@ -240,24 +375,41 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">Maruf&#39;s</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Maruf&#39;s</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -452,24 +604,26 @@
       
 
         
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
       </ul>
-
     </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
   </div>
 </nav>
 
@@ -546,23 +700,24 @@
 
 
 
+
 <div class="row">
   <div class="col-12 col-lg-4">
     <div id="profile">
 
       
       
-      <img class="portrait" src="/authors/admin/avatar_hu7586bec796e943426be44009cc1195f7_25513_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="avatar avatar-circle" src="/authors/admin/avatar_hu7586bec796e943426be44009cc1195f7_25513_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
       
 
       <div class="portrait-title">
         <h2>Abdullah Al Maruf</h2>
-        <h3>Software Engineer, Backend</h3>
+        <h3>Software Engineer • SRE</h3>
 
         
         <h3>
-          <a href="https://appscode.com/" target="_blank" rel="noopener">
-          <span>AppsCode Ltd.</span>
+          <a href="https://dh.health" target="_blank" rel="noopener">
+          <span>Digital Healthcare Solutions.</span>
           </a>
         </h3>
         
@@ -679,19 +834,15 @@
     
     
 
-    
-
-<h1 class="amatic">
+    <h1 class="amatic">
   Hey, I'm Maruf!
 </h1>
-
-<h2 id="i-like-to-tear-down-build-stuff">I like to <del>tear down</del> build stuff!! 😉</h2>
-
+<h2 id="i-like-to-tear-down-build-stuff-">I like to <del>tear down</del> build stuff!! 😉</h2>
 <blockquote>
-<p>I am a passionate software engineer with 2 years of working experience
-developing Kubernetes tools in GO. Acted as AppsCode&rsquo;s KubeDB
-project head for more than a year. Love to participate in
-programming contests. An enthusiastic team player.</p>
+<p>I am a passionate software engineer with 3 years of professional working experience in both
+developing <strong>Kubernetes</strong> tools in <strong>GO</strong> and managing microservice based infrastructure in production.
+Acted as AppsCode&rsquo;s <strong>KubeDB project head</strong> for more than a year. Love to participate in
+<strong>programming contests</strong>. An enthusiastic team player.</p>
 </blockquote>
 
 
@@ -755,6 +906,8 @@ programming contests. An enthusiastic team player.</p>
     
     
     
+    
+    
   
 
   
@@ -777,7 +930,7 @@ programming contests. An enthusiastic team player.</p>
   
   
 
-  <section id="strengths" class="home-section wg-featurette dark parallax " style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/strengths.jpg&#39;);" >
+  <section id="strengths" class="home-section wg-featurette dark  bg-image parallax " style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/strengths.jpg&#39;);" >
     <div class="container">
       
 
@@ -930,12 +1083,58 @@ programming contests. An enthusiastic team player.</p>
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Software Engineer, Backend</h4>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">DevOps Engineer</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://dh.health/" target="_blank" rel="noopener">Digital Healthcare Solutions</a></h4>
+            <div class="text-muted exp-meta">
+              Feb 2020 –
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>Dhaka</span>
+              
+            </div>
+            <div class="card-text"><em>Formerly known as <strong>Telenor Health</strong>. Digital Healthcare Solutions is a social business that uses technology and creativity to make high quality health services and health financing accessible for all.</em></p>
+<ul>
+<li>Concentrating on migration of infrastructure to Kubernetes.</li>
+<li>Experienced hybrid cloud infrastructure consisting of aws and openstack private cloud.</li>
+<li>Worked with ansible and terraform to provision the infrastructure.</li>
+<li>Initially used docker compose to provision the microservice based applications.</li>
+<li>Worked with jenkins for CI/CD.</li>
+<li>Exercised cloud native best practices for monitoring and alerting.</li>
+<li>Technology Used: <strong>AWS</strong>, <strong>Kubernetes</strong>, <strong>Ansible</strong>, <strong>Terraform</strong>, <strong>Docker</strong>, <strong>Docker Compose</strong>, <strong>Traefik</strong>, <strong>Nginx</strong>, <strong>HAProxy</strong>, <strong>Prometheus</strong>, etc.</li>
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Software Engineer</h4>
             <h4 class="card-title exp-company text-muted my-0"><a href="https://appscode.com" target="_blank" rel="noopener">AppsCode Ltd.</a></h4>
             <div class="text-muted exp-meta">
               May 2017 –
               
-                Present
+                Jan 2020
               
               
                 <span class="middot-divider"></span>
@@ -943,7 +1142,6 @@ programming contests. An enthusiastic team player.</p>
               
             </div>
             <div class="card-text"><em>AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. An Integrated platform for collaborative coding, testing &amp; deploying containerized apps.</em></p>
-
 <ul>
 <li>Worked to build <strong>Kubernetes controller tools</strong> to utilize Kubernetes services.</li>
 <li>Maintenance and development of <strong>KubeDB</strong> project, A database management tool for Kubernetes.</li>
@@ -992,8 +1190,7 @@ programming contests. An enthusiastic team player.</p>
             <div class="card-text"><ul>
 <li>2 weeks long internship program.<br></li>
 <li>Implemented an Email verification tool in <strong>Java</strong>.<br></li>
-<li>Used <strong>Elasticsearch</strong> for data store purpose.
-<br /></li>
+<li>Used <strong>Elasticsearch</strong> for data store purpose.</li>
 </ul></div>
           </div>
         </div>
@@ -1022,6 +1219,8 @@ programming contests. An enthusiastic team player.</p>
     
     
     
+    
+    
   
 
   
@@ -1044,7 +1243,7 @@ programming contests. An enthusiastic team player.</p>
   
   
 
-  <section id="skills" class="home-section wg-blank dark parallax skill" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/skill-learn.jpg&#39;);" >
+  <section id="skills" class="home-section wg-blank dark  bg-image parallax skill" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/skill-learn.jpg&#39;);" >
     <div class="container">
       
 
@@ -1056,28 +1255,16 @@ programming contests. An enthusiastic team player.</p>
       
     </div>
     <div class="col-12 col-lg-8">
-      
-
-<h3 id="go-c-c-java"><code>GO</code> <code>C</code> <code>C++</code> <code>Java</code></h3>
-
-<hr />
-
+      <h3 id="go-c-c-java"><code>GO</code> <code>C</code> <code>C++</code> <code>Java</code></h3>
+<hr>
 <h3 id="sql-bash-git"><code>SQL</code> <code>Bash</code> <code>Git</code></h3>
-
-<hr />
-
-<h3 id="kubernetes-docker"><code>Kubernetes</code> <code>Docker</code></h3>
-
-<hr />
-
-<h3 id="mysql-postgresql-mongodb"><code>MySQL</code> <code>PostgreSQL</code> <code>MongoDB</code></h3>
-
-<hr />
-
+<hr>
+<h3 id="kubernetes-docker-ansible-docker-compose"><code>Kubernetes</code> <code>Docker</code> <code>Ansible</code> <code>Docker Compose</code></h3>
+<hr>
+<h3 id="postgresql-mysql-mongodb-elasticsearch-redis"><code>PostgreSQL</code> <code>MySQL</code> <code>MongoDB</code> <code>Elasticsearch</code> <code>Redis</code></h3>
+<hr>
 <h3 id="aws-gcp-azure-digitalocean"><code>AWS</code> <code>GCP</code> <code>Azure</code> <code>DigitalOcean</code></h3>
-
-<hr />
-
+<hr>
 <h3 id="prometheus-grpc"><code>Prometheus</code> <code>gRPC</code></h3>
 
     </div>
@@ -1131,13 +1318,13 @@ programming contests. An enthusiastic team player.</p>
 
 
 <div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
+  <div class="col-12 col-lg-4 section-heading">
 
     <h1>Projects</h1>
     
 
   </div>
-  <div class="col-xs-12 col-md-8">
+  <div class="col-12 col-lg-8">
 
 
 
@@ -1545,6 +1732,8 @@ programming contests. An enthusiastic team player.</p>
     
     
     
+    
+    
   
 
   
@@ -1567,7 +1756,7 @@ programming contests. An enthusiastic team player.</p>
   
   
 
-  <section id="posts" class="home-section wg-pages dark parallax dark" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/blog.jpg&#39;);" >
+  <section id="posts" class="home-section wg-pages dark  bg-image parallax dark" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(&#39;https://maruftuhin.com/img/blog.jpg&#39;);" >
     <div class="container">
       
 
@@ -1579,6 +1768,7 @@ programming contests. An enthusiastic team player.</p>
 
 
   
+
 
 
 
@@ -1659,7 +1849,6 @@ programming contests. An enthusiastic team player.</p>
         
 
 
-
 <div class="article-metadata">
 
   
@@ -1696,8 +1885,6 @@ programming contests. An enthusiastic team player.</p>
   <span class="middot-divider"></span>
   <span class="article-categories">
     <i class="fas fa-folder mr-1"></i><a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/kubectl/">kubectl</a>, <a href="/categories/minikube/">Minikube</a></span>
-  
-
   
 
 </div>
@@ -1759,7 +1946,6 @@ programming contests. An enthusiastic team player.</p>
         
 
 
-
 <div class="article-metadata">
 
   
@@ -1796,8 +1982,6 @@ programming contests. An enthusiastic team player.</p>
   <span class="middot-divider"></span>
   <span class="article-categories">
     <i class="fas fa-folder mr-1"></i><a href="/categories/docker/">Docker</a>, <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/bash/">Bash</a></span>
-  
-
   
 
 </div>
@@ -1859,7 +2043,6 @@ programming contests. An enthusiastic team player.</p>
         
 
 
-
 <div class="article-metadata">
 
   
@@ -1896,8 +2079,6 @@ programming contests. An enthusiastic team player.</p>
   <span class="middot-divider"></span>
   <span class="article-categories">
     <i class="fas fa-folder mr-1"></i><a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/mongodb/">MongoDB</a>, <a href="/categories/minikube/">minikube</a></span>
-  
-
   
 
 </div>
@@ -1974,11 +2155,18 @@ programming contests. An enthusiastic team player.</p>
     <div class="col-12 col-lg-8">
       <ul>
 <li>Solved overall <strong>900+</strong> problems on different Online Judges.</li>
-<li>Solved <strong>330+</strong> problems on <strong>UVA Online Judge</strong>. [<a href="https://uhunt.onlinejudge.org/id/163246" target="_blank">the_redback</a>]</li>
-<li>Solved <strong>155+</strong> problems on <strong>LightOJ</strong> [<a href="http://lightoj.com/login_main.php?url=volume_userstat.php?user_id=5399" target="_blank">5399</a>]</li>
-<li>Former <strong>Candidate Master</strong> at <strong>CodeForces</strong> (Rating:1845, Expert at new rating system) [<a href="http://codeforces.com/profile/the_redback" target="_blank">the_redback</a>] solved 300+ problems.</li>
-<li>Former <strong>Expert</strong> at TopCoder (Rating: 1400) [<a href="https://www.topcoder.com/members/the_redback/" target="_blank">the_redback</a>]</li>
-<li>Also participated in many online contests at <strong>CodeChef</strong> [<a href="http://www.codechef.com/users/the_redback" target="_blank">the_redback</a>], <strong>HackerRank</strong> [<a href="https://www.hackerrank.com/the_redback" target="_blank">the_redback</a>] and <strong>Spoj</strong> [<a href="http://www.spoj.com/users/maruf2hin/" target="_blank">maruf2hin</a>]</li>
+<li>Solved <strong>330+</strong> problems on <strong>UVA Online Judge</strong>. [
+<a href="https://uhunt.onlinejudge.org/id/163246" target="_blank" rel="noopener">the_redback</a>]</li>
+<li>Solved <strong>155+</strong> problems on <strong>LightOJ</strong> [
+<a href="http://lightoj.com/login_main.php?url=volume_userstat.php?user_id=5399" target="_blank" rel="noopener">5399</a>]</li>
+<li>Former <strong>Candidate Master</strong> at <strong>CodeForces</strong> (Rating:1845, Expert at new rating system) [
+<a href="http://codeforces.com/profile/the_redback" target="_blank" rel="noopener">the_redback</a>] solved 300+ problems.</li>
+<li>Former <strong>Expert</strong> at TopCoder (Rating: 1400) [
+<a href="https://www.topcoder.com/members/the_redback/" target="_blank" rel="noopener">the_redback</a>]</li>
+<li>Also participated in many online contests at <strong>CodeChef</strong> [
+<a href="http://www.codechef.com/users/the_redback" target="_blank" rel="noopener">the_redback</a>], <strong>HackerRank</strong> [
+<a href="https://www.hackerrank.com/the_redback" target="_blank" rel="noopener">the_redback</a>] and <strong>Spoj</strong> [
+<a href="http://www.spoj.com/users/maruf2hin/" target="_blank" rel="noopener">maruf2hin</a>]</li>
 </ul>
 
     </div>
@@ -2384,13 +2572,14 @@ Participated as a contestant in many National & International Programming Contes
       
       
       
+      
 
       <div class="tag-cloud">
         
           
           
           
-          <a href="/tags/academic/" style="font-size:3.3rem">Academic</a>
+          <a href="/tags/academic/" style="font-size:1.7058172988098081rem">Academic</a>
         
           
           
@@ -2420,17 +2609,17 @@ Participated as a contestant in many National & International Programming Contes
           
           
           
-          <a href="/tags/kubectl/" style="font-size:2rem">kubectl</a>
+          <a href="/tags/kubectl/" style="font-size:1.202908649404904rem">kubectl</a>
         
           
           
           
-          <a href="/tags/kubernetes/" style="font-size:3.718506523353571rem">Kubernetes</a>
+          <a href="/tags/kubernetes/" style="font-size:1.8677177222151053rem">Kubernetes</a>
         
           
           
           
-          <a href="/tags/minikube/" style="font-size:2rem">Minikube</a>
+          <a href="/tags/minikube/" style="font-size:1.202908649404904rem">Minikube</a>
         
           
           
@@ -2440,12 +2629,12 @@ Participated as a contestant in many National & International Programming Contes
           
           
           
-          <a href="/tags/oss/" style="font-size:2rem">OSS</a>
+          <a href="/tags/oss/" style="font-size:1.202908649404904rem">OSS</a>
         
           
           
           
-          <a href="/tags/professional/" style="font-size:2.7604512509375025rem">Professional</a>
+          <a href="/tags/professional/" style="font-size:1.4970913505950958rem">Professional</a>
         
       </div>
     
@@ -2523,15 +2712,9 @@ Participated as a contestant in many National & International Programming Contes
       
       
         
-        
-        
-        
-        
-        
-        
         <li>
           <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-          <span id="person-address">Dhaka, 1230, Bangladesh</span>
+          <span id="person-address">Uttara, Dhaka, 1230</span>
         </li>
       
 
@@ -2590,58 +2773,56 @@ Participated as a contestant in many National & International Programming Contes
 
     
     
-
-    
-    
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/bash.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/yaml.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/go.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/json.min.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/console.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/json.min.js"></script>
         
       
 
-      
-      
     
 
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
     
 
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
     
     
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -2697,7 +2878,7 @@ Participated as a contestant in many National & International Programming Contes
     
     
     
-    <script src="/js/academic.min.130521ecfc6f534c52c158217bbff718.js"></script>
+    <script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
     
 
@@ -2706,6 +2887,7 @@ Participated as a contestant in many National & International Programming Contes
 
 
 
+  
   
   <div class="container">
     <footer class="site-footer">
@@ -2714,12 +2896,12 @@ Participated as a contestant in many National & International Programming Contes
     
       <a href="/privacy/"></a>
     
-        
+    
   </p>
   
 
   <p class="powered-by">
-    &copy; 2019 Abdullah Al Maruf &middot; 
+    © 2020 Abdullah Al Maruf &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -2727,7 +2909,7 @@ Participated as a contestant in many National & International Programming Contes
 
     
     <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
+      <a href="#" class="back-to-top">
         <span class="button_icon">
           <i class="fas fa-chevron-up fa-2x"></i>
         </span>
