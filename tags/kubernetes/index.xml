@@ -384,37 +384,6 @@ docker save &amp;lt;image-name&amp;gt; | (eval $(minikube docker-env) &amp;amp;&
     </item>
     
     <item>
-      <title>Appscode/Analytics</title>
-      <link>https://maruftuhin.com/project/appscode_analytics/</link>
-      <pubDate>Wed, 27 Feb 2019 03:00:07 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
-&lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
-&lt;li&gt;Used pixel tracking [aka, web beacon] to event each view of GitHub or other web pages in real time.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>KubeDB</title>
-      <link>https://maruftuhin.com/project/kubedb/</link>
-      <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/kubedb/</guid>
-      <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
-&lt;li&gt;Conducted &lt;strong&gt;Bi-Weekly KubeDB Community meetings&lt;/strong&gt; regularly.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;MongoDB&lt;/strong&gt;, &lt;strong&gt;MySQL&lt;/strong&gt;, &lt;strong&gt;Redis&lt;/strong&gt; and &lt;strong&gt;Memcached&lt;/strong&gt; support to
-KubeDB.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;MongoDB clustering&lt;/strong&gt; system. Also, worked on &lt;strong&gt;PostgreSQL&lt;/strong&gt;
-and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
-&lt;li&gt;Worked with &lt;strong&gt;prometheus&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Mongodb Replica Set on Kubernetes</title>
       <link>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</link>
       <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
@@ -677,6 +646,37 @@ $ mongo
 &lt;p&gt;As PVC was not deleted, We will still have existing Data.&lt;/p&gt;
 &lt;h3 id=&#34;verify-clusterization&#34;&gt;Verify Clusterization&lt;/h3&gt;
 &lt;p&gt;Delete &lt;code&gt;mongod-0&lt;/code&gt; Pod and keep cheking &lt;code&gt;rs.status()&lt;/code&gt;, eventually another node of the remaining two will become &lt;code&gt;Primary&lt;/code&gt; Node.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>KubeDB</title>
+      <link>https://maruftuhin.com/project/kubedb/</link>
+      <pubDate>Sun, 11 Feb 2018 03:06:15 +0600</pubDate>
+      <guid>https://maruftuhin.com/project/kubedb/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
+&lt;li&gt;Conducted &lt;strong&gt;Bi-Weekly KubeDB Community meetings&lt;/strong&gt; regularly.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;MongoDB&lt;/strong&gt;, &lt;strong&gt;MySQL&lt;/strong&gt;, &lt;strong&gt;Redis&lt;/strong&gt; and &lt;strong&gt;Memcached&lt;/strong&gt; support to
+KubeDB.&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;MongoDB clustering&lt;/strong&gt; system. Also, worked on &lt;strong&gt;PostgreSQL&lt;/strong&gt;
+and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
+&lt;li&gt;Worked with &lt;strong&gt;prometheus&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Appscode/Analytics</title>
+      <link>https://maruftuhin.com/project/appscode_analytics/</link>
+      <pubDate>Sat, 27 May 2017 03:00:07 +0600</pubDate>
+      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
+&lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
+&lt;li&gt;Used pixel tracking [aka, web beacon] to event each view of GitHub or other web pages in real time.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

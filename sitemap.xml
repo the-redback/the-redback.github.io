@@ -88,71 +88,6 @@
   </url>
   
   <url>
-    <loc>https://maruftuhin.com/project/data_encryption/</loc>
-    <lastmod>2019-02-27T03:11:03+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/tags/hobby/</loc>
-    <lastmod>2019-02-27T03:11:03+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/</loc>
-    <lastmod>2019-02-27T03:11:03+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/email_verification/</loc>
-    <lastmod>2019-02-27T03:10:51+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/tags/professional/</loc>
-    <lastmod>2019-02-27T03:10:51+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/tags/academic/</loc>
-    <lastmod>2019-02-27T03:10:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/scientific_calculator/</loc>
-    <lastmod>2019-02-27T03:10:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/library_system/</loc>
-    <lastmod>2019-02-27T03:10:14+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/dsw/</loc>
-    <lastmod>2019-02-27T03:10:03+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/3d_racing_game/</loc>
-    <lastmod>2019-02-27T03:06:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/appscode_analytics/</loc>
-    <lastmod>2019-02-27T03:00:07+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/tags/oss/</loc>
-    <lastmod>2019-02-27T03:00:07+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://maruftuhin.com/project/kubedb/</loc>
-    <lastmod>2019-02-11T03:06:15+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://maruftuhin.com/tags/database/</loc>
     <lastmod>2019-01-12T03:07:50+06:00</lastmod>
   </url>
@@ -170,6 +105,71 @@
   <url>
     <loc>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</loc>
     <lastmod>2019-01-12T03:07:50+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/kubedb/</loc>
+    <lastmod>2018-02-11T03:06:15+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/oss/</loc>
+    <lastmod>2018-02-11T03:06:15+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/professional/</loc>
+    <lastmod>2018-02-11T03:06:15+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/</loc>
+    <lastmod>2018-02-11T03:06:15+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/appscode_analytics/</loc>
+    <lastmod>2017-05-27T03:00:07+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/3d_racing_game/</loc>
+    <lastmod>2017-01-27T03:06:27+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/academic/</loc>
+    <lastmod>2017-01-27T03:06:27+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/dsw/</loc>
+    <lastmod>2016-06-27T03:10:03+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/email_verification/</loc>
+    <lastmod>2016-03-27T03:10:51+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/data_encryption/</loc>
+    <lastmod>2016-02-27T03:11:03+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/tags/hobby/</loc>
+    <lastmod>2016-02-27T03:11:03+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/library_system/</loc>
+    <lastmod>2015-02-27T03:10:14+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maruftuhin.com/project/scientific_calculator/</loc>
+    <lastmod>2012-02-27T03:10:27+06:00</lastmod>
   </url>
   
   <url>

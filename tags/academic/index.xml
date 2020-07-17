@@ -5,7 +5,7 @@
     <link>https://maruftuhin.com/tags/academic/</link>
       <atom:link href="https://maruftuhin.com/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Abdullah Al Maruf</copyright><lastBuildDate>Wed, 27 Feb 2019 03:10:27 +0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 27 Jan 2017 03:06:27 +0600</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Academic</title>
@@ -13,17 +13,30 @@
     </image>
     
     <item>
-      <title>Scientific Calculator</title>
-      <link>https://maruftuhin.com/project/scientific_calculator/</link>
-      <pubDate>Wed, 27 Feb 2019 03:10:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
+      <title>3D Racing Game</title>
+      <link>https://maruftuhin.com/project/3d_racing_game/</link>
+      <pubDate>Fri, 27 Jan 2017 03:06:27 +0600</pubDate>
+      <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
+&lt;li&gt;Developed for both &lt;strong&gt;PC&lt;/strong&gt; and &lt;strong&gt;Android&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tools:&lt;/em&gt; &lt;strong&gt;Unity 5 Game Engine&lt;/strong&gt;, &lt;strong&gt;Android SDK&lt;/strong&gt;, &lt;strong&gt;C#&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Department of Student Welfare (DSW) Management System</title>
+      <link>https://maruftuhin.com/project/dsw/</link>
+      <pubDate>Mon, 27 Jun 2016 03:10:03 +0600</pubDate>
+      <guid>https://maruftuhin.com/project/dsw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Library Management System</title>
       <link>https://maruftuhin.com/project/library_system/</link>
-      <pubDate>Wed, 27 Feb 2019 03:10:14 +0600</pubDate>
+      <pubDate>Fri, 27 Feb 2015 03:10:14 +0600</pubDate>
       <guid>https://maruftuhin.com/project/library_system/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Academical Database Project&lt;/li&gt;
@@ -33,24 +46,11 @@
     </item>
     
     <item>
-      <title>Department of Student Welfare (DSW) Management System</title>
-      <link>https://maruftuhin.com/project/dsw/</link>
-      <pubDate>Wed, 27 Feb 2019 03:10:03 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/dsw/</guid>
+      <title>Scientific Calculator</title>
+      <link>https://maruftuhin.com/project/scientific_calculator/</link>
+      <pubDate>Mon, 27 Feb 2012 03:10:27 +0600</pubDate>
+      <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>3D Racing Game</title>
-      <link>https://maruftuhin.com/project/3d_racing_game/</link>
-      <pubDate>Wed, 27 Feb 2019 03:06:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
-&lt;li&gt;Developed for both &lt;strong&gt;PC&lt;/strong&gt; and &lt;strong&gt;Android&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Tools:&lt;/em&gt; &lt;strong&gt;Unity 5 Game Engine&lt;/strong&gt;, &lt;strong&gt;Android SDK&lt;/strong&gt;, &lt;strong&gt;C#&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
