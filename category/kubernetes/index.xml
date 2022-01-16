@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes | Maruf&#39;s</title>
+    <link>https://maruftuhin.com/category/kubernetes/</link>
+      <atom:link href="https://maruftuhin.com/category/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kubernetes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>Kubernetes</title>
+      <link>https://maruftuhin.com/category/kubernetes/</link>
+    </image>
+    
+    <item>
+      <title>My Kubectl Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      <guid>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</guid>
+      <description>&lt;h1 id=&#34;kubectl-cheat-sheet&#34;&gt;Kubectl Cheat Sheet&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; minikube version
+&amp;gt; minikube start
+&amp;gt; kubectl version
+&amp;gt; kubectl get nodes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-app-in-kubernetes&#34;&gt;Run app in kubernetes&lt;/h3&gt;
+&lt;p&gt;Run app in kubernetes by kubectl&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;also run GRPS_Sample //problematic&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See deployments&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;run proxy and echo&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl proxy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting up POD_NAME variable&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
+&amp;gt; echo Name of the Pod: $POD_NAME
+
+&amp;gt; curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;pods&#34;&gt;Pods&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods
+&amp;gt; kubectl describe pods
+&amp;gt; kubectl logs $POD_NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;execute-commands-on-container&#34;&gt;Execute commands on container&lt;/h3&gt;
+&lt;p&gt;settings up env variables&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec $POD_NAME env
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;run a container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME bash
+&amp;gt; exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;services-on-kubernetes&#34;&gt;Services on kubernetes&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get services
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;create and expose new service&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl expose deployment/kubernetes-bootcamp --type=&amp;quot;NodePort&amp;quot; --port 8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting up Node Port variable&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; echo NODE_PORT=$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;accessing POD from external&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;accessing pod from internal&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME curl localhost:8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;get description of only one deployment&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -l &amp;lt;label&amp;gt;
+i.e.
+&amp;gt; kubectl get pods -l run=kubernetes-bootcamp
+&amp;gt; kubectl get services -l run=kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;setting up lable. 1st get POD NAME. then&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
+&amp;gt; echo Name of the Pod: $POD_NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;label it&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl label pod $POD_NAME app=v1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List of pods using label &amp;ldquo;app=v1&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -l app=v1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete services with label run=kubernetes-bootcamp&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl delete service -l run=kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;scaling&#34;&gt;Scaling&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;scale to 4 replicas. [kubernetes&amp;ndash;bootmcamp] is name of deloyments&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;current pods&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -o wide
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Change log&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe deployments/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;find exposed ip and service&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;set environment variable NODE PORT&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; echo NODE_PORT=$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run this command to see which pod is serving&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Scale down service to 2 replicas from 4 replicas&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Description again&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&amp;gt; kubectl get pods -o wide
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;updating-application&#34;&gt;Updating Application&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&amp;gt; kubectl get pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;current image version of app&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;update the image to version 2&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Changes in Pods&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;verify-update&#34;&gt;Verify update&lt;/h3&gt;
+&lt;p&gt;service description&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting up NODE PORT&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; echo NODE_PORT=$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rollout status command to see update&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl rollout status deployments/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;rollback-update&#34;&gt;Rollback update&lt;/h3&gt;
+&lt;p&gt;First deploy update tag v10 for example&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;status&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&amp;gt; kubectl get pods
+&amp;gt; kubectl describe pods
+# we can see, not all are v10 applied
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rollback to previous working state&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl rollout undo deployments/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-own-program-docker-grpc&#34;&gt;Run own program docker-gRPC&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; docker images
+&amp;gt; kubectl run grpc-sample3 --image=maruftuhin/server_grpc_sample:tag --port=8088
+&amp;gt; kubectl get pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;access from internal&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl proxy
+&amp;gt; curl --data &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;pc1\&amp;quot;, \&amp;quot;a\&amp;quot;:2,\&amp;quot;b\&amp;quot;:3}&amp;quot; http://localhost:8001/api/v1/proxy/namespaces/default/pods/&amp;lt;pods id &amp;gt;/echo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;access from external [Expose ]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl expose deployment/grpc-sample3 --type=&amp;quot;NodePort&amp;quot; --port 8088
+&amp;gt; kubectl get services/grpc-sample3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting $Node_Port variable. but the ports can also be used from &amp;ldquo;kubectl get services/grpc-sample3&amp;rdquo; results&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; kubectl get services/grpc-sample3
+&amp;gt; kubectl get nodes
+&amp;gt; kubectl get svc grpc-sample3 -o yaml
+&amp;gt; minikube service grpc-sample3 --url
+&amp;gt; curl --data &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;pc1\&amp;quot;, \&amp;quot;a\&amp;quot;:2,\&amp;quot;b\&amp;quot;:3}&amp;quot; http://192.168.99.100:32258/echo
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Docker Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/my-docker-cheat-sheet/</link>
+      <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
+      <guid>https://maruftuhin.com/blog/my-docker-cheat-sheet/</guid>
+      <description>&lt;h2 id=&#34;docker-cheat-sheet&#34;&gt;Docker Cheat Sheet&lt;/h2&gt;
+&lt;h2 id=&#34;build-and-run-a-docker-image&#34;&gt;Build and run a docker image&lt;/h2&gt;
+&lt;p&gt;Build docker images from docker file, goto dockerfile directory and command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker build -t friendlynginx .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run docker image from locally built image&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -d -p 50053:8088 friendlynginx
+# -d for running it in background //50053:8088 is the exposed port
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Connect with docker hub and push to directory, a directory maruftuhin/nginx is created  i docker hub at first, then login&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker login
+docker tag friendlynginx maruftuhin/nginx:tag
+docker push maruftuhin/nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pull image from docker hub:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker pull maruftuhin/nginx:tag
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run image using tag , [if locally unavailable, it pulls from online]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -p -d 4000:8088 maruftuhin/nginx:tag
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;list-of-images-and-containers&#34;&gt;List of images and containers&lt;/h2&gt;
+&lt;p&gt;List of images&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List all exited containers&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a -q -f status=exited
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List of containers&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a
+# -a for all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;stopremove-a-container-or-image&#34;&gt;Stop/remove a container or image&lt;/h3&gt;
+&lt;p&gt;Stop a container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker stop &amp;lt;container_id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Start a exited container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker start &amp;lt;container id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove an image&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rmi &amp;lt;image_id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove a container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rm &amp;lt;container id&amp;gt;
+docker rm &amp;lt;container_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove more than one image/container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rm &amp;lt;container id&amp;gt; &amp;lt;container_id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;making-change-in-a-containerimage&#34;&gt;Making change in a container/image&lt;/h3&gt;
+&lt;p&gt;Creates a container for a image and enters it directory&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it &amp;lt;image_id&amp;gt; /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Insert in a existing container [the container must be UP]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; bash
+# example: docker exec -it ecf1310ac3ed bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Anything can be installed in that container, example, at first insert into a container and command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;apt-get update
+apt-get install fish
+apt-get install php    #installs latest php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Exit container directory&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Creates a image/snapshot of a [may be modified] container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker commit &amp;lt;container_id&amp;gt; new_id_of_image
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;executing-container-commands&#34;&gt;Executing container commands&lt;/h3&gt;
+&lt;p&gt;Start a exited container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker start &amp;lt;container id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Restart a crashed container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker restart &amp;lt;contaienr_id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Start fish in interactive mode&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; fish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Start php inside container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker exec -it &amp;lt;container_id&amp;gt; php -a
+echo &amp;quot;hello world&amp;quot;;
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;names-of-conatiners-or-images&#34;&gt;Names of conatiners or Images&lt;/h3&gt;
+&lt;p&gt;Rename existing container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker rename &amp;lt;old_name&amp;gt; new_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Giving the container a name, while rnning it&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it --name newName &amp;lt;container_id&amp;gt; bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;copy-files-from-a-container&#34;&gt;Copy files from a container&lt;/h3&gt;
+&lt;p&gt;Create a text file inside container. insert the container and command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;touch test.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Copy from container. Exit from container and command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker cp containerName:/test.txt .    #copies test.txt to host root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Copy into container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker cp ./test1.txt  containerName:/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;container-hostnames&#34;&gt;Container hostnames&lt;/h3&gt;
+&lt;p&gt;Gives a new hostname to the container. it doesn&amp;rsquo;t change the Names of container. but when user is inside the  container, it sees the hostname, in this case, it&amp;rsquo;s root@test.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it -h test.local &amp;lt;image_id&amp;gt; bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;handling-volumes&#34;&gt;Handling volumes&lt;/h3&gt;
+&lt;p&gt;It links between a directory of host and  directory of container. in command, left side of  &amp;ldquo;:&amp;rdquo; defines the source of host direcotry and right side defines destination into container.In this case, changing in ~/data of directory of host machine also takes place changing in container automatically&lt;/p&gt;
+&lt;p&gt;Bind mounts, the pasth is absolute here&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it --name test21 -v ~/data:/data &amp;lt;image_id&amp;gt; bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Volume help&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Inspect a docker container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker inspect &amp;lt;container_id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Named volume [non-bind mount], here the path is not absolute&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it  -v data:/data &amp;lt;container_id&amp;gt; bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Used volumes of local machine in container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume ls
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If same volume is used in another container, they will share the volume.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it  -v data:/data &amp;lt;container_id&amp;gt; bash   //shares previous data volume
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove docker volume, volume_name is available in  docker volume ls&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume rm &amp;lt;volume_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Multiple volume&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it  -v data:/data  -v myBin:/myBin &amp;lt;container_id&amp;gt; bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Copy volume from another container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run -it --name slave --volume-from &amp;lt;master_container_id/Name&amp;gt; &amp;lt;image_id&amp;gt; bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Inspect docker volume&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume inspect &amp;lt;volume_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Show danglisg volumes [not used by any container]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume ls -f dangling=true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove one volume that is not used&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume rm &amp;lt;volume name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Removing all unsed volumes&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume prune
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Anonymous volume. &amp;ndash;rm will delete anonymous volume after remove container. here /foo is a anonymous volume&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker run --rm -v /foo -v awesome:/bar busybox top
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;untagged-images&#34;&gt;Untagged Images&lt;/h3&gt;
+&lt;p&gt;Show untagged images&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -f &amp;quot;dangling=true&amp;quot; -q
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Delete all untagged images&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -f &amp;quot;dangling=true&amp;quot; -q | xargs docker rmi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;delete-multiple-images&#34;&gt;Delete multiple images&lt;/h3&gt;
+&lt;p&gt;Delete images of same name&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images --format &#39;{{.Repository}}:{{.Tag}}&#39; | grep &#39;imagename&#39; | xargs docker rmi
+# or,
+docker images -q imagename | uniq | xargs docker rmi --force
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;docker-killer-p&#34;&gt;Docker killer!!! :P&lt;/h3&gt;
+&lt;p&gt;Stop all container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a -q | xargs docker stop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Delete all container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -a -q | xargs docker rm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Removing all unused volumes&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker volume prune
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove untagged dockers&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -q -f &amp;quot;dangling=true&amp;quot; | xargs docker rmi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove stopped containers&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker ps -aq --no-trunc -f status=exited | xargs docker rm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Remove all images&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker images -q | xargs docker rmi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;start-fresh&#34;&gt;Start fresh&lt;/h3&gt;
+&lt;h4 id=&#34;dangerous-deletes-everything&#34;&gt;Dangerous!!! Deletes everything!!&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;sudo systemctl stop docker.service
+sudo rm -rf /var/lib/docker
+sudo systemctl start docker.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;copy-local-images-to-minikube&#34;&gt;Copy Local images to Minikube&lt;/h3&gt;
+&lt;p&gt;For bash&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;docker save &amp;lt;image-name&amp;gt; | pv | (eval $(minikube docker-env) &amp;amp;&amp;amp; docker load)
+# or,
+docker save &amp;lt;image-name&amp;gt; | (eval $(minikube docker-env) &amp;amp;&amp;amp; docker load)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mongodb Replica Set on Kubernetes</title>
+      <link>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</link>
+      <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
+      <guid>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</guid>
+      <description>&lt;h3 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h3&gt;
+&lt;p&gt;Run MongoDB Replica Set on Kubernetes using &lt;em&gt;Statefulset&lt;/em&gt; and &lt;em&gt;PersistentVolumeClaim&lt;/em&gt;. Minikube kubernetes cluster is used for this post.&lt;/p&gt;
+&lt;h3 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h3&gt;
+&lt;p&gt;MongoDB will use this key to communicate internal cluster.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ openssl rand -base64 741 &amp;gt; ./replica-sets/key.txt
+
+$ kubectl create secret generic shared-bootstrap-data --from-file=internal-auth-mongodb-keyfile=./replica-sets/key.txt
+secret &amp;quot;shared-bootstrap-data&amp;quot; created
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;deploy-mongodb-replica-sets-yaml&#34;&gt;Deploy MongoDB Replica-Sets YAML&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+  labels:
+    name: mongo
+spec:
+  ports:
+  - port: 27017
+    targetPort: 27017
+  clusterIP: None
+  selector:
+    role: mongo
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mongod
+spec:
+  serviceName: mongodb-service
+  replicas: 3
+  selector:
+    matchLabels:
+      role: mongo
+      environment: test
+      replicaset: MainRepSet
+  template:
+    metadata:
+      labels:
+        role: mongo
+        environment: test
+        replicaset: MainRepSet
+    spec:
+      containers:
+      - name: mongod-container
+        image: mongo:3.4
+        command:
+        - &amp;quot;numactl&amp;quot;
+        - &amp;quot;--interleave=all&amp;quot;
+        - &amp;quot;mongod&amp;quot;
+        - &amp;quot;--bind_ip&amp;quot;
+        - &amp;quot;0.0.0.0&amp;quot;
+        - &amp;quot;--replSet&amp;quot;
+        - &amp;quot;MainRepSet&amp;quot;
+        - &amp;quot;--auth&amp;quot;
+        - &amp;quot;--clusterAuthMode&amp;quot;
+        - &amp;quot;keyFile&amp;quot;
+        - &amp;quot;--keyFile&amp;quot;
+        - &amp;quot;/etc/secrets-volume/internal-auth-mongodb-keyfile&amp;quot;
+        - &amp;quot;--setParameter&amp;quot;
+        - &amp;quot;authenticationMechanisms=SCRAM-SHA-1&amp;quot;
+        resources:
+          requests:
+            cpu: 0.2
+            memory: 200Mi
+        ports:
+        - containerPort: 27017
+        volumeMounts:
+        - name: secrets-volume
+          readOnly: true
+          mountPath: /etc/secrets-volume
+        - name: mongodb-persistent-storage-claim
+          mountPath: /data/db
+      volumes:
+      - name: secrets-volume
+        secret:
+          secretName: shared-bootstrap-data
+          defaultMode: 256
+  volumeClaimTemplates:
+  - metadata:
+      name: mongodb-persistent-storage-claim
+      annotations:
+        volume.beta.kubernetes.io/storage-class: &amp;quot;standard&amp;quot;
+    spec:
+      accessModes: [ &amp;quot;ReadWriteOnce&amp;quot; ]
+      resources:
+        requests:
+          storage: 1Gi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now Deploy the Yaml&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kc create -f ./replica-sets/mongodb-rc.yaml 
+service &amp;quot;mongodb-service&amp;quot; created
+statefulset &amp;quot;mongod&amp;quot; created
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;wait-for-pod-running-and-pvc&#34;&gt;Wait for Pod running and PVC&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl get all
+NAME                  DESIRED   CURRENT   AGE
+statefulsets/mongod   3         3         2m
+
+NAME          READY     STATUS    RESTARTS   AGE
+po/mongod-0   1/1       Running   0          2m
+po/mongod-1   1/1       Running   0          2m
+po/mongod-2   1/1       Running   0          2m
+
+$ kubectl get pvc
+NAME                                        STATUS    VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+mongodb-persistent-storage-claim-mongod-0   Bound     pvc-ba24dc66-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
+mongodb-persistent-storage-claim-mongod-1   Bound     pvc-bf2e51a5-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
+mongodb-persistent-storage-claim-mongod-2   Bound     pvc-c7948f87-319a-11e8-8dd9-080027779e8d   1Gi        RWO            standard       1h
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;setup-replicaset-configuration&#34;&gt;Setup ReplicaSet Configuration&lt;/h3&gt;
+&lt;p&gt;Finally, we need to connect to one of the “mongod” container processes to configure the replica set.&lt;/p&gt;
+&lt;p&gt;Run the following command to connect to the first container. In the shell initiate the replica set (we can rely on the hostnames always being the same, due to having employed a StatefulSet):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+$ mongo
+&amp;gt; rs.initiate({_id: &amp;quot;MainRepSet&amp;quot;, version: 1, members: [
+       { _id: 0, host : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot; },
+       { _id: 1, host : &amp;quot;mongod-1.mongodb-service.default.svc.cluster.local:27017&amp;quot; },
+       { _id: 2, host : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot; }
+ ]});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keep checking the status of the replica set, with the following command, until the replica set is fully initialised and a primary and two secondaries are present:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;gt; rs.status();
+
+# output similar to:
+{
+	&amp;quot;set&amp;quot; : &amp;quot;MainRepSet&amp;quot;,
+	&amp;quot;date&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:31.577Z&amp;quot;),
+	&amp;quot;myState&amp;quot; : 2,
+	&amp;quot;term&amp;quot; : NumberLong(1),
+	&amp;quot;syncingTo&amp;quot; : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+	&amp;quot;heartbeatIntervalMillis&amp;quot; : NumberLong(2000),
+	&amp;quot;optimes&amp;quot; : {
+		&amp;quot;lastCommittedOpTime&amp;quot; : {
+			&amp;quot;ts&amp;quot; : Timestamp(1522152676, 1),
+			&amp;quot;t&amp;quot; : NumberLong(1)
+		},
+		&amp;quot;appliedOpTime&amp;quot; : {
+			&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+			&amp;quot;t&amp;quot; : NumberLong(1)
+		},
+		&amp;quot;durableOpTime&amp;quot; : {
+			&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+			&amp;quot;t&amp;quot; : NumberLong(1)
+		}
+	},
+	&amp;quot;members&amp;quot; : [
+		{
+			&amp;quot;_id&amp;quot; : 0,
+			&amp;quot;name&amp;quot; : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;health&amp;quot; : 1,
+			&amp;quot;state&amp;quot; : 1,
+			&amp;quot;stateStr&amp;quot; : &amp;quot;PRIMARY&amp;quot;,
+			&amp;quot;uptime&amp;quot; : 399,
+			&amp;quot;optime&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDurable&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;optimeDurableDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;lastHeartbeat&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:30.360Z&amp;quot;),
+			&amp;quot;lastHeartbeatRecv&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:30.697Z&amp;quot;),
+			&amp;quot;pingMs&amp;quot; : NumberLong(0),
+			&amp;quot;electionTime&amp;quot; : Timestamp(1522152306, 1),
+			&amp;quot;electionDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:05:06Z&amp;quot;),
+			&amp;quot;configVersion&amp;quot; : 1
+		},
+		{
+			&amp;quot;_id&amp;quot; : 1,
+			&amp;quot;name&amp;quot; : &amp;quot;mongod-1.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;health&amp;quot; : 1,
+			&amp;quot;state&amp;quot; : 2,
+			&amp;quot;stateStr&amp;quot; : &amp;quot;SECONDARY&amp;quot;,
+			&amp;quot;uptime&amp;quot; : 505,
+			&amp;quot;optime&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;syncingTo&amp;quot; : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;configVersion&amp;quot; : 1,
+			&amp;quot;self&amp;quot; : true
+		},
+		{
+			&amp;quot;_id&amp;quot; : 2,
+			&amp;quot;name&amp;quot; : &amp;quot;mongod-2.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;health&amp;quot; : 1,
+			&amp;quot;state&amp;quot; : 2,
+			&amp;quot;stateStr&amp;quot; : &amp;quot;SECONDARY&amp;quot;,
+			&amp;quot;uptime&amp;quot; : 399,
+			&amp;quot;optime&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDurable&amp;quot; : {
+				&amp;quot;ts&amp;quot; : Timestamp(1522152686, 1),
+				&amp;quot;t&amp;quot; : NumberLong(1)
+			},
+			&amp;quot;optimeDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;optimeDurableDate&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:26Z&amp;quot;),
+			&amp;quot;lastHeartbeat&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:30.360Z&amp;quot;),
+			&amp;quot;lastHeartbeatRecv&amp;quot; : ISODate(&amp;quot;2018-03-27T12:11:29.915Z&amp;quot;),
+			&amp;quot;pingMs&amp;quot; : NumberLong(0),
+			&amp;quot;syncingTo&amp;quot; : &amp;quot;mongod-0.mongodb-service.default.svc.cluster.local:27017&amp;quot;,
+			&amp;quot;configVersion&amp;quot; : 1
+		}
+	],
+	&amp;quot;ok&amp;quot; : 1
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;mongodb-0&lt;/code&gt; has become &lt;code&gt;Primary&lt;/code&gt; and Others two &lt;code&gt;Secondary&lt;/code&gt; Nodes.&lt;/p&gt;
+&lt;p&gt;Then run the following command to configure an “admin” user (performing this action results in the “localhost exception” being automatically and permanently disabled):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; db.getSiblingDB(&amp;quot;admin&amp;quot;).createUser({
+      user : &amp;quot;main_admin&amp;quot;,
+      pwd  : &amp;quot;abc123&amp;quot;,
+      roles: [ { role: &amp;quot;root&amp;quot;, db: &amp;quot;admin&amp;quot; } ]
+ });
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;insert-data&#34;&gt;Insert Data&lt;/h3&gt;
+&lt;p&gt;Insert Data into &lt;code&gt;mongod-0&lt;/code&gt; pod.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&amp;gt; use test;
+&amp;gt; db.testcoll.insert({a:1});
+&amp;gt; db.testcoll.insert({b:2});
+&amp;gt; db.testcoll.find();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;verify-cluster-data&#34;&gt;Verify Cluster Data&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;exec&lt;/code&gt; into Secondary Pod (here, mongo-1)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-1 -c mongod-container bash
+$ mongo
+&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&amp;gt; db.getMongo().setSlaveOk()
+&amp;gt; use test;
+&amp;gt; db.testcoll.find();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;verify-pvc&#34;&gt;Verify PVC&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl delete -f ./replica-sets/mongodb-rc.yaml
+$ kubectl get all
+$ kubectl get persistentvolumes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Recreate MongoDB&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl apply -f ./replica-sets/mongodb-rc.yaml
+$ kubectl get all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Verify Data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;$ kubectl exec -it mongod-0 -c mongod-container bash
+$ mongo
+&amp;gt; db.getSiblingDB(&#39;admin&#39;).auth(&amp;quot;main_admin&amp;quot;, &amp;quot;abc123&amp;quot;);
+&amp;gt; use test;
+&amp;gt; db.testcoll.find();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As PVC was not deleted, We will still have existing Data.&lt;/p&gt;
+&lt;h3 id=&#34;verify-clusterization&#34;&gt;Verify Clusterization&lt;/h3&gt;
+&lt;p&gt;Delete &lt;code&gt;mongod-0&lt;/code&gt; Pod and keep cheking &lt;code&gt;rs.status()&lt;/code&gt;, eventually another node of the remaining two will become &lt;code&gt;Primary&lt;/code&gt; Node.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

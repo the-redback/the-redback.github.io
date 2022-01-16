@@ -1,0 +1,9 @@
+# Netlify redirects
+# Automatically generated
+# Documentation: http://bit.ly/netlify-deployment
+/blog/kubernetes-cheatsheet/ /blog/my-kubectl-cheat-sheet/
+/blog/ /post/
+/blogs/ /post/
+/posts/ /post/
+/blog/docker-cheatsheet/ /blog/my-docker-cheat-sheet/
+/blog/mongodb-on-kubernetes/ /blog/mongodb-replica-set-on-kubernetes/

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Container | Maruf&#39;s</title>
+    <link>https://maruftuhin.com/tag/container/</link>
+      <atom:link href="https://maruftuhin.com/tag/container/index.xml" rel="self" type="application/rss+xml" />
+    <description>Container</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 03 Mar 2019 00:15:10 +0600</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>Container</title>
+      <link>https://maruftuhin.com/tag/container/</link>
+    </image>
+    
+    <item>
+      <title>My Kubectl Cheat Sheet</title>
+      <link>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</link>
+      <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
+      <guid>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</guid>
+      <description>&lt;h1 id=&#34;kubectl-cheat-sheet&#34;&gt;Kubectl Cheat Sheet&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; minikube version
+&amp;gt; minikube start
+&amp;gt; kubectl version
+&amp;gt; kubectl get nodes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-app-in-kubernetes&#34;&gt;Run app in kubernetes&lt;/h3&gt;
+&lt;p&gt;Run app in kubernetes by kubectl&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-bootcamp --image=docker.io/jocatalin/kubernetes-bootcamp:v1 --port=8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;also run GRPS_Sample //problematic&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl run kubernetes-grpc-sample --image=maruftuhin/server_grpc_sample --port=8088
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See deployments&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;run proxy and echo&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl proxy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting up POD_NAME variable&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
+&amp;gt; echo Name of the Pod: $POD_NAME
+
+&amp;gt; curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;pods&#34;&gt;Pods&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods
+&amp;gt; kubectl describe pods
+&amp;gt; kubectl logs $POD_NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;execute-commands-on-container&#34;&gt;Execute commands on container&lt;/h3&gt;
+&lt;p&gt;settings up env variables&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec $POD_NAME env
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;run a container&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME bash
+&amp;gt; exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;services-on-kubernetes&#34;&gt;Services on kubernetes&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get services
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;create and expose new service&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl expose deployment/kubernetes-bootcamp --type=&amp;quot;NodePort&amp;quot; --port 8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting up Node Port variable&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; echo NODE_PORT=$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;accessing POD from external&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;accessing pod from internal&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl exec -ti $POD_NAME curl localhost:8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;get description of only one deployment&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -l &amp;lt;label&amp;gt;
+i.e.
+&amp;gt; kubectl get pods -l run=kubernetes-bootcamp
+&amp;gt; kubectl get services -l run=kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;setting up lable. 1st get POD NAME. then&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export POD_NAME=$(kubectl get pods -o go-template --template &#39;{{range .items}}{{.metadata.name}}{{&amp;quot;\n&amp;quot;}}{{end}}&#39;)
+&amp;gt; echo Name of the Pod: $POD_NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;label it&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl label pod $POD_NAME app=v1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List of pods using label &amp;ldquo;app=v1&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -l app=v1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete services with label run=kubernetes-bootcamp&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl delete service -l run=kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;scaling&#34;&gt;Scaling&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;scale to 4 replicas. [kubernetes&amp;ndash;bootmcamp] is name of deloyments&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;current pods&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods -o wide
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Change log&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe deployments/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;find exposed ip and service&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;set environment variable NODE PORT&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; echo NODE_PORT=$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run this command to see which pod is serving&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; curl host01:$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Scale down service to 2 replicas from 4 replicas&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl scale deployments/kubernetes-bootcamp --replicas=2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Description again&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&amp;gt; kubectl get pods -o wide
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;updating-application&#34;&gt;Updating Application&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&amp;gt; kubectl get pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;current image version of app&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;update the image to version 2&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Changes in Pods&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;verify-update&#34;&gt;Verify update&lt;/h3&gt;
+&lt;p&gt;service description&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl describe services/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting up NODE PORT&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; echo NODE_PORT=$NODE_PORT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rollout status command to see update&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl rollout status deployments/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;rollback-update&#34;&gt;Rollback update&lt;/h3&gt;
+&lt;p&gt;First deploy update tag v10 for example&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;status&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl get deployments
+&amp;gt; kubectl get pods
+&amp;gt; kubectl describe pods
+# we can see, not all are v10 applied
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rollback to previous working state&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl rollout undo deployments/kubernetes-bootcamp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;run-own-program-docker-grpc&#34;&gt;Run own program docker-gRPC&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; docker images
+&amp;gt; kubectl run grpc-sample3 --image=maruftuhin/server_grpc_sample:tag --port=8088
+&amp;gt; kubectl get pods
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;access from internal&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl proxy
+&amp;gt; curl --data &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;pc1\&amp;quot;, \&amp;quot;a\&amp;quot;:2,\&amp;quot;b\&amp;quot;:3}&amp;quot; http://localhost:8001/api/v1/proxy/namespaces/default/pods/&amp;lt;pods id &amp;gt;/echo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;access from external [Expose ]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; kubectl expose deployment/grpc-sample3 --type=&amp;quot;NodePort&amp;quot; --port 8088
+&amp;gt; kubectl get services/grpc-sample3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;setting $Node_Port variable. but the ports can also be used from &amp;ldquo;kubectl get services/grpc-sample3&amp;rdquo; results&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; export NODE_PORT=$(kubectl get services/grpc-sample3 -o go-template=&#39;{{(index .spec.ports 0).nodePort}}&#39;)
+&amp;gt; kubectl get services/grpc-sample3
+&amp;gt; kubectl get nodes
+&amp;gt; kubectl get svc grpc-sample3 -o yaml
+&amp;gt; minikube service grpc-sample3 --url
+&amp;gt; curl --data &amp;quot;{\&amp;quot;name\&amp;quot;: \&amp;quot;pc1\&amp;quot;, \&amp;quot;a\&amp;quot;:2,\&amp;quot;b\&amp;quot;:3}&amp;quot; http://192.168.99.100:32258/echo
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
