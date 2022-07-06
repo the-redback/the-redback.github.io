@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Md Rofiqul Islam | Maruf&#39;s</title>
+    <link>https://maruftuhin.com/author/md-rofiqul-islam/</link>
+      <atom:link href="https://maruftuhin.com/author/md-rofiqul-islam/index.xml" rel="self" type="application/rss+xml" />
+    <description>Md Rofiqul Islam</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>Md Rofiqul Islam</title>
+      <link>https://maruftuhin.com/author/md-rofiqul-islam/</link>
+    </image>
+    
+    <item>
+      <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
+      <link>https://maruftuhin.com/publication/electronics-11121880/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/electronics-11121880/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

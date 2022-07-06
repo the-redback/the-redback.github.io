@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Maruf&#39;s</title>
+    <link>https://maruftuhin.com/publication-type/1/</link>
+      <atom:link href="https://maruftuhin.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>1</title>
+      <link>https://maruftuhin.com/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Using Static Analysis to Address Microservice Architecture Reconstruction</title>
+      <link>https://maruftuhin.com/publication/9678749/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/9678749/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Version Control and Issue Tickets to detect Code Debt and Economical Cost</title>
+      <link>https://maruftuhin.com/publication/9678532/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/9678532/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

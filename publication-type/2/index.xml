@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Maruf&#39;s</title>
+    <link>https://maruftuhin.com/publication-type/2/</link>
+      <atom:link href="https://maruftuhin.com/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>2</title>
+      <link>https://maruftuhin.com/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
+      <link>https://maruftuhin.com/publication/electronics-11121880/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/electronics-11121880/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survey on Tools and Techniques Detecting Microservice API Patterns</title>
+      <link>https://maruftuhin.com/publication/bakhtin-survey-2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/bakhtin-survey-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical Debt Resulting from Architectural Degradation and Code Smells: A Systematic Mapping Study</title>
+      <link>https://maruftuhin.com/publication/10-1145-3512753-3512755/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/10-1145-3512753-3512755/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Microservice Analysis and Architecture Evolution: A Systematic Mapping Study</title>
+      <link>https://maruftuhin.com/publication/app-11177856/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/app-11177856/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
