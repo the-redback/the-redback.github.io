@@ -5,12 +5,20 @@
     <link>https://maruftuhin.com/publication/</link>
       <atom:link href="https://maruftuhin.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://maruftuhin.com/publication/</link>
     </image>
+    
+    <item>
+      <title>Using Microservice Telemetry Data for System Dynamic Analysis</title>
+      <link>https://maruftuhin.com/publication/maruf-using-2022/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://maruftuhin.com/publication/maruf-using-2022/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
