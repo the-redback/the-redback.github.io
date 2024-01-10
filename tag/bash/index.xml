@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/tag/bash/</link>
-      <atom:link href="https://maruftuhin.com/tag/bash/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/tag/bash/</link>
+      <atom:link href="https://the-maruf.com/tag/bash/index.xml" rel="self" type="application/rss+xml" />
     <description>Bash</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Mar 2019 04:05:30 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Mar 2019 04:05:30 +0600</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Bash</title>
-      <link>https://maruftuhin.com/tag/bash/</link>
+      <link>https://the-maruf.com/tag/bash/</link>
     </image>
     
     <item>
       <title>My Docker Cheat Sheet</title>
-      <link>https://maruftuhin.com/blog/my-docker-cheat-sheet/</link>
+      <link>https://the-maruf.com/blog/my-docker-cheat-sheet/</link>
       <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      <guid>https://maruftuhin.com/blog/my-docker-cheat-sheet/</guid>
+      <guid>https://the-maruf.com/blog/my-docker-cheat-sheet/</guid>
       <description>&lt;h2 id=&#34;docker-cheat-sheet&#34;&gt;Docker Cheat Sheet&lt;/h2&gt;
 &lt;h2 id=&#34;build-and-run-a-docker-image&#34;&gt;Build and run a docker image&lt;/h2&gt;
 &lt;p&gt;Build docker images from docker file, goto dockerfile directory and command:&lt;/p&gt;

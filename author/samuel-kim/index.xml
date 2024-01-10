@@ -2,21 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Samuel Kim | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/author/samuel-kim/</link>
-      <atom:link href="https://maruftuhin.com/author/samuel-kim/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/author/samuel-kim/</link>
+      <atom:link href="https://the-maruf.com/author/samuel-kim/index.xml" rel="self" type="application/rss+xml" />
     <description>Samuel Kim</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Samuel Kim</title>
-      <link>https://maruftuhin.com/author/samuel-kim/</link>
+      <link>https://the-maruf.com/author/samuel-kim/</link>
     </image>
     
     <item>
+      <title>Visualizing Anti-Patterns in Microservices at Runtime: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/10015027/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/10015027/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Technical Debt Resulting from Architectural Degradation and Code Smells: A Systematic Mapping Study</title>
-      <link>https://maruftuhin.com/publication/10-1145-3512753-3512755/</link>
+      <link>https://the-maruf.com/publication/10-1145-3512753-3512755/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/10-1145-3512753-3512755/</guid>
+      <guid>https://the-maruf.com/publication/10-1145-3512753-3512755/</guid>
       <description></description>
     </item>
     

@@ -2,93 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maruf&#39;s</title>
-    <link>https://maruftuhin.com/</link>
-      <atom:link href="https://maruftuhin.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/</link>
+      <atom:link href="https://the-maruf.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Maruf&#39;s</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Maruf&#39;s</title>
-      <link>https://maruftuhin.com/</link>
+      <link>https://the-maruf.com/</link>
     </image>
     
     <item>
+      <title>Catalog and detection techniques of microservice anti-patterns and bad smells: A tertiary study</title>
+      <link>https://the-maruf.com/publication/cerny-2023111829/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/cerny-2023111829/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing Anti-Patterns in Microservices at Runtime: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/10015027/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/10015027/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing Microservice Architecture in the Dynamic Perspective: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/9944666/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9944666/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Microservice Architecture Reconstruction and Visualization Techniques: A Review</title>
-      <link>https://maruftuhin.com/publication/cerny-microservice-2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/cerny-microservice-2022/</guid>
+      <link>https://the-maruf.com/publication/9912633/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9912633/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Microvision: Static analysis-based approach to visualizing microservices in augmented reality</title>
-      <link>https://maruftuhin.com/publication/cerny-microvision-2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/cerny-microvision-2022/</guid>
+      <link>https://the-maruf.com/publication/9912621/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9912621/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Microservice Telemetry Data for System Dynamic Analysis</title>
-      <link>https://maruftuhin.com/publication/maruf-using-2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/maruf-using-2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
-      <link>https://maruftuhin.com/publication/electronics-11121880/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/electronics-11121880/</guid>
+      <link>https://the-maruf.com/publication/9912631/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9912631/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Survey on Tools and Techniques Detecting Microservice API Patterns</title>
-      <link>https://maruftuhin.com/publication/bakhtin-survey-2022/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/bakhtin-survey-2022/</guid>
+      <link>https://the-maruf.com/publication/9860229/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9860229/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
+      <link>https://the-maruf.com/publication/electronics-11121880/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/electronics-11121880/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technical Debt Resulting from Architectural Degradation and Code Smells: A Systematic Mapping Study</title>
-      <link>https://maruftuhin.com/publication/10-1145-3512753-3512755/</link>
+      <link>https://the-maruf.com/publication/10-1145-3512753-3512755/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/10-1145-3512753-3512755/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>On Microservice Analysis and Architecture Evolution: A Systematic Mapping Study</title>
-      <link>https://maruftuhin.com/publication/app-11177856/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/app-11177856/</guid>
+      <guid>https://the-maruf.com/publication/10-1145-3512753-3512755/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Static Analysis to Address Microservice Architecture Reconstruction</title>
-      <link>https://maruftuhin.com/publication/9678749/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/9678749/</guid>
+      <link>https://the-maruf.com/publication/9678749/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9678749/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Version Control and Issue Tickets to detect Code Debt and Economical Cost</title>
-      <link>https://maruftuhin.com/publication/9678532/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/9678532/</guid>
+      <link>https://the-maruf.com/publication/9678532/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9678532/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Microservice Analysis and Architecture Evolution: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/app-11177856/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/app-11177856/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My Kubectl Cheat Sheet</title>
-      <link>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</link>
+      <link>https://the-maruf.com/blog/my-kubectl-cheat-sheet/</link>
       <pubDate>Sun, 03 Mar 2019 00:15:10 +0600</pubDate>
-      <guid>https://maruftuhin.com/blog/my-kubectl-cheat-sheet/</guid>
+      <guid>https://the-maruf.com/blog/my-kubectl-cheat-sheet/</guid>
       <description>&lt;h1 id=&#34;kubectl-cheat-sheet&#34;&gt;Kubectl Cheat Sheet&lt;/h1&gt;
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; minikube version
 &amp;gt; minikube start
@@ -258,9 +282,9 @@ i.e.
     
     <item>
       <title>My Docker Cheat Sheet</title>
-      <link>https://maruftuhin.com/blog/my-docker-cheat-sheet/</link>
+      <link>https://the-maruf.com/blog/my-docker-cheat-sheet/</link>
       <pubDate>Fri, 01 Mar 2019 04:05:30 +0600</pubDate>
-      <guid>https://maruftuhin.com/blog/my-docker-cheat-sheet/</guid>
+      <guid>https://the-maruf.com/blog/my-docker-cheat-sheet/</guid>
       <description>&lt;h2 id=&#34;docker-cheat-sheet&#34;&gt;Docker Cheat Sheet&lt;/h2&gt;
 &lt;h2 id=&#34;build-and-run-a-docker-image&#34;&gt;Build and run a docker image&lt;/h2&gt;
 &lt;p&gt;Build docker images from docker file, goto dockerfile directory and command:&lt;/p&gt;
@@ -457,9 +481,9 @@ docker save &amp;lt;image-name&amp;gt; | (eval $(minikube docker-env) &amp;amp;&
     
     <item>
       <title>Mongodb Replica Set on Kubernetes</title>
-      <link>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</link>
+      <link>https://the-maruf.com/blog/mongodb-replica-set-on-kubernetes/</link>
       <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
-      <guid>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</guid>
+      <guid>https://the-maruf.com/blog/mongodb-replica-set-on-kubernetes/</guid>
       <description>&lt;h3 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h3&gt;
 &lt;p&gt;Run MongoDB Replica Set on Kubernetes using &lt;em&gt;Statefulset&lt;/em&gt; and &lt;em&gt;PersistentVolumeClaim&lt;/em&gt;. Minikube kubernetes cluster is used for this post.&lt;/p&gt;
 &lt;h3 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h3&gt;
@@ -723,9 +747,9 @@ $ mongo
     
     <item>
       <title>KubeDB</title>
-      <link>https://maruftuhin.com/project/kubedb/</link>
+      <link>https://the-maruf.com/project/kubedb/</link>
       <pubDate>Sun, 11 Feb 2018 03:06:15 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/kubedb/</guid>
+      <guid>https://the-maruf.com/project/kubedb/</guid>
       <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
@@ -741,9 +765,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Appscode/Analytics</title>
-      <link>https://maruftuhin.com/project/appscode_analytics/</link>
+      <link>https://the-maruf.com/project/appscode_analytics/</link>
       <pubDate>Sat, 27 May 2017 03:00:07 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
+      <guid>https://the-maruf.com/project/appscode_analytics/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
 &lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
@@ -754,9 +778,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>3D Racing Game</title>
-      <link>https://maruftuhin.com/project/3d_racing_game/</link>
+      <link>https://the-maruf.com/project/3d_racing_game/</link>
       <pubDate>Fri, 27 Jan 2017 03:06:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
+      <guid>https://the-maruf.com/project/3d_racing_game/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
 &lt;li&gt;Developed for both &lt;strong&gt;PC&lt;/strong&gt; and &lt;strong&gt;Android&lt;/strong&gt;.&lt;/li&gt;
@@ -767,17 +791,17 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Department of Student Welfare (DSW) Management System</title>
-      <link>https://maruftuhin.com/project/dsw/</link>
+      <link>https://the-maruf.com/project/dsw/</link>
       <pubDate>Mon, 27 Jun 2016 03:10:03 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/dsw/</guid>
+      <guid>https://the-maruf.com/project/dsw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email Verification</title>
-      <link>https://maruftuhin.com/project/email_verification/</link>
+      <link>https://the-maruf.com/project/email_verification/</link>
       <pubDate>Sun, 27 Mar 2016 03:10:51 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/email_verification/</guid>
+      <guid>https://the-maruf.com/project/email_verification/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Automatic Email verification project.&lt;/li&gt;
 &lt;li&gt;Internship project.&lt;/li&gt;
@@ -788,17 +812,17 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Data Encryption Project</title>
-      <link>https://maruftuhin.com/project/data_encryption/</link>
+      <link>https://the-maruf.com/project/data_encryption/</link>
       <pubDate>Sat, 27 Feb 2016 03:11:03 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/data_encryption/</guid>
+      <guid>https://the-maruf.com/project/data_encryption/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Library Management System</title>
-      <link>https://maruftuhin.com/project/library_system/</link>
+      <link>https://the-maruf.com/project/library_system/</link>
       <pubDate>Fri, 27 Feb 2015 03:10:14 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/library_system/</guid>
+      <guid>https://the-maruf.com/project/library_system/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Academical Database Project&lt;/li&gt;
 &lt;li&gt;Tools: &lt;strong&gt;C#&lt;/strong&gt; and &lt;strong&gt;Microsoft SQL Server&lt;/strong&gt;.&lt;/li&gt;
@@ -808,17 +832,17 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Scientific Calculator</title>
-      <link>https://maruftuhin.com/project/scientific_calculator/</link>
+      <link>https://the-maruf.com/project/scientific_calculator/</link>
       <pubDate>Mon, 27 Feb 2012 03:10:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
+      <guid>https://the-maruf.com/project/scientific_calculator/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://maruftuhin.com/privacy/</link>
+      <link>https://the-maruf.com/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/privacy/</guid>
+      <guid>https://the-maruf.com/privacy/</guid>
       <description></description>
     </item>
     

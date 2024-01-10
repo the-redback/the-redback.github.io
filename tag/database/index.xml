@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/tag/database/</link>
-      <atom:link href="https://maruftuhin.com/tag/database/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/tag/database/</link>
+      <atom:link href="https://the-maruf.com/tag/database/index.xml" rel="self" type="application/rss+xml" />
     <description>Database</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 12 Jan 2019 03:07:50 +0600</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Database</title>
-      <link>https://maruftuhin.com/tag/database/</link>
+      <link>https://the-maruf.com/tag/database/</link>
     </image>
     
     <item>
       <title>Mongodb Replica Set on Kubernetes</title>
-      <link>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</link>
+      <link>https://the-maruf.com/blog/mongodb-replica-set-on-kubernetes/</link>
       <pubDate>Sat, 12 Jan 2019 03:07:50 +0600</pubDate>
-      <guid>https://maruftuhin.com/blog/mongodb-replica-set-on-kubernetes/</guid>
+      <guid>https://the-maruf.com/blog/mongodb-replica-set-on-kubernetes/</guid>
       <description>&lt;h3 id=&#34;replica-sets&#34;&gt;Replica-Sets&lt;/h3&gt;
 &lt;p&gt;Run MongoDB Replica Set on Kubernetes using &lt;em&gt;Statefulset&lt;/em&gt; and &lt;em&gt;PersistentVolumeClaim&lt;/em&gt;. Minikube kubernetes cluster is used for this post.&lt;/p&gt;
 &lt;h3 id=&#34;create-secret-for-key-file&#34;&gt;Create Secret for Key file&lt;/h3&gt;

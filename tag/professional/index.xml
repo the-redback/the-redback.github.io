@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Professional | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/tag/professional/</link>
-      <atom:link href="https://maruftuhin.com/tag/professional/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/tag/professional/</link>
+      <atom:link href="https://the-maruf.com/tag/professional/index.xml" rel="self" type="application/rss+xml" />
     <description>Professional</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 11 Feb 2018 03:06:15 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 11 Feb 2018 03:06:15 +0600</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Professional</title>
-      <link>https://maruftuhin.com/tag/professional/</link>
+      <link>https://the-maruf.com/tag/professional/</link>
     </image>
     
     <item>
       <title>KubeDB</title>
-      <link>https://maruftuhin.com/project/kubedb/</link>
+      <link>https://the-maruf.com/project/kubedb/</link>
       <pubDate>Sun, 11 Feb 2018 03:06:15 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/kubedb/</guid>
+      <guid>https://the-maruf.com/project/kubedb/</guid>
       <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
@@ -32,9 +32,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Appscode/Analytics</title>
-      <link>https://maruftuhin.com/project/appscode_analytics/</link>
+      <link>https://the-maruf.com/project/appscode_analytics/</link>
       <pubDate>Sat, 27 May 2017 03:00:07 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
+      <guid>https://the-maruf.com/project/appscode_analytics/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
 &lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
@@ -45,9 +45,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Email Verification</title>
-      <link>https://maruftuhin.com/project/email_verification/</link>
+      <link>https://the-maruf.com/project/email_verification/</link>
       <pubDate>Sun, 27 Mar 2016 03:10:51 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/email_verification/</guid>
+      <guid>https://the-maruf.com/project/email_verification/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Automatic Email verification project.&lt;/li&gt;
 &lt;li&gt;Internship project.&lt;/li&gt;

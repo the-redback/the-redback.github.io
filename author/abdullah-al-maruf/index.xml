@@ -2,77 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abdullah Al Maruf | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/author/abdullah-al-maruf/</link>
-      <atom:link href="https://maruftuhin.com/author/abdullah-al-maruf/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/author/abdullah-al-maruf/</link>
+      <atom:link href="https://the-maruf.com/author/abdullah-al-maruf/index.xml" rel="self" type="application/rss+xml" />
     <description>Abdullah Al Maruf</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Abdullah Al Maruf</title>
-      <link>https://maruftuhin.com/author/abdullah-al-maruf/</link>
+      <link>https://the-maruf.com/author/abdullah-al-maruf/</link>
     </image>
     
     <item>
+      <title>Catalog and detection techniques of microservice anti-patterns and bad smells: A tertiary study</title>
+      <link>https://the-maruf.com/publication/cerny-2023111829/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/cerny-2023111829/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing Anti-Patterns in Microservices at Runtime: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/10015027/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/10015027/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing Microservice Architecture in the Dynamic Perspective: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/9944666/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9944666/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Microservice Architecture Reconstruction and Visualization Techniques: A Review</title>
-      <link>https://maruftuhin.com/publication/cerny-microservice-2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/cerny-microservice-2022/</guid>
+      <link>https://the-maruf.com/publication/9912633/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9912633/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Microvision: Static analysis-based approach to visualizing microservices in augmented reality</title>
-      <link>https://maruftuhin.com/publication/cerny-microvision-2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/cerny-microvision-2022/</guid>
+      <link>https://the-maruf.com/publication/9912621/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9912621/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Microservice Telemetry Data for System Dynamic Analysis</title>
-      <link>https://maruftuhin.com/publication/maruf-using-2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/maruf-using-2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
-      <link>https://maruftuhin.com/publication/electronics-11121880/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/electronics-11121880/</guid>
+      <link>https://the-maruf.com/publication/9912631/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9912631/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Survey on Tools and Techniques Detecting Microservice API Patterns</title>
-      <link>https://maruftuhin.com/publication/bakhtin-survey-2022/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/bakhtin-survey-2022/</guid>
+      <link>https://the-maruf.com/publication/9860229/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9860229/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Smell Prioritization with Business Process Mining and Static Code Analysis: A Case Study</title>
+      <link>https://the-maruf.com/publication/electronics-11121880/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/electronics-11121880/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technical Debt Resulting from Architectural Degradation and Code Smells: A Systematic Mapping Study</title>
-      <link>https://maruftuhin.com/publication/10-1145-3512753-3512755/</link>
+      <link>https://the-maruf.com/publication/10-1145-3512753-3512755/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/10-1145-3512753-3512755/</guid>
+      <guid>https://the-maruf.com/publication/10-1145-3512753-3512755/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Static Analysis to Address Microservice Architecture Reconstruction</title>
-      <link>https://maruftuhin.com/publication/9678749/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/9678749/</guid>
+      <link>https://the-maruf.com/publication/9678749/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9678749/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Version Control and Issue Tickets to detect Code Debt and Economical Cost</title>
-      <link>https://maruftuhin.com/publication/9678532/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/9678532/</guid>
+      <link>https://the-maruf.com/publication/9678532/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9678532/</guid>
       <description></description>
     </item>
     

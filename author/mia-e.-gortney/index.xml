@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mia E. Gortney | Maruf&#39;s</title>
+    <link>https://the-maruf.com/author/mia-e.-gortney/</link>
+      <atom:link href="https://the-maruf.com/author/mia-e.-gortney/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mia E. Gortney</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>Mia E. Gortney</title>
+      <link>https://the-maruf.com/author/mia-e.-gortney/</link>
+    </image>
+    
+    <item>
+      <title>Visualizing Microservice Architecture in the Dynamic Perspective: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/9944666/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9944666/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

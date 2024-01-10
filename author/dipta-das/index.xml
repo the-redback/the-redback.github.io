@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dipta Das | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/author/dipta-das/</link>
-      <atom:link href="https://maruftuhin.com/author/dipta-das/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/author/dipta-das/</link>
+      <atom:link href="https://the-maruf.com/author/dipta-das/index.xml" rel="self" type="application/rss+xml" />
     <description>Dipta Das</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Dipta Das</title>
-      <link>https://maruftuhin.com/author/dipta-das/</link>
+      <link>https://the-maruf.com/author/dipta-das/</link>
     </image>
     
     <item>
       <title>Technical Debt Resulting from Architectural Degradation and Code Smells: A Systematic Mapping Study</title>
-      <link>https://maruftuhin.com/publication/10-1145-3512753-3512755/</link>
+      <link>https://the-maruf.com/publication/10-1145-3512753-3512755/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/10-1145-3512753-3512755/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>On Microservice Analysis and Architecture Evolution: A Systematic Mapping Study</title>
-      <link>https://maruftuhin.com/publication/app-11177856/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/app-11177856/</guid>
+      <guid>https://the-maruf.com/publication/10-1145-3512753-3512755/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using Static Analysis to Address Microservice Architecture Reconstruction</title>
-      <link>https://maruftuhin.com/publication/9678749/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://maruftuhin.com/publication/9678749/</guid>
+      <link>https://the-maruf.com/publication/9678749/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/9678749/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Microservice Analysis and Architecture Evolution: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/app-11177856/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/app-11177856/</guid>
       <description></description>
     </item>
     

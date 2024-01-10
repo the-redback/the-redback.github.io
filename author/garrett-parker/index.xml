@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Garrett Parker | Maruf&#39;s</title>
+    <link>https://the-maruf.com/author/garrett-parker/</link>
+      <atom:link href="https://the-maruf.com/author/garrett-parker/index.xml" rel="self" type="application/rss+xml" />
+    <description>Garrett Parker</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>Garrett Parker</title>
+      <link>https://the-maruf.com/author/garrett-parker/</link>
+    </image>
+    
+    <item>
+      <title>Visualizing Anti-Patterns in Microservices at Runtime: A Systematic Mapping Study</title>
+      <link>https://the-maruf.com/publication/10015027/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/publication/10015027/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Maruf&#39;s</title>
-    <link>https://maruftuhin.com/project/</link>
-      <atom:link href="https://maruftuhin.com/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://the-maruf.com/project/</link>
+      <atom:link href="https://the-maruf.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 11 Feb 2018 03:06:15 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2024 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 11 Feb 2018 03:06:15 +0600</lastBuildDate>
     <image>
-      <url>https://maruftuhin.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>https://maruftuhin.com/project/</link>
+      <link>https://the-maruf.com/project/</link>
     </image>
     
     <item>
       <title>KubeDB</title>
-      <link>https://maruftuhin.com/project/kubedb/</link>
+      <link>https://the-maruf.com/project/kubedb/</link>
       <pubDate>Sun, 11 Feb 2018 03:06:15 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/kubedb/</guid>
+      <guid>https://the-maruf.com/project/kubedb/</guid>
       <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
@@ -32,9 +32,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Appscode/Analytics</title>
-      <link>https://maruftuhin.com/project/appscode_analytics/</link>
+      <link>https://the-maruf.com/project/appscode_analytics/</link>
       <pubDate>Sat, 27 May 2017 03:00:07 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/appscode_analytics/</guid>
+      <guid>https://the-maruf.com/project/appscode_analytics/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Worked with docker-hub APIs to collect analytic data.&lt;/li&gt;
 &lt;li&gt;Stored analytical datas in Google sheets using GO client.&lt;/li&gt;
@@ -45,9 +45,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>3D Racing Game</title>
-      <link>https://maruftuhin.com/project/3d_racing_game/</link>
+      <link>https://the-maruf.com/project/3d_racing_game/</link>
       <pubDate>Fri, 27 Jan 2017 03:06:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/3d_racing_game/</guid>
+      <guid>https://the-maruf.com/project/3d_racing_game/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Final year thesis &amp;amp; project.&lt;/li&gt;
 &lt;li&gt;Developed for both &lt;strong&gt;PC&lt;/strong&gt; and &lt;strong&gt;Android&lt;/strong&gt;.&lt;/li&gt;
@@ -58,17 +58,17 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Department of Student Welfare (DSW) Management System</title>
-      <link>https://maruftuhin.com/project/dsw/</link>
+      <link>https://the-maruf.com/project/dsw/</link>
       <pubDate>Mon, 27 Jun 2016 03:10:03 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/dsw/</guid>
+      <guid>https://the-maruf.com/project/dsw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email Verification</title>
-      <link>https://maruftuhin.com/project/email_verification/</link>
+      <link>https://the-maruf.com/project/email_verification/</link>
       <pubDate>Sun, 27 Mar 2016 03:10:51 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/email_verification/</guid>
+      <guid>https://the-maruf.com/project/email_verification/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Automatic Email verification project.&lt;/li&gt;
 &lt;li&gt;Internship project.&lt;/li&gt;
@@ -79,17 +79,17 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Data Encryption Project</title>
-      <link>https://maruftuhin.com/project/data_encryption/</link>
+      <link>https://the-maruf.com/project/data_encryption/</link>
       <pubDate>Sat, 27 Feb 2016 03:11:03 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/data_encryption/</guid>
+      <guid>https://the-maruf.com/project/data_encryption/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Library Management System</title>
-      <link>https://maruftuhin.com/project/library_system/</link>
+      <link>https://the-maruf.com/project/library_system/</link>
       <pubDate>Fri, 27 Feb 2015 03:10:14 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/library_system/</guid>
+      <guid>https://the-maruf.com/project/library_system/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Academical Database Project&lt;/li&gt;
 &lt;li&gt;Tools: &lt;strong&gt;C#&lt;/strong&gt; and &lt;strong&gt;Microsoft SQL Server&lt;/strong&gt;.&lt;/li&gt;
@@ -99,9 +99,9 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     
     <item>
       <title>Scientific Calculator</title>
-      <link>https://maruftuhin.com/project/scientific_calculator/</link>
+      <link>https://the-maruf.com/project/scientific_calculator/</link>
       <pubDate>Mon, 27 Feb 2012 03:10:27 +0600</pubDate>
-      <guid>https://maruftuhin.com/project/scientific_calculator/</guid>
+      <guid>https://the-maruf.com/project/scientific_calculator/</guid>
       <description></description>
     </item>
     
