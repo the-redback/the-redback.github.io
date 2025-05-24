@@ -172,6 +172,6 @@
   <url>
     <loc>https://the-maruf.com/project/scientific_calculator/</loc><lastmod>2012-02-27T03:10:27+06:00</lastmod></url>
   <url>
-    <loc>https://the-maruf.com/privacy/</loc></url>
+    <loc>https://the-maruf.com/privacy/</loc><priority>0</priority></url>
   <url>
     <loc>https://the-maruf.com/author/abdullah-al-maruf/</loc></url></urlset>
