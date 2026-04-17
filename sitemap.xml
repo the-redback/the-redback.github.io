@@ -94,6 +94,12 @@
   <url>
     <loc>https://the-maruf.com/publication/10-1145-3512753-3512755/</loc><lastmod>2024-01-10T01:30:03-06:00</lastmod></url>
   <url>
+    <loc>https://the-maruf.com/tag/academic/</loc><lastmod>2021-12-27T03:06:27+06:00</lastmod></url>
+  <url>
+    <loc>https://the-maruf.com/project/bearmapping/</loc><lastmod>2021-12-27T03:06:27+06:00</lastmod></url>
+  <url>
+    <loc>https://the-maruf.com/project/</loc><lastmod>2021-12-27T03:06:27+06:00</lastmod></url>
+  <url>
     <loc>https://the-maruf.com/publication/9678749/</loc><lastmod>2024-01-10T01:30:03-06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/publication/9678532/</loc><lastmod>2024-01-10T01:30:03-06:00</lastmod></url>
@@ -108,6 +114,16 @@
   <url>
     <loc>https://the-maruf.com/publication/app-11177856/</loc><lastmod>2024-01-10T01:30:03-06:00</lastmod></url>
   <url>
+    <loc>https://the-maruf.com/project/msa_reconstruction/</loc><lastmod>2021-01-27T03:06:27+06:00</lastmod></url>
+  <url>
+    <loc>https://the-maruf.com/project/kubedb/</loc><lastmod>2020-02-11T03:06:15+06:00</lastmod></url>
+  <url>
+    <loc>https://the-maruf.com/tag/kubernetes/</loc><lastmod>2020-02-11T03:06:15+06:00</lastmod></url>
+  <url>
+    <loc>https://the-maruf.com/tag/oss/</loc><lastmod>2020-02-11T03:06:15+06:00</lastmod></url>
+  <url>
+    <loc>https://the-maruf.com/tag/professional/</loc><lastmod>2020-02-11T03:06:15+06:00</lastmod></url>
+  <url>
     <loc>https://the-maruf.com/categories/</loc><lastmod>2019-03-03T00:15:10+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/tag/container/</loc><lastmod>2019-03-03T00:15:10+06:00</lastmod></url>
@@ -115,8 +131,6 @@
     <loc>https://the-maruf.com/tag/kubectl/</loc><lastmod>2019-03-03T00:15:10+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/category/kubectl/</loc><lastmod>2019-03-03T00:15:10+06:00</lastmod></url>
-  <url>
-    <loc>https://the-maruf.com/tag/kubernetes/</loc><lastmod>2019-03-03T00:15:10+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/category/kubernetes/</loc><lastmod>2019-03-03T00:15:10+06:00</lastmod></url>
   <url>
@@ -138,6 +152,8 @@
   <url>
     <loc>https://the-maruf.com/blog/my-docker-cheat-sheet/</loc><lastmod>2019-03-01T04:05:30+06:00</lastmod></url>
   <url>
+    <loc>https://the-maruf.com/project/stash/</loc><lastmod>2019-02-11T03:06:15+06:00</lastmod></url>
+  <url>
     <loc>https://the-maruf.com/tag/database/</loc><lastmod>2019-01-12T03:07:50+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/tag/mongodb/</loc><lastmod>2019-01-12T03:07:50+06:00</lastmod></url>
@@ -146,29 +162,15 @@
   <url>
     <loc>https://the-maruf.com/blog/mongodb-replica-set-on-kubernetes/</loc><lastmod>2019-01-12T03:07:50+06:00</lastmod></url>
   <url>
-    <loc>https://the-maruf.com/project/kubedb/</loc><lastmod>2018-02-11T03:06:15+06:00</lastmod></url>
-  <url>
-    <loc>https://the-maruf.com/tag/oss/</loc><lastmod>2018-02-11T03:06:15+06:00</lastmod></url>
-  <url>
-    <loc>https://the-maruf.com/tag/professional/</loc><lastmod>2018-02-11T03:06:15+06:00</lastmod></url>
-  <url>
-    <loc>https://the-maruf.com/project/</loc><lastmod>2018-02-11T03:06:15+06:00</lastmod></url>
-  <url>
     <loc>https://the-maruf.com/project/appscode_analytics/</loc><lastmod>2017-05-27T03:00:07+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/project/3d_racing_game/</loc><lastmod>2017-01-27T03:06:27+06:00</lastmod></url>
   <url>
-    <loc>https://the-maruf.com/tag/academic/</loc><lastmod>2017-01-27T03:06:27+06:00</lastmod></url>
-  <url>
     <loc>https://the-maruf.com/project/dsw/</loc><lastmod>2016-06-27T03:10:03+06:00</lastmod></url>
-  <url>
-    <loc>https://the-maruf.com/project/email_verification/</loc><lastmod>2016-03-27T03:10:51+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/project/data_encryption/</loc><lastmod>2016-02-27T03:11:03+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/tag/hobby/</loc><lastmod>2016-02-27T03:11:03+06:00</lastmod></url>
-  <url>
-    <loc>https://the-maruf.com/project/library_system/</loc><lastmod>2015-02-27T03:10:14+06:00</lastmod></url>
   <url>
     <loc>https://the-maruf.com/project/scientific_calculator/</loc><lastmod>2012-02-27T03:10:27+06:00</lastmod></url>
   <url>

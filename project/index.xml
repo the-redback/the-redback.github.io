@@ -5,7 +5,7 @@
     <link>https://the-maruf.com/project/</link>
       <atom:link href="https://the-maruf.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Sun, 11 Feb 2018 03:06:15 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Mon, 27 Dec 2021 03:06:27 +0600</lastBuildDate>
     <image>
       <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
@@ -13,19 +13,64 @@
     </image>
     
     <item>
+      <title>BearMapping</title>
+      <link>https://the-maruf.com/project/bearmapping/</link>
+      <pubDate>Mon, 27 Dec 2021 03:06:27 +0600</pubDate>
+      <guid>https://the-maruf.com/project/bearmapping/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Built a Java Spring Boot microservices backend to automate literature review workflows and identify research
+papers based on user-defined queries.&lt;/li&gt;
+&lt;li&gt;Developed data ingestion and NLP pipelines in Python to process and index large volumes of research papers for
+efficient search and discovery.&lt;/li&gt;
+&lt;li&gt;Containerized services and deployed using Docker Compose to enable reproducible environments and simplified
+microservices orchestration.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microservice Architecture (MSA) Reconstruction</title>
+      <link>https://the-maruf.com/project/msa_reconstruction/</link>
+      <pubDate>Wed, 27 Jan 2021 03:06:27 +0600</pubDate>
+      <guid>https://the-maruf.com/project/msa_reconstruction/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Designed a Software Architecture Reconstruction (SAR) framework in Java to generate dynamic service
+dependency graphs by parsing Istio distributed tracing logs.&lt;/li&gt;
+&lt;li&gt;Developed engine to detect runtime anti-patterns and architectural drift via telemetry analysis.&lt;/li&gt;
+&lt;li&gt;Implemented automated visualization pipelines for architecture tracking and system auditing.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>KubeDB</title>
       <link>https://the-maruf.com/project/kubedb/</link>
-      <pubDate>Sun, 11 Feb 2018 03:06:15 +0600</pubDate>
+      <pubDate>Tue, 11 Feb 2020 03:06:15 +0600</pubDate>
       <guid>https://the-maruf.com/project/kubedb/</guid>
       <description>&lt;p&gt;&lt;em&gt;A tool to automate database deploy on &lt;strong&gt;Kubernetes&lt;/strong&gt; using &lt;strong&gt;CRD&lt;/strong&gt;. It also takes scheduled backup of databases.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Acted as &lt;strong&gt;KubeDB project head&lt;/strong&gt; for more than a year.&lt;/li&gt;
-&lt;li&gt;Conducted &lt;strong&gt;Bi-Weekly KubeDB Community meetings&lt;/strong&gt; regularly.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;MongoDB&lt;/strong&gt;, &lt;strong&gt;MySQL&lt;/strong&gt;, &lt;strong&gt;Redis&lt;/strong&gt; and &lt;strong&gt;Memcached&lt;/strong&gt; support to
-KubeDB.&lt;/li&gt;
-&lt;li&gt;Added &lt;strong&gt;MongoDB clustering&lt;/strong&gt; system. Also, worked on &lt;strong&gt;PostgreSQL&lt;/strong&gt;
-and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
-&lt;li&gt;Worked with &lt;strong&gt;prometheus&lt;/strong&gt; exporter to export database metrics.&lt;/li&gt;
+&lt;li&gt;Built Kubernetes Custom Resource Definitions (CRDs) and controllers in Go to manage database lifecycle
+operations within Kubernetes clusters.&lt;/li&gt;
+&lt;li&gt;Developed modular operator architecture including API machinery, CLI, installer, and database-specific controllers
+for PostgreSQL, MongoDB, Elasticsearch, Redis, and MySQL.&lt;/li&gt;
+&lt;li&gt;Implemented reconciliation loops, leader election, and rolling upgrade mechanisms for reliable distributed database
+orchestration.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stash</title>
+      <link>https://the-maruf.com/project/stash/</link>
+      <pubDate>Mon, 11 Feb 2019 03:06:15 +0600</pubDate>
+      <guid>https://the-maruf.com/project/stash/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A complete Kubernetes native disaster recovery solution for backup and restore your volumes and databases in Kubernetes on any public and private clouds.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kubernetes-native disaster recovery solution using restic for backup and restore volumes and databases.&lt;/li&gt;
+&lt;li&gt;Designed and implemented database-aware backup and Point-in-Time Recovery (PITR) workflows for MongoDB
+and Elasticsearch using custom hooks, sidecar orchestration, and scheduled snapshots to ensure data consistency.&lt;/li&gt;
+&lt;li&gt;Integrated Stash with KubeDB and built backup pipelines with automated recovery, improving database reliability
+across Kubernetes environments.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -65,36 +110,11 @@ and &lt;strong&gt;Elasticsearch&lt;/strong&gt; clustering.&lt;/li&gt;
     </item>
     
     <item>
-      <title>Email Verification</title>
-      <link>https://the-maruf.com/project/email_verification/</link>
-      <pubDate>Sun, 27 Mar 2016 03:10:51 +0600</pubDate>
-      <guid>https://the-maruf.com/project/email_verification/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Automatic Email verification project.&lt;/li&gt;
-&lt;li&gt;Internship project.&lt;/li&gt;
-&lt;li&gt;Tools: &lt;strong&gt;Java&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Data Encryption Project</title>
       <link>https://the-maruf.com/project/data_encryption/</link>
       <pubDate>Sat, 27 Feb 2016 03:11:03 +0600</pubDate>
       <guid>https://the-maruf.com/project/data_encryption/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Library Management System</title>
-      <link>https://the-maruf.com/project/library_system/</link>
-      <pubDate>Fri, 27 Feb 2015 03:10:14 +0600</pubDate>
-      <guid>https://the-maruf.com/project/library_system/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Academical Database Project&lt;/li&gt;
-&lt;li&gt;Tools: &lt;strong&gt;C#&lt;/strong&gt; and &lt;strong&gt;Microsoft SQL Server&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
     <item>

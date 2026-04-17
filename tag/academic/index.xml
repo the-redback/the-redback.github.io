@@ -5,12 +5,42 @@
     <link>https://the-maruf.com/tag/academic/</link>
       <atom:link href="https://the-maruf.com/tag/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 27 Jan 2017 03:06:27 +0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Mon, 27 Dec 2021 03:06:27 +0600</lastBuildDate>
     <image>
       <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
       <title>Academic</title>
       <link>https://the-maruf.com/tag/academic/</link>
     </image>
+    
+    <item>
+      <title>BearMapping</title>
+      <link>https://the-maruf.com/project/bearmapping/</link>
+      <pubDate>Mon, 27 Dec 2021 03:06:27 +0600</pubDate>
+      <guid>https://the-maruf.com/project/bearmapping/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Built a Java Spring Boot microservices backend to automate literature review workflows and identify research
+papers based on user-defined queries.&lt;/li&gt;
+&lt;li&gt;Developed data ingestion and NLP pipelines in Python to process and index large volumes of research papers for
+efficient search and discovery.&lt;/li&gt;
+&lt;li&gt;Containerized services and deployed using Docker Compose to enable reproducible environments and simplified
+microservices orchestration.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microservice Architecture (MSA) Reconstruction</title>
+      <link>https://the-maruf.com/project/msa_reconstruction/</link>
+      <pubDate>Wed, 27 Jan 2021 03:06:27 +0600</pubDate>
+      <guid>https://the-maruf.com/project/msa_reconstruction/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Designed a Software Architecture Reconstruction (SAR) framework in Java to generate dynamic service
+dependency graphs by parsing Istio distributed tracing logs.&lt;/li&gt;
+&lt;li&gt;Developed engine to detect runtime anti-patterns and architectural drift via telemetry analysis.&lt;/li&gt;
+&lt;li&gt;Implemented automated visualization pipelines for architecture tracking and system auditing.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>3D Racing Game</title>
@@ -31,18 +61,6 @@
       <pubDate>Mon, 27 Jun 2016 03:10:03 +0600</pubDate>
       <guid>https://the-maruf.com/project/dsw/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Library Management System</title>
-      <link>https://the-maruf.com/project/library_system/</link>
-      <pubDate>Fri, 27 Feb 2015 03:10:14 +0600</pubDate>
-      <guid>https://the-maruf.com/project/library_system/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Academical Database Project&lt;/li&gt;
-&lt;li&gt;Tools: &lt;strong&gt;C#&lt;/strong&gt; and &lt;strong&gt;Microsoft SQL Server&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
     <item>
