@@ -2,8 +2,8 @@
   "name": "Maruf's",
   "short_name": "Maruf's",
   "lang": "en-us",
-  "theme_color": "#0095eb",
-  "background_color": "#0095eb",
+  "theme_color": "#3F51B5",
+  "background_color": "#3F51B5",
   "icons": [{
     "src": "/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",
