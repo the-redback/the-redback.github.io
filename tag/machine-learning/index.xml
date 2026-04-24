@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine-learning | Maruf&#39;s</title>
+    <link>https://the-maruf.com/tag/machine-learning/</link>
+      <atom:link href="https://the-maruf.com/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>machine-learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Mon, 27 Dec 2021 03:06:27 +0600</lastBuildDate>
+    <image>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>machine-learning</title>
+      <link>https://the-maruf.com/tag/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>BearMapping</title>
+      <link>https://the-maruf.com/project/bearmapping/</link>
+      <pubDate>Mon, 27 Dec 2021 03:06:27 +0600</pubDate>
+      <guid>https://the-maruf.com/project/bearmapping/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Built a Java Spring Boot microservices backend to automate literature review workflows and identify research
+papers based on user-defined queries.&lt;/li&gt;
+&lt;li&gt;Developed data ingestion and NLP pipelines in Python to process and index large volumes of research papers for
+efficient search and discovery.&lt;/li&gt;
+&lt;li&gt;Containerized services and deployed using Docker Compose to enable reproducible environments and simplified
+microservices orchestration.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
