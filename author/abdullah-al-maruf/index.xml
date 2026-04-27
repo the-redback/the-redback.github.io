@@ -5,12 +5,16 @@
     <link>https://the-maruf.com/author/abdullah-al-maruf/</link>
       <atom:link href="https://the-maruf.com/author/abdullah-al-maruf/index.xml" rel="self" type="application/rss+xml" />
     <description>Abdullah Al Maruf</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright>
     <image>
-      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <url>https://the-maruf.com/author/abdullah-al-maruf/avatar_hu77afd2752f31e9cb775c10d27c602a6f_1259098_270x270_fill_q90_lanczos_center.JPG</url>
       <title>Abdullah Al Maruf</title>
       <link>https://the-maruf.com/author/abdullah-al-maruf/</link>
     </image>
+    
+  </channel>
+</rss>
+   </image>
     
     <item>
       <title>Catalog and detection techniques of microservice anti-patterns and bad smells: A tertiary study</title>
