@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 534" width="1200" height="534">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="534" fill="url(#bg)"/>
+  <!-- Subtle grid lines -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="134" x2="1200" y2="134"/>
+    <line x1="0" y1="267" x2="1200" y2="267"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="534"/>
+    <line x1="480" y1="0" x2="480" y2="534"/>
+    <line x1="720" y1="0" x2="720" y2="534"/>
+    <line x1="960" y1="0" x2="960" y2="534"/>
+  </g>
+  <!-- Glow circles -->
+  <circle cx="600" cy="267" r="250" fill="url(#glow1)"/>
+  <circle cx="200" cy="100" r="150" fill="url(#glow1)" opacity="0.5"/>
+  <circle cx="1000" cy="434" r="150" fill="url(#glow1)" opacity="0.5"/>
+
+  <!-- Tech labels - Row 1 -->
+  <g font-family="'SF Mono', 'Fira Code', 'Consolas', monospace" font-weight="600" text-anchor="middle">
+    <!-- Row 1 -->
+    <rect x="30" y="25" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#00ADD8" stroke-width="2" opacity="0.9"/>
+    <text x="110" y="55" fill="#00ADD8" font-size="14">Go</text>
+    <text x="110" y="78" fill="#94a3b8" font-size="10">language</text>
+
+    <rect x="220" y="25" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#326CE5" stroke-width="2" opacity="0.9"/>
+    <text x="300" y="55" fill="#326CE5" font-size="14">Kubernetes</text>
+    <text x="300" y="78" fill="#94a3b8" font-size="10">orchestration</text>
+
+    <rect x="410" y="25" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#2496ED" stroke-width="2" opacity="0.9"/>
+    <text x="490" y="55" fill="#2496ED" font-size="14">Docker</text>
+    <text x="490" y="78" fill="#94a3b8" font-size="10">containers</text>
+
+    <rect x="600" y="25" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#FF9900" stroke-width="2" opacity="0.9"/>
+    <text x="680" y="55" fill="#FF9900" font-size="14">AWS</text>
+    <text x="680" y="78" fill="#94a3b8" font-size="10">cloud</text>
+
+    <rect x="790" y="25" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#0078D4" stroke-width="2" opacity="0.9"/>
+    <text x="870" y="55" fill="#0078D4" font-size="14">Azure</text>
+    <text x="870" y="78" fill="#94a3b8" font-size="10">cloud</text>
+
+    <rect x="980" y="25" rx="12" ry="12" width="190" height="80" fill="#1e293b" stroke="#844FBA" stroke-width="2" opacity="0.9"/>
+    <text x="1075" y="55" fill="#844FBA" font-size="14">Terraform</text>
+    <text x="1075" y="78" fill="#94a3b8" font-size="10">IaC</text>
+
+    <!-- Row 2 -->
+    <rect x="60" y="140" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#E34F26" stroke-width="2" opacity="0.9"/>
+    <text x="140" y="170" fill="#E34F26" font-size="14">Java</text>
+    <text x="140" y="193" fill="#94a3b8" font-size="10">language</text>
+
+    <rect x="260" y="140" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#6DB33F" stroke-width="2" opacity="0.9"/>
+    <text x="340" y="170" fill="#6DB33F" font-size="14">Spring Boot</text>
+    <text x="340" y="193" fill="#94a3b8" font-size="10">framework</text>
+
+    <rect x="460" y="140" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#0F9D58" stroke-width="2" opacity="0.9"/>
+    <text x="540" y="170" fill="#0F9D58" font-size="14">Helm</text>
+    <text x="540" y="193" fill="#94a3b8" font-size="10">packaging</text>
+
+    <rect x="660" y="140" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#EF7B4D" stroke-width="2" opacity="0.9"/>
+    <text x="740" y="170" fill="#EF7B4D" font-size="14">ArgoCD</text>
+    <text x="740" y="193" fill="#94a3b8" font-size="10">GitOps</text>
+
+    <rect x="860" y="140" rx="12" ry="12" width="190" height="80" fill="#1e293b" stroke="#E6522C" stroke-width="2" opacity="0.9"/>
+    <text x="955" y="170" fill="#E6522C" font-size="14">Prometheus</text>
+    <text x="955" y="193" fill="#94a3b8" font-size="10">monitoring</text>
+
+    <!-- Row 3 (center) -->
+    <rect x="30" y="255" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#539E43" stroke-width="2" opacity="0.9"/>
+    <text x="110" y="285" fill="#539E43" font-size="14">Node.js</text>
+    <text x="110" y="308" fill="#94a3b8" font-size="10">runtime</text>
+
+    <rect x="220" y="255" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#336791" stroke-width="2" opacity="0.9"/>
+    <text x="300" y="285" fill="#336791" font-size="14">PostgreSQL</text>
+    <text x="300" y="308" fill="#94a3b8" font-size="10">database</text>
+
+    <rect x="410" y="255" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#47A248" stroke-width="2" opacity="0.9"/>
+    <text x="490" y="285" fill="#47A248" font-size="14">MongoDB</text>
+    <text x="490" y="308" fill="#94a3b8" font-size="10">database</text>
+
+    <rect x="600" y="255" rx="12" ry="12" width="190" height="80" fill="#1e293b" stroke="#F8DC75" stroke-width="2" opacity="0.9"/>
+    <text x="695" y="285" fill="#F8DC75" font-size="14">Elasticsearch</text>
+    <text x="695" y="308" fill="#94a3b8" font-size="10">search</text>
+
+    <rect x="820" y="255" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#DC382D" stroke-width="2" opacity="0.9"/>
+    <text x="900" y="285" fill="#DC382D" font-size="14">Redis</text>
+    <text x="900" y="308" fill="#94a3b8" font-size="10">cache</text>
+
+    <rect x="1010" y="255" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#F7A41D" stroke-width="2" opacity="0.9"/>
+    <text x="1090" y="285" fill="#F7A41D" font-size="14">Grafana</text>
+    <text x="1090" y="308" fill="#94a3b8" font-size="10">dashboards</text>
+
+    <!-- Row 4 -->
+    <rect x="60" y="370" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#3776AB" stroke-width="2" opacity="0.9"/>
+    <text x="140" y="400" fill="#3776AB" font-size="14">Python</text>
+    <text x="140" y="423" fill="#94a3b8" font-size="10">language</text>
+
+    <rect x="260" y="370" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#EE0000" stroke-width="2" opacity="0.9"/>
+    <text x="340" y="400" fill="#EE0000" font-size="14">Ansible</text>
+    <text x="340" y="423" fill="#94a3b8" font-size="10">automation</text>
+
+    <rect x="460" y="370" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#D24939" stroke-width="2" opacity="0.9"/>
+    <text x="540" y="400" fill="#D24939" font-size="14">Jenkins</text>
+    <text x="540" y="423" fill="#94a3b8" font-size="10">CI/CD</text>
+
+    <rect x="660" y="370" rx="12" ry="12" width="190" height="80" fill="#1e293b" stroke="#231F20" stroke-width="2" opacity="0.9"/>
+    <text x="755" y="400" fill="#e2e8f0" font-size="14">Kafka</text>
+    <text x="755" y="423" fill="#94a3b8" font-size="10">messaging</text>
+
+    <rect x="880" y="370" rx="12" ry="12" width="160" height="80" fill="#1e293b" stroke="#4285F4" stroke-width="2" opacity="0.9"/>
+    <text x="960" y="400" fill="#4285F4" font-size="14">GCP</text>
+    <text x="960" y="423" fill="#94a3b8" font-size="10">cloud</text>
+
+    <!-- Floating accent elements -->
+    <text x="1100" y="480" fill="#475569" font-size="11" font-weight="400">+ more</text>
+  </g>
+
+  <!-- Decorative connection lines -->
+  <g stroke="#3b82f6" stroke-width="1" opacity="0.15">
+    <line x1="190" y1="65" x2="260" y2="180"/>
+    <line x1="560" y1="65" x2="540" y2="180"/>
+    <line x1="870" y1="105" x2="955" y2="140"/>
+    <line x1="340" y1="220" x2="300" y2="255"/>
+    <line x1="540" y1="220" x2="490" y2="255"/>
+    <line x1="300" y1="335" x2="340" y2="370"/>
+    <line x1="900" y1="335" x2="960" y2="370"/>
+  </g>
+</svg>

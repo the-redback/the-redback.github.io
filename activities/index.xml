@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activities | Maruf&#39;s</title>
+    <link>https://the-maruf.com/activities/</link>
+      <atom:link href="https://the-maruf.com/activities/index.xml" rel="self" type="application/rss+xml" />
+    <description>Activities</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2026 Abdullah Al Maruf</copyright><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://the-maruf.com/media/icon_hu55f686cf01b2571760ccbbe4ddc433b7_22664_512x512_fill_lanczos_center_3.png</url>
+      <title>Activities</title>
+      <link>https://the-maruf.com/activities/</link>
+    </image>
+    
+    <item>
+      <title>Cat Foster</title>
+      <link>https://the-maruf.com/activities/cat-fostering/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/activities/cat-fostering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Competitive Programmer</title>
+      <link>https://the-maruf.com/activities/competitive-programming/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/activities/competitive-programming/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Solved overall &lt;strong&gt;1100+&lt;/strong&gt; problems on different Online Judges.&lt;/li&gt;
+&lt;li&gt;Solved &lt;strong&gt;330+&lt;/strong&gt; problems on &lt;strong&gt;UVA Online Judge&lt;/strong&gt;. [&lt;a href=&#34;https://uhunt.onlinejudge.org/id/163246&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the_redback&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Solved &lt;strong&gt;155+&lt;/strong&gt; problems on &lt;strong&gt;LightOJ&lt;/strong&gt; [&lt;a href=&#34;https://lightoj.com/user/the_redback&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the_redback&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Former &lt;strong&gt;Candidate Master&lt;/strong&gt; at &lt;strong&gt;Codeforces&lt;/strong&gt; (Rating:1845, Expert at new rating system) [&lt;a href=&#34;http://codeforces.com/profile/the_redback&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the_redback&lt;/a&gt;]. Solved 450+ problems. &lt;a href=&#34;https://cfviz.netlify.app/?handle=the_redback&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visualize Codeforces stats here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Former &lt;strong&gt;Expert&lt;/strong&gt; at TopCoder (Rating: 1400) [&lt;a href=&#34;https://www.topcoder.com/members/the_redback/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the_redback&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Also participated in many online contests at &lt;strong&gt;CodeChef&lt;/strong&gt; [&lt;a href=&#34;http://www.codechef.com/users/the_redback&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the_redback&lt;/a&gt;], &lt;strong&gt;HackerRank&lt;/strong&gt; [&lt;a href=&#34;https://www.hackerrank.com/the_redback&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the_redback&lt;/a&gt;] and &lt;strong&gt;Spoj&lt;/strong&gt; [&lt;a href=&#34;http://www.spoj.com/users/maruf2hin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;maruf2hin&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Researcher</title>
+      <link>https://the-maruf.com/activities/researcher/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/activities/researcher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Engineer</title>
+      <link>https://the-maruf.com/activities/software-engineer/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/activities/software-engineer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Traveller</title>
+      <link>https://the-maruf.com/activities/traveling/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://the-maruf.com/activities/traveling/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
